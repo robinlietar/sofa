@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		632FB9771DC682F6003EA4A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FB9761DC682F6003EA4A2 /* AppDelegate.swift */; };
+		632FB9791DC682F6003EA4A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FB9781DC682F6003EA4A2 /* ViewController.swift */; };
+		632FB97C1DC682F6003EA4A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632FB97A1DC682F6003EA4A2 /* Main.storyboard */; };
+		632FB97E1DC682F6003EA4A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632FB97D1DC682F6003EA4A2 /* Assets.xcassets */; };
+		632FB9811DC682F6003EA4A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 632FB97F1DC682F6003EA4A2 /* LaunchScreen.storyboard */; };
+		632FB98C1DC682F6003EA4A2 /* SofaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FB98B1DC682F6003EA4A2 /* SofaTests.swift */; };
+		632FB9971DC682F6003EA4A2 /* SofaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632FB9961DC682F6003EA4A2 /* SofaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		632FB9881DC682F6003EA4A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 632FB96B1DC682F6003EA4A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 632FB9721DC682F6003EA4A2;
+			remoteInfo = Sofa;
+		};
+		632FB9931DC682F6003EA4A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 632FB96B1DC682F6003EA4A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 632FB9721DC682F6003EA4A2;
+			remoteInfo = Sofa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		632FB9731DC682F6003EA4A2 /* Sofa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sofa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		632FB9761DC682F6003EA4A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		632FB9781DC682F6003EA4A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		632FB97B1DC682F6003EA4A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		632FB97D1DC682F6003EA4A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		632FB9801DC682F6003EA4A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		632FB9821DC682F6003EA4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632FB9871DC682F6003EA4A2 /* SofaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		632FB98B1DC682F6003EA4A2 /* SofaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofaTests.swift; sourceTree = "<group>"; };
+		632FB98D1DC682F6003EA4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		632FB9921DC682F6003EA4A2 /* SofaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SofaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		632FB9961DC682F6003EA4A2 /* SofaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SofaUITests.swift; sourceTree = "<group>"; };
+		632FB9981DC682F6003EA4A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		632FB9701DC682F6003EA4A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632FB9841DC682F6003EA4A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632FB98F1DC682F6003EA4A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		632FB96A1DC682F6003EA4A2 = {
+			isa = PBXGroup;
+			children = (
+				632FB9751DC682F6003EA4A2 /* Sofa */,
+				632FB98A1DC682F6003EA4A2 /* SofaTests */,
+				632FB9951DC682F6003EA4A2 /* SofaUITests */,
+				632FB9741DC682F6003EA4A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		632FB9741DC682F6003EA4A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				632FB9731DC682F6003EA4A2 /* Sofa.app */,
+				632FB9871DC682F6003EA4A2 /* SofaTests.xctest */,
+				632FB9921DC682F6003EA4A2 /* SofaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		632FB9751DC682F6003EA4A2 /* Sofa */ = {
+			isa = PBXGroup;
+			children = (
+				632FB9761DC682F6003EA4A2 /* AppDelegate.swift */,
+				632FB9781DC682F6003EA4A2 /* ViewController.swift */,
+				632FB97A1DC682F6003EA4A2 /* Main.storyboard */,
+				632FB97D1DC682F6003EA4A2 /* Assets.xcassets */,
+				632FB97F1DC682F6003EA4A2 /* LaunchScreen.storyboard */,
+				632FB9821DC682F6003EA4A2 /* Info.plist */,
+			);
+			path = Sofa;
+			sourceTree = "<group>";
+		};
+		632FB98A1DC682F6003EA4A2 /* SofaTests */ = {
+			isa = PBXGroup;
+			children = (
+				632FB98B1DC682F6003EA4A2 /* SofaTests.swift */,
+				632FB98D1DC682F6003EA4A2 /* Info.plist */,
+			);
+			path = SofaTests;
+			sourceTree = "<group>";
+		};
+		632FB9951DC682F6003EA4A2 /* SofaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				632FB9961DC682F6003EA4A2 /* SofaUITests.swift */,
+				632FB9981DC682F6003EA4A2 /* Info.plist */,
+			);
+			path = SofaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		632FB9721DC682F6003EA4A2 /* Sofa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 632FB99B1DC682F6003EA4A2 /* Build configuration list for PBXNativeTarget "Sofa" */;
+			buildPhases = (
+				632FB96F1DC682F6003EA4A2 /* Sources */,
+				632FB9701DC682F6003EA4A2 /* Frameworks */,
+				632FB9711DC682F6003EA4A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sofa;
+			productName = Sofa;
+			productReference = 632FB9731DC682F6003EA4A2 /* Sofa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		632FB9861DC682F6003EA4A2 /* SofaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 632FB99E1DC682F6003EA4A2 /* Build configuration list for PBXNativeTarget "SofaTests" */;
+			buildPhases = (
+				632FB9831DC682F6003EA4A2 /* Sources */,
+				632FB9841DC682F6003EA4A2 /* Frameworks */,
+				632FB9851DC682F6003EA4A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				632FB9891DC682F6003EA4A2 /* PBXTargetDependency */,
+			);
+			name = SofaTests;
+			productName = SofaTests;
+			productReference = 632FB9871DC682F6003EA4A2 /* SofaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		632FB9911DC682F6003EA4A2 /* SofaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 632FB9A11DC682F6003EA4A2 /* Build configuration list for PBXNativeTarget "SofaUITests" */;
+			buildPhases = (
+				632FB98E1DC682F6003EA4A2 /* Sources */,
+				632FB98F1DC682F6003EA4A2 /* Frameworks */,
+				632FB9901DC682F6003EA4A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				632FB9941DC682F6003EA4A2 /* PBXTargetDependency */,
+			);
+			name = SofaUITests;
+			productName = SofaUITests;
+			productReference = 632FB9921DC682F6003EA4A2 /* SofaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		632FB96B1DC682F6003EA4A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Sofa;
+				TargetAttributes = {
+					632FB9721DC682F6003EA4A2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					632FB9861DC682F6003EA4A2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 632FB9721DC682F6003EA4A2;
+					};
+					632FB9911DC682F6003EA4A2 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 632FB9721DC682F6003EA4A2;
+					};
+				};
+			};
+			buildConfigurationList = 632FB96E1DC682F6003EA4A2 /* Build configuration list for PBXProject "Sofa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 632FB96A1DC682F6003EA4A2;
+			productRefGroup = 632FB9741DC682F6003EA4A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				632FB9721DC682F6003EA4A2 /* Sofa */,
+				632FB9861DC682F6003EA4A2 /* SofaTests */,
+				632FB9911DC682F6003EA4A2 /* SofaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		632FB9711DC682F6003EA4A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632FB9811DC682F6003EA4A2 /* LaunchScreen.storyboard in Resources */,
+				632FB97E1DC682F6003EA4A2 /* Assets.xcassets in Resources */,
+				632FB97C1DC682F6003EA4A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632FB9851DC682F6003EA4A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632FB9901DC682F6003EA4A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		632FB96F1DC682F6003EA4A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632FB9791DC682F6003EA4A2 /* ViewController.swift in Sources */,
+				632FB9771DC682F6003EA4A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632FB9831DC682F6003EA4A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632FB98C1DC682F6003EA4A2 /* SofaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		632FB98E1DC682F6003EA4A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				632FB9971DC682F6003EA4A2 /* SofaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		632FB9891DC682F6003EA4A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 632FB9721DC682F6003EA4A2 /* Sofa */;
+			targetProxy = 632FB9881DC682F6003EA4A2 /* PBXContainerItemProxy */;
+		};
+		632FB9941DC682F6003EA4A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 632FB9721DC682F6003EA4A2 /* Sofa */;
+			targetProxy = 632FB9931DC682F6003EA4A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		632FB97A1DC682F6003EA4A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				632FB97B1DC682F6003EA4A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		632FB97F1DC682F6003EA4A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				632FB9801DC682F6003EA4A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		632FB9991DC682F6003EA4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		632FB99A1DC682F6003EA4A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		632FB99C1DC682F6003EA4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sofa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sofa.Sofa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		632FB99D1DC682F6003EA4A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Sofa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sofa.Sofa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		632FB99F1DC682F6003EA4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SofaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sofa.SofaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sofa.app/Sofa";
+			};
+			name = Debug;
+		};
+		632FB9A01DC682F6003EA4A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SofaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sofa.SofaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sofa.app/Sofa";
+			};
+			name = Release;
+		};
+		632FB9A21DC682F6003EA4A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SofaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sofa.SofaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Sofa;
+			};
+			name = Debug;
+		};
+		632FB9A31DC682F6003EA4A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = SofaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sofa.SofaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Sofa;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		632FB96E1DC682F6003EA4A2 /* Build configuration list for PBXProject "Sofa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				632FB9991DC682F6003EA4A2 /* Debug */,
+				632FB99A1DC682F6003EA4A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		632FB99B1DC682F6003EA4A2 /* Build configuration list for PBXNativeTarget "Sofa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				632FB99C1DC682F6003EA4A2 /* Debug */,
+				632FB99D1DC682F6003EA4A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		632FB99E1DC682F6003EA4A2 /* Build configuration list for PBXNativeTarget "SofaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				632FB99F1DC682F6003EA4A2 /* Debug */,
+				632FB9A01DC682F6003EA4A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		632FB9A11DC682F6003EA4A2 /* Build configuration list for PBXNativeTarget "SofaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				632FB9A21DC682F6003EA4A2 /* Debug */,
+				632FB9A31DC682F6003EA4A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 632FB96B1DC682F6003EA4A2 /* Project object */;
+}
