@@ -42,6 +42,9 @@
 		634BE5FB1DC758F30015D735 /* SpiderMan_affiche.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634BE5FA1DC758F30015D735 /* SpiderMan_affiche.jpg */; };
 		634BE5FE1DC75E310015D735 /* Juste-la-fin-du-monde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634BE5FD1DC75E310015D735 /* Juste-la-fin-du-monde.jpg */; };
 		635772B61DC79F80009808AC /* HomeSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635772B51DC79F80009808AC /* HomeSofa.swift */; };
+		63DBE7FB1DC7AEF1001C1F89 /* CreateSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */; };
+		63DBE7FD1DC7AEFD001C1F89 /* JoinSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */; };
+		63E2026A1DC7A9D400FE78B7 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E202691DC7A9D400FE78B7 /* WatchList.swift */; };
 		6D71B4F3513222839B22ECA8 /* Pods_SofaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C97098145AF00C1BB6B062 /* Pods_SofaUITests.framework */; };
 		95AAB0DB7867BB621F865EF3 /* Pods_Sofa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C18F9EBB587C21C3A6584B0 /* Pods_Sofa.framework */; };
 		EE2A44670E6C919324D9F249 /* Pods_SofaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923F7FA8B943FF2E21E36C87 /* Pods_SofaTests.framework */; };
@@ -113,6 +116,9 @@
 		634BE5FA1DC758F30015D735 /* SpiderMan_affiche.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SpiderMan_affiche.jpg; sourceTree = "<group>"; };
 		634BE5FD1DC75E310015D735 /* Juste-la-fin-du-monde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Juste-la-fin-du-monde.jpg"; sourceTree = "<group>"; };
 		635772B51DC79F80009808AC /* HomeSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSofa.swift; sourceTree = "<group>"; };
+		63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSofa.swift; sourceTree = "<group>"; };
+		63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinSofa.swift; sourceTree = "<group>"; };
+		63E202691DC7A9D400FE78B7 /* WatchList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
 		79518271E3F483DC0967BDB9 /* Pods-SofaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofaUITests/Pods-SofaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		923F7FA8B943FF2E21E36C87 /* Pods_SofaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FD20F92BFEF926063C2EF3A /* Pods-SofaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofaTests/Pods-SofaTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,7 +200,10 @@
 				634BE5F61DC757B70015D735 /* SignUp.swift */,
 				634BE5F81DC757D90015D735 /* TindFilm.swift */,
 				635772B51DC79F80009808AC /* HomeSofa.swift */,
+				63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */,
 				632FB97A1DC682F6003EA4A2 /* Main.storyboard */,
+				63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */,
+				63E202691DC7A9D400FE78B7 /* WatchList.swift */,
 				632FB97D1DC682F6003EA4A2 /* Assets.xcassets */,
 				632FB97F1DC682F6003EA4A2 /* LaunchScreen.storyboard */,
 				632FB9821DC682F6003EA4A2 /* Info.plist */,
@@ -595,12 +604,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63DBE7FB1DC7AEF1001C1F89 /* CreateSofa.swift in Sources */,
 				634BE5F51DC7572C0015D735 /* Login.swift in Sources */,
 				635772B61DC79F80009808AC /* HomeSofa.swift in Sources */,
 				634BE5F71DC757B70015D735 /* SignUp.swift in Sources */,
 				634BE5F91DC757D90015D735 /* TindFilm.swift in Sources */,
 				632FB9791DC682F6003EA4A2 /* Home.swift in Sources */,
+				63E2026A1DC7A9D400FE78B7 /* WatchList.swift in Sources */,
 				632FB9771DC682F6003EA4A2 /* AppDelegate.swift in Sources */,
+				63DBE7FD1DC7AEFD001C1F89 /* JoinSofa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

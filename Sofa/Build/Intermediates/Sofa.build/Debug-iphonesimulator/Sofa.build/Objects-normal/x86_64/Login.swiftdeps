@@ -6,13 +6,13 @@ provides-nominal:
 provides-member:
 - ["C4Sofa5Login", ""]
 provides-dynamic-lookup:
+- "viewWillAppear"
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
 - "viewWillDisappear"
-- "viewWillAppear"
 depends-top-level:
-- "UIViewController"
 - "Bool"
+- "UIViewController"
 - "Login"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]

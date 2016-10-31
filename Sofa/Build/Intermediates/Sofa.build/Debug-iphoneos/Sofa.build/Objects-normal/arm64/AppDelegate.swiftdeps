@@ -6,23 +6,23 @@ provides-nominal:
 provides-member:
 - ["C4Sofa11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
 - "window"
 - "applicationDidBecomeActive"
-- "applicationWillTerminate"
-- "application"
-- "applicationDidEnterBackground"
 - "applicationWillResignActive"
+- "applicationWillTerminate"
+- "applicationDidEnterBackground"
+- "application"
+- "applicationWillEnterForeground"
 depends-top-level:
-- "Bool"
-- !private "FBSDKAppEvents"
-- "UIApplication"
+- "UIApplicationDelegate"
+- "UIResponder"
 - "UIWindow"
 - "UIApplicationLaunchOptionsKey"
+- !private "FBSDKAppEvents"
+- "Bool"
 - "AppDelegate"
-- "UIResponder"
 - !private "BooleanLiteralType"
-- "UIApplicationDelegate"
+- "UIApplication"
 depends-member:
 - !private ["Ps9AnyObject", "FBSDKAppEvents"]
 - !private ["Ps9AnyObject", "activateApp"]

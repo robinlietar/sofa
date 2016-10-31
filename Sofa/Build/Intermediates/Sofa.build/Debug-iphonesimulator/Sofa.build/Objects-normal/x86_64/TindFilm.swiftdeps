@@ -6,46 +6,47 @@ provides-nominal:
 provides-member:
 - ["C4Sofa8TindFilm", ""]
 provides-dynamic-lookup:
-- "likeButton"
-- "unlikeSent"
-- "handlePan"
-- "likeSent"
-- "backAfficheFilm"
-- "viewWillDisappear"
 - "unlikeButton"
+- "backAfficheFilm"
 - "viewWillAppear"
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "handlePan"
 - "afficheFilm"
+- "viewDidLoad"
+- "increment"
+- "likeButton"
+- "likeSent"
+- "viewWillDisappear"
+- "unlikeSent"
 depends-top-level:
+- !private "max"
+- !private "HomeSofa"
+- !private "min"
+- "UIImageView"
+- !private "BooleanLiteralType"
+- !private "sqrt"
+- "StringLiteralType"
+- !private "UIGestureRecognizerState"
+- !private "+"
+- !private "UIViewAnimationOptions"
+- "TindFilm"
+- "Bool"
+- !private "/"
+- "UIViewController"
+- !private "CGPoint"
+- "UIPanGestureRecognizer"
 - !private "UIView"
+- "AssignmentPrecedence"
+- !private "=="
 - !private "<"
+- "Int"
+- "CastingPrecedence"
+- !private "UIImage"
+- !private ">"
 - "UIButton"
 - "AnyObject"
-- "TindFilm"
-- "UIImageView"
-- !private "-"
-- !private "+"
-- !private "UIImage"
-- !private "UIViewAnimationOptions"
-- !private "=="
-- "AssignmentPrecedence"
-- !private "CastingPrecedence"
-- "UIPanGestureRecognizer"
-- !private "/"
 - !private "*"
-- !private "HomeSofa"
-- !private "sqrt"
-- "UIViewController"
-- !private "UIGestureRecognizerState"
-- "StringLiteralType"
-- "Bool"
-- !private ">"
-- !private "CGPoint"
-- "Int"
-- !private "max"
-- !private "BooleanLiteralType"
-- !private "min"
+- !private "-"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "UIGestureRecognizerState"]
@@ -65,6 +66,7 @@ depends-member:
 - ["Ps9AnyObject", "handlePan"]
 - !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "imageView"]
+- ["Ps9AnyObject", "increment"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "instantiateViewController"]
 - ["Ps9AnyObject", "likeButton"]
@@ -123,6 +125,7 @@ depends-member:
 - ["Ps7CVarArg", "handlePan"]
 - !private ["Ps7CVarArg", "image"]
 - !private ["Ps7CVarArg", "imageView"]
+- ["Ps7CVarArg", "increment"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "instantiateViewController"]
 - ["Ps7CVarArg", "likeButton"]
@@ -165,6 +168,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "imageView"]
+- ["Ps28CustomDebugStringConvertible", "increment"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - ["Ps28CustomDebugStringConvertible", "likeButton"]
@@ -226,6 +230,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "handlePan"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "imageView"]
+- ["Ps23CustomStringConvertible", "increment"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - ["Ps23CustomStringConvertible", "likeButton"]
@@ -273,6 +278,7 @@ depends-member:
 - !private ["Ps9Equatable", "height"]
 - !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "imageView"]
+- ["Ps9Equatable", "increment"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "instantiateViewController"]
 - ["Ps9Equatable", "likeButton"]
@@ -330,6 +336,7 @@ depends-member:
 - ["Ps8Hashable", "handlePan"]
 - !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "imageView"]
+- ["Ps8Hashable", "increment"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "instantiateViewController"]
 - ["Ps8Hashable", "likeButton"]
@@ -353,7 +360,7 @@ depends-member:
 - ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", "viewWillDisappear"]
 - ["Ps8Hashable", ""]
-- !private ["C4Sofa8HomeSofa", "deinit"]
+- ["C4Sofa8HomeSofa", "deinit"]
 - ["SQ", "deinit"]
 - ["Si", "deinit"]
 - !private ["Vs5Int16", "deinit"]
@@ -382,6 +389,7 @@ depends-member:
 - ["PSo8NSCoding", "handlePan"]
 - !private ["PSo8NSCoding", "image"]
 - !private ["PSo8NSCoding", "imageView"]
+- ["PSo8NSCoding", "increment"]
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "likeButton"]
 - ["PSo8NSCoding", "likeSent"]
@@ -410,6 +418,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "cpt"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - ["PSo26NSExtensionRequestHandling", "handlePan"]
+- ["PSo26NSExtensionRequestHandling", "increment"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "likeButton"]
 - ["PSo26NSExtensionRequestHandling", "likeSent"]
@@ -453,6 +462,7 @@ depends-member:
 - ["CSo8NSObject", "handlePan"]
 - !private ["CSo8NSObject", "image"]
 - !private ["CSo8NSObject", "imageView"]
+- ["CSo8NSObject", "increment"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "instantiateViewController"]
 - ["CSo8NSObject", "likeButton"]
@@ -492,6 +502,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "handlePan"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "imageView"]
+- ["PSo16NSObjectProtocol", "increment"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - ["PSo16NSObjectProtocol", "likeButton"]
@@ -524,7 +535,7 @@ depends-member:
 - !private ["Ps16RawRepresentable", "ended"]
 - !private ["Ps16RawRepresentable", "scaleAspectFit"]
 - !private ["Ps10SetAlgebra", "curveEaseOut"]
-- !private ["SS", "deinit"]
+- ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
@@ -546,6 +557,7 @@ depends-member:
 - ["C4Sofa8TindFilm", "deinit"]
 - ["C4Sofa8TindFilm", "didReceiveMemoryWarning"]
 - ["C4Sofa8TindFilm", "handlePan"]
+- ["C4Sofa8TindFilm", "increment"]
 - ["C4Sofa8TindFilm", "init"]
 - ["C4Sofa8TindFilm", "likeButton"]
 - ["C4Sofa8TindFilm", "likeSent"]
@@ -595,6 +607,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "handlePan"]
 - !private ["PSo21UIAppearanceContainer", "image"]
 - !private ["PSo21UIAppearanceContainer", "imageView"]
+- ["PSo21UIAppearanceContainer", "increment"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "likeButton"]
 - ["PSo21UIAppearanceContainer", "likeSent"]
@@ -624,6 +637,7 @@ depends-member:
 - ["PSo18UIContentContainer", "cpt"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - ["PSo18UIContentContainer", "handlePan"]
+- ["PSo18UIContentContainer", "increment"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "likeButton"]
 - ["PSo18UIContentContainer", "likeSent"]
@@ -677,6 +691,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "handlePan"]
 - !private ["PSo18UIFocusEnvironment", "image"]
 - !private ["PSo18UIFocusEnvironment", "imageView"]
+- ["PSo18UIFocusEnvironment", "increment"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "likeButton"]
 - ["PSo18UIFocusEnvironment", "likeSent"]
@@ -750,6 +765,7 @@ depends-member:
 - ["CSo11UIResponder", "handlePan"]
 - !private ["CSo11UIResponder", "image"]
 - !private ["CSo11UIResponder", "imageView"]
+- ["CSo11UIResponder", "increment"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "likeButton"]
 - ["CSo11UIResponder", "likeSent"]
@@ -784,6 +800,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "handlePan"]
 - !private ["PSo30UIResponderStandardEditActions", "image"]
 - !private ["PSo30UIResponderStandardEditActions", "imageView"]
+- ["PSo30UIResponderStandardEditActions", "increment"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "likeButton"]
 - ["PSo30UIResponderStandardEditActions", "likeSent"]
@@ -811,6 +828,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "cpt"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - ["PSo16UIStateRestoring", "handlePan"]
+- ["PSo16UIStateRestoring", "increment"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "likeButton"]
 - ["PSo16UIStateRestoring", "likeSent"]
@@ -828,7 +846,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", ""]
-- !private ["CSo12UIStoryboard", "deinit"]
+- ["CSo12UIStoryboard", "deinit"]
 - !private ["CSo12UIStoryboard", "instantiateViewController"]
 - !private ["PSo18UITraitEnvironment", "CGPoint"]
 - !private ["PSo18UITraitEnvironment", "UIGestureRecognizerState"]
@@ -848,6 +866,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "handlePan"]
 - !private ["PSo18UITraitEnvironment", "image"]
 - !private ["PSo18UITraitEnvironment", "imageView"]
+- ["PSo18UITraitEnvironment", "increment"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "likeButton"]
 - ["PSo18UITraitEnvironment", "likeSent"]
@@ -896,6 +915,7 @@ depends-member:
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "handlePan"]
+- ["CSo16UIViewController", "increment"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "likeButton"]
 - ["CSo16UIViewController", "likeSent"]
@@ -954,6 +974,7 @@ depends-member:
 - ["Ps9_Hashable", "handlePan"]
 - !private ["Ps9_Hashable", "image"]
 - !private ["Ps9_Hashable", "imageView"]
+- ["Ps9_Hashable", "increment"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "instantiateViewController"]
 - ["Ps9_Hashable", "likeButton"]
@@ -1006,7 +1027,7 @@ depends-nominal:
 - !private "Sf"
 - !private "Vs7Float80"
 - "Ps8Hashable"
-- !private "C4Sofa8HomeSofa"
+- "C4Sofa8HomeSofa"
 - "SQ"
 - "Si"
 - !private "Vs5Int16"
@@ -1028,7 +1049,7 @@ depends-nominal:
 - "Sq"
 - !private "Ps16RawRepresentable"
 - !private "Ps10SetAlgebra"
-- !private "SS"
+- "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - "C4Sofa8TindFilm"
@@ -1051,7 +1072,7 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
-- !private "CSo12UIStoryboard"
+- "CSo12UIStoryboard"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
 - "VSC22UIViewAnimationOptions"
@@ -1136,4 +1157,4 @@ depends-external:
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "5843bb7b7da0277a128e971406a7e62d"
+interface-hash: "bb8ac14b22e4db12e7aefdb7120820c2"

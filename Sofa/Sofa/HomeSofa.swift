@@ -12,16 +12,14 @@ import FBSDKLoginKit
 
 class HomeSofa: UIViewController {
     
+    @IBOutlet weak var createSofa: UIButton!
+    
+    @IBOutlet weak var joinSofa: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if (FBSDKAccessToken.current() != nil)
-        {
-            // User is already logged in, do work such as go to next view controller.
-        }
-        else
-        {
-            
-        }
+        createSofa.imageView?.contentMode = .scaleAspectFit
+        joinSofa.imageView?.contentMode = .scaleAspectFit
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +32,8 @@ class HomeSofa: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setToolbarHidden(false, animated: true)
+        
     }
     override func viewWillDisappear(_ animated: Bool) {
         // Show the navigation bar on other view controllers

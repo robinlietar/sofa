@@ -34,7 +34,7 @@ class TindFilm: UIViewController {
                 let image: UIImage = UIImage(named: "Juste-la-fin-du-monde.jpg")!
                 self.afficheFilm.image = image
                 self.likeButton.alpha = 1
-                self.cpt = self.cpt + 1
+                self.increment()
 
         })
     }
@@ -56,7 +56,8 @@ class TindFilm: UIViewController {
                 let image: UIImage = UIImage(named: "Juste-la-fin-du-monde.jpg")!
                 self.afficheFilm.image = image
                 self.unlikeButton.alpha = 1
-                self.cpt = self.cpt + 1
+                self.increment()
+
                 
         })
     }
@@ -138,15 +139,18 @@ class TindFilm: UIViewController {
                     }
                     self.unlikeButton.alpha = 1
                     self.likeButton.alpha = 1
-                    self.cpt = self.cpt + 1
-                    if (self.cpt == 5){
-                        let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "HomeSofa") as? HomeSofa
-                        self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
-
-                    }
+                    self.increment()
             })
         }
         
+    }
+    
+    func increment() {
+        self.cpt = self.cpt + 1
+        if (self.cpt == 5){
+            let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "HomeSofa") as? HomeSofa
+            self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
+        }
     }
     
     override func viewDidLoad() {

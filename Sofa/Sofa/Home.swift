@@ -33,6 +33,8 @@ class Home: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         // Hide the navigation bar on the this view controller
         self.navigationController?.setNavigationBarHidden(true, animated: true)
+        self.navigationController?.setToolbarHidden(true, animated: true)
+
     }
     override func viewWillDisappear(_ animated: Bool) {
         // Show the navigation bar on other view controllers

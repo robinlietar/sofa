@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 - "didReceiveMemoryWarning"
-- "viewWillAppear"
 - "viewWillDisappear"
+- "viewWillAppear"
 depends-top-level:
 - "UIViewController"
 - "Bool"

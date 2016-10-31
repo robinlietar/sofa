@@ -7,13 +7,13 @@ provides-member:
 - ["C4Sofa6SignUp", ""]
 provides-dynamic-lookup:
 - "didReceiveMemoryWarning"
-- "viewDidLoad"
 - "viewWillAppear"
 - "viewWillDisappear"
+- "viewDidLoad"
 depends-top-level:
 - "Bool"
-- "SignUp"
 - "UIViewController"
+- "SignUp"
 depends-member:
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]

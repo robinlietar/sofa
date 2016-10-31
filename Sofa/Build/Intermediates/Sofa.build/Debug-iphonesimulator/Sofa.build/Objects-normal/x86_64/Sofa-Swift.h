@@ -133,6 +133,17 @@ SWIFT_CLASS("_TtC4Sofa11AppDelegate")
 @class NSBundle;
 @class NSCoder;
 
+SWIFT_CLASS("_TtC4Sofa10CreateSofa")
+@interface CreateSofa : UIViewController
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC4Sofa4Home")
 @interface Home : UIViewController
 - (void)viewDidLoad;
@@ -143,9 +154,23 @@ SWIFT_CLASS("_TtC4Sofa4Home")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 
 SWIFT_CLASS("_TtC4Sofa8HomeSofa")
 @interface HomeSofa : UIViewController
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createSofa;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified joinSofa;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Sofa8JoinSofa")
+@interface JoinSofa : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
@@ -177,7 +202,6 @@ SWIFT_CLASS("_TtC4Sofa6SignUp")
 @end
 
 @class UIPanGestureRecognizer;
-@class UIButton;
 @class UIImageView;
 
 SWIFT_CLASS("_TtC4Sofa8TindFilm")
@@ -189,6 +213,18 @@ SWIFT_CLASS("_TtC4Sofa8TindFilm")
 - (IBAction)unlikeSent:(id _Nonnull)sender;
 - (IBAction)likeSent:(id _Nonnull)sender;
 - (IBAction)handlePanWithRecognizer:(UIPanGestureRecognizer * _Nonnull)recognizer;
+- (void)increment;
+- (void)viewDidLoad;
+- (void)didReceiveMemoryWarning;
+- (void)viewWillAppear:(BOOL)animated;
+- (void)viewWillDisappear:(BOOL)animated;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC4Sofa9WatchList")
+@interface WatchList : UIViewController
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;

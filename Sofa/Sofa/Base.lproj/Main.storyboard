@@ -10,18 +10,22 @@
         <!--Navigation Controller-->
         <scene sceneID="jnq-Vr-zJK">
             <objects>
-                <navigationController id="vag-FA-335" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="vag-FA-335" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HHi-yG-FX5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hTr-0z-f7Y">
+                        <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="T9t-9t-C55" kind="relationship" relationship="rootViewController" id="NSA-bt-Hmu"/>
+                        <segue destination="T9t-9t-C55" kind="relationship" relationship="rootViewController" id="lho-XH-j2S"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nOJ-fP-wU9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2212" y="-586"/>
+            <point key="canvasLocation" x="-1554" y="-416"/>
         </scene>
         <!--Home-->
         <scene sceneID="q8G-FA-O66">
@@ -185,6 +189,9 @@
                                         <integer key="value" value="6"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="cWx-iv-NAg" kind="show" id="K9G-Ml-8Wh"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHK-Hu-GJI">
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="25"/>
@@ -232,10 +239,135 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xK4-F5-XKh">
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3d-3Z-pjo">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="aMO-oV-mQf"/>
+                                    <constraint firstAttribute="width" constant="300" id="qGr-Li-MwY"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="JoinASofa0.png"/>
+                                <connections>
+                                    <segue destination="CSB-Eu-xfd" kind="show" id="XXE-fY-sCg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW1-aF-l21">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="f28-BF-VVV"/>
+                                    <constraint firstAttribute="height" constant="200" id="ybg-cQ-46e"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="CreateASofa0.png"/>
+                                <connections>
+                                    <segue destination="CHx-VW-GHx" kind="show" id="ZPF-Mx-9GF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62745098040000002" green="0.81960784310000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XW1-aF-l21" firstAttribute="top" secondItem="qkl-Oo-k7U" secondAttribute="bottom" constant="84" id="DNy-Wz-uI8"/>
+                            <constraint firstItem="TE1-5f-bUU" firstAttribute="top" secondItem="qkl-Oo-k7U" secondAttribute="bottom" constant="2" id="ESk-eN-bgn"/>
+                            <constraint firstItem="G3d-3Z-pjo" firstAttribute="top" secondItem="XW1-aF-l21" secondAttribute="bottom" constant="54" id="M0D-Ye-UFX"/>
+                            <constraint firstItem="7ds-qG-2PY" firstAttribute="top" secondItem="G3d-3Z-pjo" secondAttribute="bottom" constant="65" id="SV2-5O-EWO"/>
+                            <constraint firstItem="G3d-3Z-pjo" firstAttribute="centerX" secondItem="o2I-Wg-gTD" secondAttribute="centerX" id="VAG-8k-3jo"/>
+                            <constraint firstItem="TE1-5f-bUU" firstAttribute="centerX" secondItem="o2I-Wg-gTD" secondAttribute="centerX" id="dIa-g6-0VW"/>
+                            <constraint firstItem="XW1-aF-l21" firstAttribute="centerX" secondItem="o2I-Wg-gTD" secondAttribute="centerX" id="jJg-gq-0Qp"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Sofa" id="Gfa-xD-SVZ"/>
+                        <barButtonItem systemItem="flexibleSpace" id="plI-Wx-uyv"/>
+                        <barButtonItem title="Watch Lists" id="Vcx-Kt-k4g">
+                            <color key="tintColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="ksa-ZP-nKT" kind="show" id="cWa-z3-7RF"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="FWb-tj-fxX"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="createSofa" destination="XW1-aF-l21" id="jHN-7m-HoU"/>
+                        <outlet property="joinSofa" destination="G3d-3Z-pjo" id="DlZ-5e-GpU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w0B-N0-35z" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394.4000000000001" y="310.79460269865069"/>
+        </scene>
+        <!--Watch List-->
+        <scene sceneID="yxZ-5X-1Nv">
+            <objects>
+                <viewController storyboardIdentifier="WatchList" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ksa-ZP-nKT" customClass="WatchList" customModule="Sofa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fUm-ch-K94"/>
+                        <viewControllerLayoutGuide type="bottom" id="lgf-6k-Ph6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Apt-X0-quI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4aI-f3-aLC">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2T1-HH-eCr">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2T1-HH-eCr" id="uil-Qa-iwH">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Watch List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLB-NR-9Gt">
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62745098040000002" green="0.81960784310000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lgf-6k-Ph6" firstAttribute="top" secondItem="4aI-f3-aLC" secondAttribute="bottom" id="6Bs-HH-0mr"/>
+                            <constraint firstItem="wLB-NR-9Gt" firstAttribute="centerX" secondItem="Apt-X0-quI" secondAttribute="centerX" id="BLH-tP-79B"/>
+                            <constraint firstItem="4aI-f3-aLC" firstAttribute="leading" secondItem="Apt-X0-quI" secondAttribute="leading" id="EwF-5j-HrS"/>
+                            <constraint firstItem="4aI-f3-aLC" firstAttribute="top" secondItem="fUm-ch-K94" secondAttribute="bottom" constant="50" id="KxC-Q3-5pY"/>
+                            <constraint firstAttribute="trailing" secondItem="4aI-f3-aLC" secondAttribute="trailing" id="LIi-Ms-O0L"/>
+                            <constraint firstItem="wLB-NR-9Gt" firstAttribute="top" secondItem="fUm-ch-K94" secondAttribute="bottom" constant="2" id="NR2-O9-W3q"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Sofa" id="9bl-sA-qRy">
+                            <color key="tintColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="cWx-iv-NAg" kind="show" id="3SG-uu-ugW"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem systemItem="flexibleSpace" id="oTr-VU-Emu"/>
+                        <barButtonItem title="Watch Lists" id="5Ca-hr-dZx"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="uHJ-b2-tkh"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKS-rK-NuB" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2104.8000000000002" y="310.79460269865069"/>
+        </scene>
+        <!--Create Sofa-->
+        <scene sceneID="5cE-3l-el2">
+            <objects>
+                <viewController storyboardIdentifier="CreateSofa" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CHx-VW-GHx" customClass="CreateSofa" customModule="Sofa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Cz-zw-OZE"/>
+                        <viewControllerLayoutGuide type="bottom" id="THg-Eo-Xto"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="L8v-ci-ksk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Sofa's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oRb-kb-5Fb">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="8La-9r-CGE"/>
+                                    <constraint firstAttribute="height" constant="40" id="lTH-tT-1Ar"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -245,10 +377,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wuD-AH-fIZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FOp-dZ-Zmd">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="N3O-Z4-QH5"/>
+                                    <constraint firstAttribute="height" constant="40" id="Rld-qE-R5K"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -258,10 +390,10 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRb-Vu-G5K">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmM-0C-W16">
                                 <color key="backgroundColor" red="0.83921568629999999" green="0.23137254900000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="6ej-uP-8p1"/>
+                                    <constraint firstAttribute="height" constant="40" id="Llr-1w-XVm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
                                 <state key="normal" title="Go">
@@ -273,7 +405,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HN1-xY-4uc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Sofa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DOV-vS-0pB">
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -281,27 +413,110 @@
                         </subviews>
                         <color key="backgroundColor" red="0.62745098040000002" green="0.81960784310000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wuD-AH-fIZ" firstAttribute="top" secondItem="xK4-F5-XKh" secondAttribute="bottom" constant="23" id="3KG-Hz-L2Z"/>
-                            <constraint firstItem="xK4-F5-XKh" firstAttribute="top" secondItem="HN1-xY-4uc" secondAttribute="bottom" constant="58.5" id="67I-ML-J83"/>
-                            <constraint firstItem="TE1-5f-bUU" firstAttribute="top" secondItem="qkl-Oo-k7U" secondAttribute="bottom" constant="2" id="ESk-eN-bgn"/>
-                            <constraint firstItem="xK4-F5-XKh" firstAttribute="leading" secondItem="o2I-Wg-gTD" secondAttribute="leadingMargin" constant="22" id="H45-Wg-M2q"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="xK4-F5-XKh" secondAttribute="trailing" constant="21" id="McZ-XI-pg5"/>
-                            <constraint firstItem="TE1-5f-bUU" firstAttribute="centerX" secondItem="o2I-Wg-gTD" secondAttribute="centerX" id="dIa-g6-0VW"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="wuD-AH-fIZ" secondAttribute="trailing" constant="21" id="gmc-dh-D9Q"/>
-                            <constraint firstItem="HN1-xY-4uc" firstAttribute="centerX" secondItem="o2I-Wg-gTD" secondAttribute="centerX" id="hwW-5z-fje"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="fRb-Vu-G5K" secondAttribute="trailing" constant="22" id="oXh-6M-5x2"/>
-                            <constraint firstItem="7ds-qG-2PY" firstAttribute="top" secondItem="fRb-Vu-G5K" secondAttribute="bottom" constant="20" id="pgX-Mj-2t2"/>
-                            <constraint firstItem="fRb-Vu-G5K" firstAttribute="top" secondItem="wuD-AH-fIZ" secondAttribute="bottom" constant="49" id="sXu-ER-IhA"/>
-                            <constraint firstItem="fRb-Vu-G5K" firstAttribute="leading" secondItem="o2I-Wg-gTD" secondAttribute="leadingMargin" constant="22" id="seG-Ml-efw"/>
-                            <constraint firstItem="wuD-AH-fIZ" firstAttribute="leading" secondItem="o2I-Wg-gTD" secondAttribute="leadingMargin" constant="22" id="wAz-JN-L5X"/>
+                            <constraint firstItem="nmM-0C-W16" firstAttribute="top" secondItem="FOp-dZ-Zmd" secondAttribute="bottom" constant="49" id="18j-CO-qdc"/>
+                            <constraint firstItem="FOp-dZ-Zmd" firstAttribute="top" secondItem="oRb-kb-5Fb" secondAttribute="bottom" constant="23" id="7u9-Ju-PUA"/>
+                            <constraint firstItem="THg-Eo-Xto" firstAttribute="top" secondItem="nmM-0C-W16" secondAttribute="bottom" constant="20" id="B0U-Vx-6cg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FOp-dZ-Zmd" secondAttribute="trailing" constant="21" id="D54-xs-IuZ"/>
+                            <constraint firstItem="oRb-kb-5Fb" firstAttribute="top" secondItem="DOV-vS-0pB" secondAttribute="bottom" constant="270" id="Oxx-pF-Nfq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nmM-0C-W16" secondAttribute="trailing" constant="22" id="XL4-UG-C3Z"/>
+                            <constraint firstItem="nmM-0C-W16" firstAttribute="leading" secondItem="L8v-ci-ksk" secondAttribute="leadingMargin" constant="22" id="kOO-hd-tA5"/>
+                            <constraint firstItem="FOp-dZ-Zmd" firstAttribute="leading" secondItem="L8v-ci-ksk" secondAttribute="leadingMargin" constant="22" id="lG5-AT-eWu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oRb-kb-5Fb" secondAttribute="trailing" constant="21" id="ppz-ZA-PTh"/>
+                            <constraint firstItem="DOV-vS-0pB" firstAttribute="centerX" secondItem="L8v-ci-ksk" secondAttribute="centerX" id="sLw-Ce-edK"/>
+                            <constraint firstItem="oRb-kb-5Fb" firstAttribute="leading" secondItem="L8v-ci-ksk" secondAttribute="leadingMargin" constant="22" id="xpA-bx-hjA"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="IWD-Pf-amW"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="w0B-N0-35z" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dAn-Fy-Cxt" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1415" y="311"/>
+            <point key="canvasLocation" x="713" y="1045"/>
+        </scene>
+        <!--Join Sofa-->
+        <scene sceneID="Lct-bl-hGG">
+            <objects>
+                <viewController storyboardIdentifier="JoinSofa" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CSB-Eu-xfd" customClass="JoinSofa" customModule="Sofa" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FCL-Qj-bRW"/>
+                        <viewControllerLayoutGuide type="bottom" id="70s-h0-bu2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Shb-FN-8Kp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Sofa's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="19H-Tk-jj0">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="xyn-uL-BzZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oep-8L-93c">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vCX-ee-ZAP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXb-xw-xJH">
+                                <color key="backgroundColor" red="0.83921568629999999" green="0.23137254900000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5HK-w0-S9W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                <state key="normal" title="Go">
+                                    <color key="titleColor" red="0.031372549020000001" green="0.18823529410000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Sofa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAc-Sq-Eh8">
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.62745098040000002" green="0.81960784310000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eXb-xw-xJH" secondAttribute="trailing" constant="22" id="4Xf-fq-i3j"/>
+                            <constraint firstItem="19H-Tk-jj0" firstAttribute="top" secondItem="XAc-Sq-Eh8" secondAttribute="bottom" constant="270" id="54r-0i-zPS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="19H-Tk-jj0" secondAttribute="trailing" constant="21" id="8iV-A9-AMk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Oep-8L-93c" secondAttribute="trailing" constant="21" id="FWZ-Kc-mGg"/>
+                            <constraint firstItem="eXb-xw-xJH" firstAttribute="top" secondItem="Oep-8L-93c" secondAttribute="bottom" constant="49" id="Gcm-p3-9He"/>
+                            <constraint firstItem="eXb-xw-xJH" firstAttribute="leading" secondItem="Shb-FN-8Kp" secondAttribute="leadingMargin" constant="22" id="H5C-9w-dWu"/>
+                            <constraint firstItem="XAc-Sq-Eh8" firstAttribute="centerX" secondItem="Shb-FN-8Kp" secondAttribute="centerX" id="NlT-XB-GCd"/>
+                            <constraint firstItem="19H-Tk-jj0" firstAttribute="leading" secondItem="Shb-FN-8Kp" secondAttribute="leadingMargin" constant="22" id="Q3b-TE-e9T"/>
+                            <constraint firstItem="Oep-8L-93c" firstAttribute="top" secondItem="19H-Tk-jj0" secondAttribute="bottom" constant="23" id="Xvz-ZL-iLb"/>
+                            <constraint firstItem="70s-h0-bu2" firstAttribute="top" secondItem="eXb-xw-xJH" secondAttribute="bottom" constant="20" id="Zsa-Yr-Np4"/>
+                            <constraint firstItem="Oep-8L-93c" firstAttribute="leading" secondItem="Shb-FN-8Kp" secondAttribute="leadingMargin" constant="22" id="nJV-R5-yi8"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="VIC-ir-Q24"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQy-aY-KbN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1506" y="1045"/>
         </scene>
         <!--Sign Up-->
         <scene sceneID="Djo-Ug-HCa">
@@ -470,10 +685,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CreateASofa0.png" width="623" height="567"/>
+        <image name="JoinASofa0.png" width="623" height="567"/>
         <image name="Juste-la-fin-du-monde.jpg" width="590" height="861"/>
         <image name="SofaLogo.png" width="276" height="126"/>
         <image name="SpiderMan_affiche.jpg" width="950" height="1406"/>
         <image name="like.png" width="516" height="516"/>
         <image name="unlike.png" width="516" height="516"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3SG-uu-ugW"/>
+    </inferredMetricsTieBreakers>
 </document>
