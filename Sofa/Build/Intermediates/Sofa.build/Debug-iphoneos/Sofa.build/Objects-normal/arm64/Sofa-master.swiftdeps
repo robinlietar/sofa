@@ -1,0 +1,9 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "8dd1771c3065d1187ad8537c538cc158"
+build_time: [531242400, 775459000]
+inputs:
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/Login.swift": [531226099, 0]
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/SignUp.swift": [531226099, 0]
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/TindFilm.swift": [531242399, 0]
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/Home.swift": [531224887, 0]
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/AppDelegate.swift": [531224611, 0]

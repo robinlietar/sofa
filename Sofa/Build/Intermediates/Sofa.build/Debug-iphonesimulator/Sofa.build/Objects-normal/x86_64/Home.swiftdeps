@@ -6,292 +6,333 @@ provides-nominal:
 provides-member:
 - ["C4Sofa4Home", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
 - "didReceiveMemoryWarning"
+- "viewDidLoad"
 - "viewWillAppear"
 - "viewWillDisappear"
 depends-top-level:
+- !private "!="
 - "Bool"
 - "UIViewController"
-- !private "LoginButton"
-- "AssignmentPrecedence"
-- "Home"
+- !private "FBSDKAccessToken"
 - !private "BooleanLiteralType"
+- "Home"
 depends-member:
-- !private ["Ps9AnyObject", "LoginButton"]
-- !private ["Ps9AnyObject", "addSubview"]
+- !private ["Ps9AnyObject", "FBSDKAccessToken"]
+- !private ["Ps9AnyObject", "current"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "navigationController"]
 - !private ["Ps9AnyObject", "setNavigationBarHidden"]
-- !private ["Ps9AnyObject", "view"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", "viewWillDisappear"]
 - ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
-- !private ["PSo15CALayerDelegate", "addSubview"]
-- !private ["Ps7CVarArg", "LoginButton"]
-- !private ["Ps7CVarArg", "addSubview"]
+- !private ["Ps7CVarArg", "FBSDKAccessToken"]
+- !private ["Ps7CVarArg", "current"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "navigationController"]
 - !private ["Ps7CVarArg", "setNavigationBarHidden"]
-- !private ["Ps7CVarArg", "view"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", "viewWillDisappear"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps28CustomDebugStringConvertible", "LoginButton"]
-- !private ["Ps28CustomDebugStringConvertible", "addSubview"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKAccessToken"]
+- !private ["Ps28CustomDebugStringConvertible", "current"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - !private ["Ps28CustomDebugStringConvertible", "setNavigationBarHidden"]
-- !private ["Ps28CustomDebugStringConvertible", "view"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewWillDisappear"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "LoginButton"]
-- !private ["Ps23CustomStringConvertible", "addSubview"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "FBSDKAccessToken"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "current"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - !private ["Ps23CustomStringConvertible", "setNavigationBarHidden"]
-- !private ["Ps23CustomStringConvertible", "view"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", "viewWillDisappear"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "LoginButton"]
-- !private ["Ps9Equatable", "addSubview"]
+- !private ["Ps9Equatable", "FBSDKAccessToken"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "current"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "navigationController"]
 - !private ["Ps9Equatable", "setNavigationBarHidden"]
-- !private ["Ps9Equatable", "view"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", "viewWillDisappear"]
 - ["Ps9Equatable", ""]
-- !private ["Ps8Hashable", "LoginButton"]
-- !private ["Ps8Hashable", "addSubview"]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["CSo16FBSDKAccessToken", "current"]
+- !private ["CSo16FBSDKAccessToken", "deinit"]
+- !private ["PSo12FBSDKCopying", "current"]
+- !private ["Ps8Hashable", "FBSDKAccessToken"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "current"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "navigationController"]
 - !private ["Ps8Hashable", "setNavigationBarHidden"]
-- !private ["Ps8Hashable", "view"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", "viewWillDisappear"]
 - ["Ps8Hashable", ""]
 - ["C4Sofa4Home", "Bool"]
-- !private ["C4Sofa4Home", "LoginButton"]
+- !private ["C4Sofa4Home", "FBSDKAccessToken"]
 - ["C4Sofa4Home", "deinit"]
 - ["C4Sofa4Home", "didReceiveMemoryWarning"]
 - ["C4Sofa4Home", "init"]
 - !private ["C4Sofa4Home", "navigationController"]
-- !private ["C4Sofa4Home", "view"]
 - ["C4Sofa4Home", "viewDidLoad"]
 - ["C4Sofa4Home", "viewWillAppear"]
 - ["C4Sofa4Home", "viewWillDisappear"]
+- ["SQ", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["CSo7NSCoder", "deinit"]
-- !private ["PSo8NSCoding", "LoginButton"]
-- !private ["PSo8NSCoding", "addSubview"]
+- !private ["PSo8NSCoding", "FBSDKAccessToken"]
+- !private ["PSo8NSCoding", "current"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "navigationController"]
 - !private ["PSo8NSCoding", "setNavigationBarHidden"]
-- !private ["PSo8NSCoding", "view"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo26NSExtensionRequestHandling", "LoginButton"]
+- !private ["PSo9NSCopying", "current"]
+- !private ["PSo26NSExtensionRequestHandling", "FBSDKAccessToken"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - !private ["PSo26NSExtensionRequestHandling", "setNavigationBarHidden"]
-- !private ["PSo26NSExtensionRequestHandling", "view"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "LoginButton"]
-- !private ["CSo8NSObject", "addSubview"]
-- ["CSo8NSObject", "deinit"]
+- !private ["CSo8NSObject", "FBSDKAccessToken"]
+- !private ["CSo8NSObject", "current"]
+- !private ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "navigationController"]
 - !private ["CSo8NSObject", "setNavigationBarHidden"]
-- !private ["CSo8NSObject", "view"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
-- !private ["PSo16NSObjectProtocol", "LoginButton"]
-- !private ["PSo16NSObjectProtocol", "addSubview"]
+- !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
+- !private ["PSo16NSObjectProtocol", "current"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - !private ["PSo16NSObjectProtocol", "setNavigationBarHidden"]
-- !private ["PSo16NSObjectProtocol", "view"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "current"]
 - ["Sq", "deinit"]
-- !private ["PSo29UIAccessibilityIdentification", "addSubview"]
-- !private ["PSo12UIAppearance", "addSubview"]
-- !private ["PSo21UIAppearanceContainer", "LoginButton"]
-- !private ["PSo21UIAppearanceContainer", "addSubview"]
+- !private ["PSo21UIAppearanceContainer", "FBSDKAccessToken"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - !private ["PSo21UIAppearanceContainer", "setNavigationBarHidden"]
-- !private ["PSo21UIAppearanceContainer", "view"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "LoginButton"]
+- !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
 - !private ["PSo18UIContentContainer", "init"]
 - !private ["PSo18UIContentContainer", "navigationController"]
 - !private ["PSo18UIContentContainer", "setNavigationBarHidden"]
-- !private ["PSo18UIContentContainer", "view"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "viewWillDisappear"]
 - ["PSo18UIContentContainer", ""]
-- !private ["PSo17UICoordinateSpace", "addSubview"]
-- !private ["PSo13UIDynamicItem", "addSubview"]
-- !private ["PSo18UIFocusEnvironment", "LoginButton"]
-- !private ["PSo18UIFocusEnvironment", "addSubview"]
+- !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - !private ["PSo18UIFocusEnvironment", "setNavigationBarHidden"]
-- !private ["PSo18UIFocusEnvironment", "view"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
 - ["PSo18UIFocusEnvironment", ""]
-- !private ["PSo11UIFocusItem", "addSubview"]
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "setNavigationBarHidden"]
 - ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "LoginButton"]
-- !private ["CSo11UIResponder", "addSubview"]
-- ["CSo11UIResponder", "deinit"]
+- !private ["CSo11UIResponder", "FBSDKAccessToken"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "navigationController"]
 - !private ["CSo11UIResponder", "setNavigationBarHidden"]
-- !private ["CSo11UIResponder", "view"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
-- !private ["PSo30UIResponderStandardEditActions", "LoginButton"]
-- !private ["PSo30UIResponderStandardEditActions", "addSubview"]
+- !private ["PSo30UIResponderStandardEditActions", "FBSDKAccessToken"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - !private ["PSo30UIResponderStandardEditActions", "setNavigationBarHidden"]
-- !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", "viewWillDisappear"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo16UIStateRestoring", "LoginButton"]
+- !private ["PSo16UIStateRestoring", "FBSDKAccessToken"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
 - !private ["PSo16UIStateRestoring", "init"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - !private ["PSo16UIStateRestoring", "setNavigationBarHidden"]
-- !private ["PSo16UIStateRestoring", "view"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", ""]
-- !private ["PSo18UITraitEnvironment", "LoginButton"]
-- !private ["PSo18UITraitEnvironment", "addSubview"]
+- !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - !private ["PSo18UITraitEnvironment", "setNavigationBarHidden"]
-- !private ["PSo18UITraitEnvironment", "view"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
 - ["PSo18UITraitEnvironment", ""]
-- !private ["CSo6UIView", "addSubview"]
 - ["CSo16UIViewController", "Bool"]
-- !private ["CSo16UIViewController", "LoginButton"]
+- !private ["CSo16UIViewController", "FBSDKAccessToken"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "init"]
 - !private ["CSo16UIViewController", "navigationController"]
 - !private ["CSo16UIViewController", "setNavigationBarHidden"]
-- !private ["CSo16UIViewController", "view"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
 - ["CSo16UIViewController", ""]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addSubview"]
-- !private ["Ps9_Hashable", "LoginButton"]
-- !private ["Ps9_Hashable", "addSubview"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "FBSDKAccessToken"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "current"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "navigationController"]
 - !private ["Ps9_Hashable", "setNavigationBarHidden"]
-- !private ["Ps9_Hashable", "view"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", "viewWillDisappear"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sb"
-- !private "PSo15CALayerDelegate"
 - "Ps7CVarArg"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "CSo16FBSDKAccessToken"
+- !private "PSo12FBSDKCopying"
 - "Ps8Hashable"
 - "C4Sofa4Home"
+- "SQ"
+- !private "Ps25LosslessStringConvertible"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
 - "Sq"
-- !private "PSo29UIAccessibilityIdentification"
-- !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - "PSo18UIContentContainer"
-- !private "PSo17UICoordinateSpace"
-- !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
-- !private "PSo11UIFocusItem"
 - "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
 - "PSo18UITraitEnvironment"
-- !private "CSo6UIView"
 - "CSo16UIViewController"
-- !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - "Ps9_Hashable"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "d3370b37d66e84cc16012211017eb9b4"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL_Internal.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent_Internal.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink_Internal.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView_Internal.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+interface-hash: "4926c87e4faf19417ea2f9e54b99ecf8"

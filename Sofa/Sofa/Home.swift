@@ -7,16 +7,21 @@
 //
 
 import UIKit
-import FacebookLogin
+import FBSDKLoginKit
 
 class Home: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let loginButton = LoginButton(readPermissions: [ .PublicProfile ])
-        loginButton.center = view.center
+        if (FBSDKAccessToken.current() != nil)
+        {
+            // User is already logged in, do work such as go to next view controller.
+        }
+        else
+        {
+            
+        }
         
-        view.addSubview(loginButton)
 
         // Do any additional setup after loading the view, typically from a nib.
     }

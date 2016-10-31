@@ -6,25 +6,26 @@ provides-nominal:
 provides-member:
 - ["C4Sofa11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
 - "application"
-- "applicationWillTerminate"
-- "window"
 - "applicationDidBecomeActive"
-- "applicationWillResignActive"
+- "applicationWillEnterForeground"
+- "window"
 - "applicationDidEnterBackground"
+- "applicationWillResignActive"
+- "applicationWillTerminate"
 depends-top-level:
-- "UIApplication"
-- "UIWindow"
-- "UIApplicationDelegate"
-- "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
-- !private "AppEventsLogger"
-- !private "BooleanLiteralType"
-- "UIResponder"
+- !private "FBSDKAppEvents"
 - "Bool"
+- "UIWindow"
+- "UIResponder"
+- !private "BooleanLiteralType"
+- "UIApplication"
+- "UIApplicationDelegate"
+- "UIApplicationLaunchOptionsKey"
+- "AppDelegate"
 depends-member:
-- !private ["Ps9AnyObject", "AppEventsLogger"]
+- !private ["Ps9AnyObject", "FBSDKAppEvents"]
+- !private ["Ps9AnyObject", "activateApp"]
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
 - ["Ps9AnyObject", "applicationDidEnterBackground"]
@@ -40,8 +41,8 @@ depends-member:
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "window"]
 - ["Ps9AnyObject", ""]
-- !private ["C4Sofa11AppDelegate", "AppEventsLogger"]
 - ["C4Sofa11AppDelegate", "Bool"]
+- !private ["C4Sofa11AppDelegate", "FBSDKAppEvents"]
 - ["C4Sofa11AppDelegate", "UIApplication"]
 - ["C4Sofa11AppDelegate", "UIApplicationLaunchOptionsKey"]
 - ["C4Sofa11AppDelegate", "UIWindow"]
@@ -61,7 +62,8 @@ depends-member:
 - ["C4Sofa11AppDelegate", "init"]
 - ["C4Sofa11AppDelegate", "window"]
 - ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "AppEventsLogger"]
+- !private ["Ps7CVarArg", "FBSDKAppEvents"]
+- !private ["Ps7CVarArg", "activateApp"]
 - ["Ps7CVarArg", "application"]
 - ["Ps7CVarArg", "applicationDidBecomeActive"]
 - ["Ps7CVarArg", "applicationDidEnterBackground"]
@@ -77,7 +79,8 @@ depends-member:
 - !private ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "window"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps28CustomDebugStringConvertible", "AppEventsLogger"]
+- !private ["Ps28CustomDebugStringConvertible", "FBSDKAppEvents"]
+- !private ["Ps28CustomDebugStringConvertible", "activateApp"]
 - ["Ps28CustomDebugStringConvertible", "application"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidBecomeActive"]
 - ["Ps28CustomDebugStringConvertible", "applicationDidEnterBackground"]
@@ -93,7 +96,8 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "window"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps23CustomStringConvertible", "AppEventsLogger"]
+- !private ["Ps23CustomStringConvertible", "FBSDKAppEvents"]
+- !private ["Ps23CustomStringConvertible", "activateApp"]
 - ["Ps23CustomStringConvertible", "application"]
 - ["Ps23CustomStringConvertible", "applicationDidBecomeActive"]
 - ["Ps23CustomStringConvertible", "applicationDidEnterBackground"]
@@ -109,7 +113,8 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "window"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "AppEventsLogger"]
+- !private ["Ps9Equatable", "FBSDKAppEvents"]
+- !private ["Ps9Equatable", "activateApp"]
 - ["Ps9Equatable", "application"]
 - ["Ps9Equatable", "applicationDidBecomeActive"]
 - ["Ps9Equatable", "applicationDidEnterBackground"]
@@ -125,7 +130,9 @@ depends-member:
 - !private ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "window"]
 - ["Ps9Equatable", ""]
-- !private ["Ps8Hashable", "AppEventsLogger"]
+- !private ["CSo14FBSDKAppEvents", "activateApp"]
+- !private ["Ps8Hashable", "FBSDKAppEvents"]
+- !private ["Ps8Hashable", "activateApp"]
 - ["Ps8Hashable", "application"]
 - ["Ps8Hashable", "applicationDidBecomeActive"]
 - ["Ps8Hashable", "applicationDidEnterBackground"]
@@ -141,11 +148,12 @@ depends-member:
 - !private ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "window"]
 - ["Ps8Hashable", ""]
-- !private ["CSo8NSObject", "AppEventsLogger"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "FBSDKAppEvents"]
 - ["CSo8NSObject", "UIApplication"]
 - ["CSo8NSObject", "UIApplicationLaunchOptionsKey"]
 - ["CSo8NSObject", "UIWindow"]
+- !private ["CSo8NSObject", "activateApp"]
 - ["CSo8NSObject", "application"]
 - ["CSo8NSObject", "applicationDidBecomeActive"]
 - ["CSo8NSObject", "applicationDidEnterBackground"]
@@ -158,10 +166,10 @@ depends-member:
 - ["CSo8NSObject", "applicationWillEnterForeground"]
 - ["CSo8NSObject", "applicationWillResignActive"]
 - ["CSo8NSObject", "applicationWillTerminate"]
-- ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "window"]
-- !private ["PSo16NSObjectProtocol", "AppEventsLogger"]
+- !private ["PSo16NSObjectProtocol", "FBSDKAppEvents"]
+- !private ["PSo16NSObjectProtocol", "activateApp"]
 - ["PSo16NSObjectProtocol", "application"]
 - ["PSo16NSObjectProtocol", "applicationDidBecomeActive"]
 - ["PSo16NSObjectProtocol", "applicationDidEnterBackground"]
@@ -178,7 +186,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "window"]
 - ["PSo16NSObjectProtocol", ""]
 - ["Sq", "deinit"]
-- !private ["PSo21UIApplicationDelegate", "AppEventsLogger"]
+- !private ["PSo21UIApplicationDelegate", "FBSDKAppEvents"]
 - ["PSo21UIApplicationDelegate", "application"]
 - ["PSo21UIApplicationDelegate", "applicationDidBecomeActive"]
 - ["PSo21UIApplicationDelegate", "applicationDidEnterBackground"]
@@ -193,8 +201,8 @@ depends-member:
 - ["PSo21UIApplicationDelegate", "applicationWillTerminate"]
 - ["PSo21UIApplicationDelegate", "window"]
 - ["PSo21UIApplicationDelegate", ""]
-- !private ["CSo11UIResponder", "AppEventsLogger"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "FBSDKAppEvents"]
 - ["CSo11UIResponder", "UIApplication"]
 - ["CSo11UIResponder", "UIApplicationLaunchOptionsKey"]
 - ["CSo11UIResponder", "UIWindow"]
@@ -214,7 +222,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "window"]
 - ["CSo11UIResponder", ""]
-- !private ["PSo30UIResponderStandardEditActions", "AppEventsLogger"]
+- !private ["PSo30UIResponderStandardEditActions", "FBSDKAppEvents"]
 - ["PSo30UIResponderStandardEditActions", "application"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidBecomeActive"]
 - ["PSo30UIResponderStandardEditActions", "applicationDidEnterBackground"]
@@ -230,7 +238,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "window"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["Ps9_Hashable", "AppEventsLogger"]
+- !private ["Ps9_Hashable", "FBSDKAppEvents"]
+- !private ["Ps9_Hashable", "activateApp"]
 - ["Ps9_Hashable", "application"]
 - ["Ps9_Hashable", "applicationDidBecomeActive"]
 - ["Ps9_Hashable", "applicationDidEnterBackground"]
@@ -254,6 +263,7 @@ depends-nominal:
 - "Ps28CustomDebugStringConvertible"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "CSo14FBSDKAppEvents"
 - "Ps8Hashable"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -266,11 +276,64 @@ depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-interface-hash: "7e85a999868267b7cde0941f4dd635ac"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFTask.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFExecutor.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenSource.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationTokenRegistration.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFCancellationToken.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFWebViewAppLinkResolver.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL_Internal.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFURL.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent_Internal.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFMeasurementEvent.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink_Internal.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkTarget.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView_Internal.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererView.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkReturnToRefererController.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkResolving.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLinkNavigation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/BFAppLink.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Headers/Bolts-umbrella.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/Bolts/Bolts.framework/Modules/module.modulemap"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
+interface-hash: "d01b7b08885330a4d40efa21575aed36"
