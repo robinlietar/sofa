@@ -36,6 +36,9 @@
 		632FB9D21DC684AC003EA4A2 /* friend0.png in Resources */ = {isa = PBXBuildFile; fileRef = 632FB9BC1DC684AC003EA4A2 /* friend0.png */; };
 		632FB9D31DC684AC003EA4A2 /* key.png in Resources */ = {isa = PBXBuildFile; fileRef = 632FB9BD1DC684AC003EA4A2 /* key.png */; };
 		632FB9D41DC684AC003EA4A2 /* unlike.png in Resources */ = {isa = PBXBuildFile; fileRef = 632FB9BE1DC684AC003EA4A2 /* unlike.png */; };
+		6D71B4F3513222839B22ECA8 /* Pods_SofaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C97098145AF00C1BB6B062 /* Pods_SofaUITests.framework */; };
+		95AAB0DB7867BB621F865EF3 /* Pods_Sofa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C18F9EBB587C21C3A6584B0 /* Pods_Sofa.framework */; };
+		EE2A44670E6C919324D9F249 /* Pods_SofaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923F7FA8B943FF2E21E36C87 /* Pods_SofaTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		392EE737FEB4CE43A9D2AE68 /* Pods-SofaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofaUITests/Pods-SofaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		39ACF5B2C4BAF12CB40317D7 /* Pods-Sofa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sofa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sofa/Pods-Sofa.release.xcconfig"; sourceTree = "<group>"; };
+		5C18F9EBB587C21C3A6584B0 /* Pods_Sofa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sofa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		632FB9731DC682F6003EA4A2 /* Sofa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sofa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632FB9761DC682F6003EA4A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632FB9781DC682F6003EA4A2 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
@@ -91,6 +97,16 @@
 		632FB9BC1DC684AC003EA4A2 /* friend0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friend0.png; sourceTree = "<group>"; };
 		632FB9BD1DC684AC003EA4A2 /* key.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key.png; sourceTree = "<group>"; };
 		632FB9BE1DC684AC003EA4A2 /* unlike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = unlike.png; sourceTree = "<group>"; };
+		634BE4C51DC74FAB0015D735 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "Build/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
+		634BE4C61DC74FAB0015D735 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = "Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework"; sourceTree = "<group>"; };
+		634BE4C71DC74FAB0015D735 /* FBSDKMessengerShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKMessengerShareKit.framework; path = "Build/Products/Debug-iphonesimulator/FBSDKMessengerShareKit/FBSDKMessengerShareKit.framework"; sourceTree = "<group>"; };
+		634BE4C81DC74FAB0015D735 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = "Build/Products/Debug-iphonesimulator/FBSDKShareKit/FBSDKShareKit.framework"; sourceTree = "<group>"; };
+		79518271E3F483DC0967BDB9 /* Pods-SofaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofaUITests/Pods-SofaUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		923F7FA8B943FF2E21E36C87 /* Pods_SofaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FD20F92BFEF926063C2EF3A /* Pods-SofaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofaTests/Pods-SofaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7CCFA22092026BF93086FF6 /* Pods-SofaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SofaTests/Pods-SofaTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA1566715B9E6C9E1E84EC29 /* Pods-Sofa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sofa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sofa/Pods-Sofa.debug.xcconfig"; sourceTree = "<group>"; };
+		F6C97098145AF00C1BB6B062 /* Pods_SofaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95AAB0DB7867BB621F865EF3 /* Pods_Sofa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE2A44670E6C919324D9F249 /* Pods_SofaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,12 +130,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D71B4F3513222839B22ECA8 /* Pods_SofaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D2A71C10418A80C4BDA1CF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				634BE4C51DC74FAB0015D735 /* FBSDKCoreKit.framework */,
+				634BE4C61DC74FAB0015D735 /* FBSDKLoginKit.framework */,
+				634BE4C71DC74FAB0015D735 /* FBSDKMessengerShareKit.framework */,
+				634BE4C81DC74FAB0015D735 /* FBSDKShareKit.framework */,
+				5C18F9EBB587C21C3A6584B0 /* Pods_Sofa.framework */,
+				923F7FA8B943FF2E21E36C87 /* Pods_SofaTests.framework */,
+				F6C97098145AF00C1BB6B062 /* Pods_SofaUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		632FB96A1DC682F6003EA4A2 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +158,8 @@
 				632FB98A1DC682F6003EA4A2 /* SofaTests */,
 				632FB9951DC682F6003EA4A2 /* SofaUITests */,
 				632FB9741DC682F6003EA4A2 /* Products */,
+				8D0B6E295FA4547CB635B191 /* Pods */,
+				5D2A71C10418A80C4BDA1CF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +266,19 @@
 			path = Social;
 			sourceTree = "<group>";
 		};
+		8D0B6E295FA4547CB635B191 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA1566715B9E6C9E1E84EC29 /* Pods-Sofa.debug.xcconfig */,
+				39ACF5B2C4BAF12CB40317D7 /* Pods-Sofa.release.xcconfig */,
+				9FD20F92BFEF926063C2EF3A /* Pods-SofaTests.debug.xcconfig */,
+				B7CCFA22092026BF93086FF6 /* Pods-SofaTests.release.xcconfig */,
+				79518271E3F483DC0967BDB9 /* Pods-SofaUITests.debug.xcconfig */,
+				392EE737FEB4CE43A9D2AE68 /* Pods-SofaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -238,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 632FB99B1DC682F6003EA4A2 /* Build configuration list for PBXNativeTarget "Sofa" */;
 			buildPhases = (
+				D09A418A46EF832FE48EF760 /* 📦 Check Pods Manifest.lock */,
 				632FB96F1DC682F6003EA4A2 /* Sources */,
 				632FB9701DC682F6003EA4A2 /* Frameworks */,
 				632FB9711DC682F6003EA4A2 /* Resources */,
+				BC5233F52AB2E2C003E644F9 /* 📦 Embed Pods Frameworks */,
+				73F8D8FAC4CCEDDE3225611A /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,9 +306,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 632FB99E1DC682F6003EA4A2 /* Build configuration list for PBXNativeTarget "SofaTests" */;
 			buildPhases = (
+				467EEF2C21CADF1A32D9B5C6 /* 📦 Check Pods Manifest.lock */,
 				632FB9831DC682F6003EA4A2 /* Sources */,
 				632FB9841DC682F6003EA4A2 /* Frameworks */,
 				632FB9851DC682F6003EA4A2 /* Resources */,
+				4481E6C32F3FD68C8175D418 /* 📦 Embed Pods Frameworks */,
+				A6B92144708AF8E09695141B /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,9 +327,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 632FB9A11DC682F6003EA4A2 /* Build configuration list for PBXNativeTarget "SofaUITests" */;
 			buildPhases = (
+				A2C4E8051985B29D02565BEF /* 📦 Check Pods Manifest.lock */,
 				632FB98E1DC682F6003EA4A2 /* Sources */,
 				632FB98F1DC682F6003EA4A2 /* Frameworks */,
 				632FB9901DC682F6003EA4A2 /* Resources */,
+				5F47D252D024079275781E10 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -299,6 +355,7 @@
 				TargetAttributes = {
 					632FB9721DC682F6003EA4A2 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = R7LT4U2985;
 						ProvisioningStyle = Automatic;
 					};
 					632FB9861DC682F6003EA4A2 = {
@@ -381,6 +438,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4481E6C32F3FD68C8175D418 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SofaTests/Pods-SofaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		467EEF2C21CADF1A32D9B5C6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F47D252D024079275781E10 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SofaUITests/Pods-SofaUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73F8D8FAC4CCEDDE3225611A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sofa/Pods-Sofa-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2C4E8051985B29D02565BEF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B92144708AF8E09695141B /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SofaTests/Pods-SofaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC5233F52AB2E2C003E644F9 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sofa/Pods-Sofa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D09A418A46EF832FE48EF760 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		632FB96F1DC682F6003EA4A2 /* Sources */ = {
@@ -538,8 +718,17 @@
 		};
 		632FB99C1DC682F6003EA4A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA1566715B9E6C9E1E84EC29 /* Pods-Sofa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R7LT4U2985;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/FBSDKCoreKit",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/FBSDKLoginKit",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/FBSDKMessengerShareKit",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/FBSDKShareKit",
+				);
 				INFOPLIST_FILE = Sofa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sofa.Sofa;
@@ -550,8 +739,17 @@
 		};
 		632FB99D1DC682F6003EA4A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39ACF5B2C4BAF12CB40317D7 /* Pods-Sofa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = R7LT4U2985;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/FBSDKCoreKit",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/FBSDKLoginKit",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/FBSDKMessengerShareKit",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/FBSDKShareKit",
+				);
 				INFOPLIST_FILE = Sofa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sofa.Sofa;
@@ -562,6 +760,7 @@
 		};
 		632FB99F1DC682F6003EA4A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FD20F92BFEF926063C2EF3A /* Pods-SofaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -576,6 +775,7 @@
 		};
 		632FB9A01DC682F6003EA4A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7CCFA22092026BF93086FF6 /* Pods-SofaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -590,6 +790,7 @@
 		};
 		632FB9A21DC682F6003EA4A2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79518271E3F483DC0967BDB9 /* Pods-SofaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SofaUITests/Info.plist;
@@ -603,6 +804,7 @@
 		};
 		632FB9A31DC682F6003EA4A2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392EE737FEB4CE43A9D2AE68 /* Pods-SofaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SofaUITests/Info.plist;

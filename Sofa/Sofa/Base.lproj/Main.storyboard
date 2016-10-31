@@ -26,7 +26,7 @@
         <!--Home-->
         <scene sceneID="q8G-FA-O66">
             <objects>
-                <viewController id="T9t-9t-C55" customClass="Home" sceneMemberID="viewController">
+                <viewController id="T9t-9t-C55" customClass="Home" customModule="Sofa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4fs-ai-qGA"/>
                         <viewControllerLayoutGuide type="bottom" id="a3m-Mc-wnQ"/>
