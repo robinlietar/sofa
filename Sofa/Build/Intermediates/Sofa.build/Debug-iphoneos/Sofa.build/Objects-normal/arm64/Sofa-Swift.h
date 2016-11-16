@@ -111,6 +111,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import Foundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -201,6 +203,7 @@ SWIFT_CLASS("_TtC4Sofa6SignUp")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImage;
 @class UIPanGestureRecognizer;
 @class UIImageView;
 
@@ -210,25 +213,41 @@ SWIFT_CLASS("_TtC4Sofa8TindFilm")
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified unlikeButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified afficheFilm;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backAfficheFilm;
-- (IBAction)unlikeSent:(id _Nonnull)sender;
-- (IBAction)likeSent:(id _Nonnull)sender;
-- (IBAction)handlePanWithRecognizer:(UIPanGestureRecognizer * _Nonnull)recognizer;
-- (void)increment;
+@property (nonatomic, copy) NSArray<UIImage *> * _Nonnull afficheImages;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
+- (IBAction)unlikeSent:(id _Nonnull)sender;
+- (IBAction)likeSent:(id _Nonnull)sender;
+- (IBAction)handlePanWithRecognizer:(UIPanGestureRecognizer * _Nonnull)recognizer;
+- (void)increment;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
+SWIFT_CLASS("_TtC4Sofa4User")
+@interface User : NSObject
+@property (nonatomic, copy) NSString * _Nullable nom;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWith_login:(NSString * _Nonnull)_login _pwd:(NSString * _Nonnull)_pwd;
+- (nonnull instancetype)initWith_id:(NSString * _Nonnull)_id _login:(NSString * _Nonnull)_login _pwd:(NSString * _Nonnull)_pwd _nom:(NSString * _Nonnull)_nom _prenom:(NSString * _Nonnull)_prenom;
+@end
+
+@class UITableView;
+@class UITableViewCell;
+
 SWIFT_CLASS("_TtC4Sofa9WatchList")
-@interface WatchList : UIViewController
+@interface WatchList : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

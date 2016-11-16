@@ -15,10 +15,43 @@ class TindFilm: UIViewController {
     @IBOutlet weak var afficheFilm: UIImageView!
     @IBOutlet weak var backAfficheFilm: UIImageView!
     var cpt:Int!
+    var afficheImages: [UIImage] = []
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        likeButton.imageView?.contentMode = .scaleAspectFit
+        unlikeButton.imageView?.contentMode = .scaleAspectFit
+        cpt = 0
+        afficheImages.append(UIImage(named: "SpiderMan_affiche.jpg")!)
+        afficheImages.append(UIImage(named: "arnacoeur.jpg")!)
+        afficheImages.append(UIImage(named: "chihiro.jpg")!)
+        afficheImages.append(UIImage(named: "the-green-line.jpg")!)
+        afficheImages.append(UIImage(named: "Juste-la-fin-du-monde.jpg")!)
+        
+        self.afficheFilm.image = afficheImages[cpt]
+        self.backAfficheFilm.image = afficheImages[cpt + 1]
+
+        
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        // Hide the navigation bar on the this view controller
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    override func viewWillDisappear(_ animated: Bool) {
+        // Show the navigation bar on other view controllers
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
+    }
     
     @IBAction func unlikeSent(_ sender: AnyObject) {
         let finalPoint = CGPoint(x:-self.view.bounds.size.width/2,
                                  y:afficheFilm.center.y /*+ (velocity.y * slideFactor)*/)
+        if (cpt < afficheImages.count - 1){
         UIView.animate(withDuration: 0.5,
                        delay: 0,
                        // 6
@@ -37,10 +70,15 @@ class TindFilm: UIViewController {
                 self.increment()
 
         })
+        }
+        else {
+            self.increment()
+        }
     }
     @IBAction func likeSent(_ sender: AnyObject) {
         let finalPoint = CGPoint(x:3*self.view.bounds.size.width/2,
                                  y:afficheFilm.center.y /*+ (velocity.y * slideFactor)*/)
+        if (cpt < afficheImages.count - 1){
         UIView.animate(withDuration: 0.5,
             delay: 0,
             // 6
@@ -61,7 +99,11 @@ class TindFilm: UIViewController {
                 
         })
     }
-    
+    else {
+    self.increment()
+    }
+    }
+
     @IBAction func handlePan(recognizer:UIPanGestureRecognizer) {
         // Pan Gesture recognizer
         var transition = true
@@ -109,6 +151,7 @@ class TindFilm: UIViewController {
             }
             
             // 5
+            if (cpt < afficheImages.count - 1 || !transition){
             UIView.animate(withDuration: 0.5,
                                        delay: 0,
                                        // 6
@@ -136,13 +179,18 @@ class TindFilm: UIViewController {
                         recognizer.view!.center.x = self.view.bounds.size.width/2
                         let image: UIImage = UIImage(named: "Juste-la-fin-du-monde.jpg")!
                         self.afficheFilm.image = image
+                        self.increment()
                     }
                     self.unlikeButton.alpha = 1
                     self.likeButton.alpha = 1
-                    self.increment()
             })
         }
-        
+            else {
+                self.increment()
+            }
+    }
+
+    
     }
     
     func increment() {
@@ -151,30 +199,16 @@ class TindFilm: UIViewController {
             let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "HomeSofa") as? HomeSofa
             self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
         }
+        else if (self.cpt == 4){
+            self.afficheFilm.image = afficheImages[cpt]
+            self.backAfficheFilm.isHidden = true
+        }
+        else {
+            self.afficheFilm.image = afficheImages[cpt]
+            self.backAfficheFilm.image = afficheImages[cpt + 1]
+        }
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        likeButton.imageView?.contentMode = .scaleAspectFit
-        unlikeButton.imageView?.contentMode = .scaleAspectFit
-        cpt = 0
-        
 
-        
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        // Hide the navigation bar on the this view controller
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
-    }
-    override func viewWillDisappear(_ animated: Bool) {
-        // Show the navigation bar on other view controllers
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
-    }
     
 }

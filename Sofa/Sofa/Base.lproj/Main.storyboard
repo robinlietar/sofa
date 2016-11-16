@@ -217,6 +217,10 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="passwordField" destination="7Ln-6w-wfS" id="SKa-gt-Pxk"/>
+                        <outlet property="usernameField" destination="c9X-6L-Ra1" id="YvZ-Ms-7Bn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1I-YD-jHX" sceneMemberID="firstResponder"/>
             </objects>
@@ -241,8 +245,8 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3d-3Z-pjo">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="aMO-oV-mQf"/>
-                                    <constraint firstAttribute="width" constant="300" id="qGr-Li-MwY"/>
+                                    <constraint firstAttribute="height" constant="150" id="aMO-oV-mQf"/>
+                                    <constraint firstAttribute="width" constant="200" id="qGr-Li-MwY"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="JoinASofa0.png"/>
                                 <connections>
@@ -251,8 +255,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW1-aF-l21">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="f28-BF-VVV"/>
-                                    <constraint firstAttribute="height" constant="200" id="ybg-cQ-46e"/>
+                                    <constraint firstAttribute="width" constant="200" id="f28-BF-VVV"/>
+                                    <constraint firstAttribute="height" constant="150" id="ybg-cQ-46e"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="CreateASofa0.png"/>
                                 <connections>
@@ -262,7 +266,6 @@
                         </subviews>
                         <color key="backgroundColor" red="0.62745098040000002" green="0.81960784310000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="XW1-aF-l21" firstAttribute="top" secondItem="qkl-Oo-k7U" secondAttribute="bottom" constant="84" id="DNy-Wz-uI8"/>
                             <constraint firstItem="TE1-5f-bUU" firstAttribute="top" secondItem="qkl-Oo-k7U" secondAttribute="bottom" constant="2" id="ESk-eN-bgn"/>
                             <constraint firstItem="G3d-3Z-pjo" firstAttribute="top" secondItem="XW1-aF-l21" secondAttribute="bottom" constant="54" id="M0D-Ye-UFX"/>
                             <constraint firstItem="7ds-qG-2PY" firstAttribute="top" secondItem="G3d-3Z-pjo" secondAttribute="bottom" constant="65" id="SV2-5O-EWO"/>
@@ -277,7 +280,7 @@
                         <barButtonItem title="Watch Lists" id="Vcx-Kt-k4g">
                             <color key="tintColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="ksa-ZP-nKT" kind="show" id="cWa-z3-7RF"/>
+                                <segue destination="ksa-ZP-nKT" kind="show" animates="NO" id="cWa-z3-7RF"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -308,7 +311,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4aI-f3-aLC">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="2T1-HH-eCr">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="2T1-HH-eCr">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2T1-HH-eCr" id="uil-Qa-iwH">
@@ -317,6 +320,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ksa-ZP-nKT" id="TYJ-Tg-cbW"/>
+                                    <outlet property="delegate" destination="ksa-ZP-nKT" id="tGt-I0-5NY"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Watch List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wLB-NR-9Gt">
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="36"/>
@@ -329,7 +336,7 @@
                             <constraint firstItem="lgf-6k-Ph6" firstAttribute="top" secondItem="4aI-f3-aLC" secondAttribute="bottom" id="6Bs-HH-0mr"/>
                             <constraint firstItem="wLB-NR-9Gt" firstAttribute="centerX" secondItem="Apt-X0-quI" secondAttribute="centerX" id="BLH-tP-79B"/>
                             <constraint firstItem="4aI-f3-aLC" firstAttribute="leading" secondItem="Apt-X0-quI" secondAttribute="leading" id="EwF-5j-HrS"/>
-                            <constraint firstItem="4aI-f3-aLC" firstAttribute="top" secondItem="fUm-ch-K94" secondAttribute="bottom" constant="50" id="KxC-Q3-5pY"/>
+                            <constraint firstItem="4aI-f3-aLC" firstAttribute="top" secondItem="fUm-ch-K94" secondAttribute="bottom" constant="100" id="KxC-Q3-5pY"/>
                             <constraint firstAttribute="trailing" secondItem="4aI-f3-aLC" secondAttribute="trailing" id="LIi-Ms-O0L"/>
                             <constraint firstItem="wLB-NR-9Gt" firstAttribute="top" secondItem="fUm-ch-K94" secondAttribute="bottom" constant="2" id="NR2-O9-W3q"/>
                         </constraints>
@@ -338,7 +345,7 @@
                         <barButtonItem title="Sofa" id="9bl-sA-qRy">
                             <color key="tintColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="cWx-iv-NAg" kind="show" id="3SG-uu-ugW"/>
+                                <segue destination="cWx-iv-NAg" kind="show" animates="NO" id="3SG-uu-ugW"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem systemItem="flexibleSpace" id="oTr-VU-Emu"/>
@@ -347,10 +354,13 @@
                     <navigationItem key="navigationItem" id="uHJ-b2-tkh"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="tableView" destination="4aI-f3-aLC" id="GlK-L8-zSX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OKS-rK-NuB" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2104.8000000000002" y="310.79460269865069"/>
+            <point key="canvasLocation" x="2377" y="310"/>
         </scene>
         <!--Create Sofa-->
         <scene sceneID="5cE-3l-el2">
@@ -417,7 +427,7 @@
                             <constraint firstItem="FOp-dZ-Zmd" firstAttribute="top" secondItem="oRb-kb-5Fb" secondAttribute="bottom" constant="23" id="7u9-Ju-PUA"/>
                             <constraint firstItem="THg-Eo-Xto" firstAttribute="top" secondItem="nmM-0C-W16" secondAttribute="bottom" constant="20" id="B0U-Vx-6cg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FOp-dZ-Zmd" secondAttribute="trailing" constant="21" id="D54-xs-IuZ"/>
-                            <constraint firstItem="oRb-kb-5Fb" firstAttribute="top" secondItem="DOV-vS-0pB" secondAttribute="bottom" constant="270" id="Oxx-pF-Nfq"/>
+                            <constraint firstItem="DOV-vS-0pB" firstAttribute="top" secondItem="9Cz-zw-OZE" secondAttribute="bottom" constant="130" id="UT6-Kf-Vxm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="nmM-0C-W16" secondAttribute="trailing" constant="22" id="XL4-UG-C3Z"/>
                             <constraint firstItem="nmM-0C-W16" firstAttribute="leading" secondItem="L8v-ci-ksk" secondAttribute="leadingMargin" constant="22" id="kOO-hd-tA5"/>
                             <constraint firstItem="FOp-dZ-Zmd" firstAttribute="leading" secondItem="L8v-ci-ksk" secondAttribute="leadingMargin" constant="22" id="lG5-AT-eWu"/>
@@ -497,7 +507,6 @@
                         <color key="backgroundColor" red="0.62745098040000002" green="0.81960784310000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="eXb-xw-xJH" secondAttribute="trailing" constant="22" id="4Xf-fq-i3j"/>
-                            <constraint firstItem="19H-Tk-jj0" firstAttribute="top" secondItem="XAc-Sq-Eh8" secondAttribute="bottom" constant="270" id="54r-0i-zPS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="19H-Tk-jj0" secondAttribute="trailing" constant="21" id="8iV-A9-AMk"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Oep-8L-93c" secondAttribute="trailing" constant="21" id="FWZ-Kc-mGg"/>
                             <constraint firstItem="eXb-xw-xJH" firstAttribute="top" secondItem="Oep-8L-93c" secondAttribute="bottom" constant="49" id="Gcm-p3-9He"/>
@@ -505,6 +514,7 @@
                             <constraint firstItem="XAc-Sq-Eh8" firstAttribute="centerX" secondItem="Shb-FN-8Kp" secondAttribute="centerX" id="NlT-XB-GCd"/>
                             <constraint firstItem="19H-Tk-jj0" firstAttribute="leading" secondItem="Shb-FN-8Kp" secondAttribute="leadingMargin" constant="22" id="Q3b-TE-e9T"/>
                             <constraint firstItem="Oep-8L-93c" firstAttribute="top" secondItem="19H-Tk-jj0" secondAttribute="bottom" constant="23" id="Xvz-ZL-iLb"/>
+                            <constraint firstItem="XAc-Sq-Eh8" firstAttribute="top" secondItem="FCL-Qj-bRW" secondAttribute="bottom" constant="130" id="YIO-84-gll"/>
                             <constraint firstItem="70s-h0-bu2" firstAttribute="top" secondItem="eXb-xw-xJH" secondAttribute="bottom" constant="20" id="Zsa-Yr-Np4"/>
                             <constraint firstItem="Oep-8L-93c" firstAttribute="leading" secondItem="Shb-FN-8Kp" secondAttribute="leadingMargin" constant="22" id="nJV-R5-yi8"/>
                         </constraints>
@@ -603,6 +613,10 @@
                         </constraints>
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="passwordField" destination="HwE-V1-ngs" id="GSE-w6-nex"/>
+                        <outlet property="usernameField" destination="SeE-dm-I5k" id="n0u-y5-VBr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="klK-tU-QXX" sceneMemberID="firstResponder"/>
             </objects>
@@ -611,7 +625,7 @@
         <!--Tind Film-->
         <scene sceneID="ckV-0p-W0f">
             <objects>
-                <viewController id="pdK-36-KBE" customClass="TindFilm" customModule="Sofa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TindFilm" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pdK-36-KBE" customClass="TindFilm" customModule="Sofa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="z4G-oh-8SR"/>
                         <viewControllerLayoutGuide type="bottom" id="eK2-TP-ybB"/>
@@ -694,6 +708,6 @@
         <image name="unlike.png" width="516" height="516"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="3SG-uu-ugW"/>
+        <segue reference="K9G-Ml-8Wh"/>
     </inferredMetricsTieBreakers>
 </document>

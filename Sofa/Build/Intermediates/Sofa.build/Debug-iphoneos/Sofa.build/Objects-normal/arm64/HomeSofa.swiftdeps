@@ -7,17 +7,17 @@ provides-member:
 - ["C4Sofa8HomeSofa", ""]
 provides-dynamic-lookup:
 - "viewWillDisappear"
-- "joinSofa"
 - "viewWillAppear"
-- "viewDidLoad"
 - "createSofa"
+- "joinSofa"
+- "viewDidLoad"
 - "didReceiveMemoryWarning"
 depends-top-level:
 - "UIButton"
-- "HomeSofa"
 - "AssignmentPrecedence"
 - "UIViewController"
 - !private "BooleanLiteralType"
+- "HomeSofa"
 - "Bool"
 depends-member:
 - !private ["Ps9AnyObject", "contentMode"]

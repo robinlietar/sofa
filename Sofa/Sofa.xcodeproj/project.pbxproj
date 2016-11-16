@@ -42,8 +42,14 @@
 		634BE5FB1DC758F30015D735 /* SpiderMan_affiche.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634BE5FA1DC758F30015D735 /* SpiderMan_affiche.jpg */; };
 		634BE5FE1DC75E310015D735 /* Juste-la-fin-du-monde.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 634BE5FD1DC75E310015D735 /* Juste-la-fin-du-monde.jpg */; };
 		635772B61DC79F80009808AC /* HomeSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635772B51DC79F80009808AC /* HomeSofa.swift */; };
+		636D26601DCA2A5F0012A639 /* db_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 636D265E1DCA2A5F0012A639 /* db_data.csv */; };
+		636D26611DCA2A5F0012A639 /* sorting_films.csv in Resources */ = {isa = PBXBuildFile; fileRef = 636D265F1DCA2A5F0012A639 /* sorting_films.csv */; };
 		63DBE7FB1DC7AEF1001C1F89 /* CreateSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */; };
 		63DBE7FD1DC7AEFD001C1F89 /* JoinSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */; };
+		63DBE8011DC7F3D9001C1F89 /* arnacoeur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63DBE7FE1DC7F3D9001C1F89 /* arnacoeur.jpg */; };
+		63DBE8021DC7F3D9001C1F89 /* chihiro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63DBE7FF1DC7F3D9001C1F89 /* chihiro.jpg */; };
+		63DBE8031DC7F3D9001C1F89 /* the-green-line.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63DBE8001DC7F3D9001C1F89 /* the-green-line.jpg */; };
+		63DBE8051DC7FCF4001C1F89 /* UserInfos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE8041DC7FCF4001C1F89 /* UserInfos.swift */; };
 		63E2026A1DC7A9D400FE78B7 /* WatchList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E202691DC7A9D400FE78B7 /* WatchList.swift */; };
 		6D71B4F3513222839B22ECA8 /* Pods_SofaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C97098145AF00C1BB6B062 /* Pods_SofaUITests.framework */; };
 		95AAB0DB7867BB621F865EF3 /* Pods_Sofa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C18F9EBB587C21C3A6584B0 /* Pods_Sofa.framework */; };
@@ -116,8 +122,14 @@
 		634BE5FA1DC758F30015D735 /* SpiderMan_affiche.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SpiderMan_affiche.jpg; sourceTree = "<group>"; };
 		634BE5FD1DC75E310015D735 /* Juste-la-fin-du-monde.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Juste-la-fin-du-monde.jpg"; sourceTree = "<group>"; };
 		635772B51DC79F80009808AC /* HomeSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSofa.swift; sourceTree = "<group>"; };
+		636D265E1DCA2A5F0012A639 /* db_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = db_data.csv; path = ../../../../Downloads/sofa/db_data.csv; sourceTree = "<group>"; };
+		636D265F1DCA2A5F0012A639 /* sorting_films.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sorting_films.csv; path = ../../../../Downloads/sofa/sorting_films.csv; sourceTree = "<group>"; };
 		63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSofa.swift; sourceTree = "<group>"; };
 		63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinSofa.swift; sourceTree = "<group>"; };
+		63DBE7FE1DC7F3D9001C1F89 /* arnacoeur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arnacoeur.jpg; sourceTree = "<group>"; };
+		63DBE7FF1DC7F3D9001C1F89 /* chihiro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chihiro.jpg; sourceTree = "<group>"; };
+		63DBE8001DC7F3D9001C1F89 /* the-green-line.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "the-green-line.jpg"; sourceTree = "<group>"; };
+		63DBE8041DC7FCF4001C1F89 /* UserInfos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfos.swift; sourceTree = "<group>"; };
 		63E202691DC7A9D400FE78B7 /* WatchList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchList.swift; sourceTree = "<group>"; };
 		79518271E3F483DC0967BDB9 /* Pods-SofaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SofaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SofaUITests/Pods-SofaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		923F7FA8B943FF2E21E36C87 /* Pods_SofaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SofaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +210,7 @@
 				632FB9781DC682F6003EA4A2 /* Home.swift */,
 				634BE5F41DC7572C0015D735 /* Login.swift */,
 				634BE5F61DC757B70015D735 /* SignUp.swift */,
+				63DBE8041DC7FCF4001C1F89 /* UserInfos.swift */,
 				634BE5F81DC757D90015D735 /* TindFilm.swift */,
 				635772B51DC79F80009808AC /* HomeSofa.swift */,
 				63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */,
@@ -207,6 +220,7 @@
 				632FB97D1DC682F6003EA4A2 /* Assets.xcassets */,
 				632FB97F1DC682F6003EA4A2 /* LaunchScreen.storyboard */,
 				632FB9821DC682F6003EA4A2 /* Info.plist */,
+				636D265D1DCA2A540012A639 /* Db */,
 				632FB9A41DC684AC003EA4A2 /* images */,
 			);
 			path = Sofa;
@@ -295,10 +309,22 @@
 		634BE5FC1DC75D460015D735 /* Affiche Films */ = {
 			isa = PBXGroup;
 			children = (
+				63DBE7FE1DC7F3D9001C1F89 /* arnacoeur.jpg */,
+				63DBE7FF1DC7F3D9001C1F89 /* chihiro.jpg */,
+				63DBE8001DC7F3D9001C1F89 /* the-green-line.jpg */,
 				634BE5FD1DC75E310015D735 /* Juste-la-fin-du-monde.jpg */,
 				634BE5FA1DC758F30015D735 /* SpiderMan_affiche.jpg */,
 			);
 			name = "Affiche Films";
+			sourceTree = "<group>";
+		};
+		636D265D1DCA2A540012A639 /* Db */ = {
+			isa = PBXGroup;
+			children = (
+				636D265E1DCA2A5F0012A639 /* db_data.csv */,
+				636D265F1DCA2A5F0012A639 /* sorting_films.csv */,
+			);
+			name = Db;
 			sourceTree = "<group>";
 		};
 		8D0B6E295FA4547CB635B191 /* Pods */ = {
@@ -433,19 +459,24 @@
 				634BE5FB1DC758F30015D735 /* SpiderMan_affiche.jpg in Resources */,
 				632FB9811DC682F6003EA4A2 /* LaunchScreen.storyboard in Resources */,
 				632FB9CF1DC684AC003EA4A2 /* triangle.png in Resources */,
+				63DBE8031DC7F3D9001C1F89 /* the-green-line.jpg in Resources */,
+				636D26601DCA2A5F0012A639 /* db_data.csv in Resources */,
 				632FB9CA1DC684AC003EA4A2 /* ready.png in Resources */,
 				632FB9D31DC684AC003EA4A2 /* key.png in Resources */,
 				632FB9C11DC684AC003EA4A2 /* CreateASofa0.png in Resources */,
 				632FB97E1DC682F6003EA4A2 /* Assets.xcassets in Resources */,
 				632FB9BF1DC684AC003EA4A2 /* coeurgris50.png in Resources */,
 				632FB9CC1DC684AC003EA4A2 /* WatchListLogo.png in Resources */,
+				636D26611DCA2A5F0012A639 /* sorting_films.csv in Resources */,
 				632FB9C01DC684AC003EA4A2 /* coeurnoir2.png in Resources */,
 				632FB9C51DC684AC003EA4A2 /* JoinASofa0.png in Resources */,
+				63DBE8021DC7F3D9001C1F89 /* chihiro.jpg in Resources */,
 				632FB9C31DC684AC003EA4A2 /* home0.png in Resources */,
 				632FB9D41DC684AC003EA4A2 /* unlike.png in Resources */,
 				632FB9D01DC684AC003EA4A2 /* refresh.png in Resources */,
 				632FB9C91DC684AC003EA4A2 /* ok.png in Resources */,
 				634BE5FE1DC75E310015D735 /* Juste-la-fin-du-monde.jpg in Resources */,
+				63DBE8011DC7F3D9001C1F89 /* arnacoeur.jpg in Resources */,
 				632FB9CE1DC684AC003EA4A2 /* coeur.png in Resources */,
 				632FB9CD1DC684AC003EA4A2 /* netflix.png in Resources */,
 				632FB9CB1DC684AC003EA4A2 /* SofaLogo.png in Resources */,
@@ -608,6 +639,7 @@
 				634BE5F51DC7572C0015D735 /* Login.swift in Sources */,
 				635772B61DC79F80009808AC /* HomeSofa.swift in Sources */,
 				634BE5F71DC757B70015D735 /* SignUp.swift in Sources */,
+				63DBE8051DC7FCF4001C1F89 /* UserInfos.swift in Sources */,
 				634BE5F91DC757D90015D735 /* TindFilm.swift in Sources */,
 				632FB9791DC682F6003EA4A2 /* Home.swift in Sources */,
 				63E2026A1DC7A9D400FE78B7 /* WatchList.swift in Sources */,
