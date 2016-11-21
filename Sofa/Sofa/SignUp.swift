@@ -8,27 +8,32 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
-class SignUp: UIViewController, UITextFieldDelegate, StreamDelegate {
+class SignUp: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     
-
+    @IBAction func goSender(_ sender: Any) {
+        connexionAttempt()
+    }
+    
+    
+    public var user:User!
     public var username:String?
     private var password:String?
     private var signUpAttempt:Bool?
 
-    let serverAddress: CFString = "localhost" as CFString
-    let serverPort: UInt32 = 8000
-    
-    private var inputStream : InputStream!
-    private var outputStream : OutputStream!
+    var nc:NetworkCommunication!
 
+    let notificationName = Notification.Name("SignUp.ConnexionSucceeded")
+    let notificationName2 = Notification.Name("SignUp.ConnexionFailed")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         username = ""
         password = ""
         signUpAttempt = false
@@ -49,84 +54,13 @@ class SignUp: UIViewController, UITextFieldDelegate, StreamDelegate {
         
         view.addGestureRecognizer(tap)
         
-        initNetwork()
-    }
-    
-    // MARK: Network functions
-    
-    func initNetwork() {
-        var readStream:  Unmanaged<CFReadStream>?
-        var writeStream: Unmanaged<CFWriteStream>?
-        
-        CFStreamCreatePairWithSocketToHost(nil, self.serverAddress, self.serverPort, &readStream, &writeStream)
-        self.inputStream = readStream!.takeRetainedValue()
-        self.outputStream = writeStream!.takeRetainedValue()
-        
-        self.inputStream.delegate = self
-        self.outputStream.delegate = self
-        
-        self.inputStream.schedule(in: RunLoop.current, forMode: RunLoopMode.defaultRunLoopMode)
-        self.outputStream.schedule(in: RunLoop.current, forMode: RunLoopMode.defaultRunLoopMode)
-        
-        self.inputStream.open()
-        self.outputStream.open()
-    }
-    
-    func sendString (message: String){
-        print("mess")
-        print(message)
-        let encodedDataArray = [UInt8](message.utf8)
-        outputStream.write(encodedDataArray, maxLength: encodedDataArray.count)
-    }
-    
-    func stream(_ handlestream: Stream, handle eventCode: Stream.Event) {
-        print("stream event")
-        switch (eventCode){
-        case Stream.Event.errorOccurred:
-            NSLog("ErrorOccurred")
-            break
-        case Stream.Event.endEncountered:
-            NSLog("EndEncountered")
-            break
-            /*case Stream.Event.none:
-             NSLog("None")
-             break*/
-        case Stream.Event.hasBytesAvailable:
-            NSLog("HasBytesAvaible")
-            var buffer = [UInt8](repeating: 0, count: 4096)
-            if ( handlestream == inputStream){
-                
-                while (inputStream.hasBytesAvailable){
-                    let len = inputStream.read(&buffer, maxLength: buffer.count)
-                    if(len > 0){
-                        let output = NSString(bytes: &buffer, length: buffer.count, encoding: String.Encoding.utf8.rawValue)
-                        if (output != ""){
-                            NSLog("server said: %@", output!)
-                            let outputFirst = output?.substring(with: NSRange(location: 0, length: 1))
-                            if (outputFirst == "1" && signUpAttempt!){
-                                let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "TindFilm") as? TindFilm
-                                self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
+        //initNetwork()
+        nc = NetworkCommunication()
+        nc.currentVC = "SignUp"
 
-                            }
-                        }
-                    }
-                }
-            }
-            break
-            /*case Stream.Event.allZeros:
-             NSLog("allZeros")
-             break*/
-        case Stream.Event.openCompleted:
-            NSLog("OpenCompleted")
-            break
-        case Stream.Event.hasSpaceAvailable:
-            NSLog("HasSpaceAvailable")
-            break
-        default:
-            break
-        }
-        
     }
+    
+
     
     // MARK: Textfield functions
 
@@ -157,11 +91,79 @@ class SignUp: UIViewController, UITextFieldDelegate, StreamDelegate {
     }
     
     func connexionAttempt(){
+        errorLabel.isHidden = true
         let messageString = "90;" + username! + ";" + password! + ";0;"
         print(messageString)
-        sendString(message: messageString)
+        nc.sendString(message: messageString)
         signUpAttempt = true
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(SignUp.connexionSucceeded), name: notificationName, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(SignUp.connexionFailed), name: notificationName2, object: nil)
             }
+    
+    func connexionSucceeded() {
+        user = User.init(_username:username!, _pwd:password!)
+        let name = user.username
+        print("Le nom est de \(name)")
+        parseOutput()
+        
+        let manager = SDWebImageManager()
+        var dwnldIm:Int = 0
+        //typealias PrefetchingDone = (UIImage?, Error?, SDImageCacheType, Bool, URL?) -> Void
+
+        
+        manager.downloadImage(with: NSURL(string: user.affArrReco[0]) as URL!, options: SDWebImageOptions(rawValue: 0), progress: nil, completed: { (image, error, bool, cache, url) in
+            dwnldIm = dwnldIm + 1
+            print("image  1")
+            if (image != nil) {
+                print("image not nil")
+                self.user.firstImage = image
+            }
+            if (dwnldIm == 2){
+                self.passToTindFilms()
+            }
+        })
+        manager.downloadImage(with: NSURL(string: user.affArrReco[1]) as URL!, options: SDWebImageOptions(rawValue: 0), progress: nil, completed: { (image, error, bool, cache, url) in
+            dwnldIm = dwnldIm + 1
+            print("image  2")
+            if (image != nil) {
+                print("image not nil")
+                self.user.secondImage = image
+            }
+            if (dwnldIm == 2){
+                self.passToTindFilms()
+            }
+        })
+    
+        NotificationCenter.default.removeObserver(self, name: notificationName, object: nil);
+        NotificationCenter.default.removeObserver(self, name: notificationName2, object: nil);
+        
+    }
+    
+    func connexionFailed() {
+        print("connexion failed")
+        errorLabel.isHidden = false
+        NotificationCenter.default.removeObserver(self, name: notificationName, object: nil);
+        NotificationCenter.default.removeObserver(self, name: notificationName2, object: nil);
+    }
+    
+    func passToTindFilms () {
+        let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "TindFilm") as? TindFilm
+        mapViewControllerObj?.user = user
+        self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
+    }
+    
+
+    
+    func parseOutput(){
+        let fullNameArr = nc.outputRead.components(separatedBy: "::")
+        let idString = fullNameArr[1] as String
+        let affString = fullNameArr[2] as String
+        user.idArrReco = idString.components(separatedBy: ";")
+        user.affArrReco = affString.components(separatedBy: ";")
+        
+    }
     
     // MARK: Keyboard functions
 
@@ -196,8 +198,17 @@ class SignUp: UIViewController, UITextFieldDelegate, StreamDelegate {
         }
     }
     
-    
-    
+    /*func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
+        if (segue.identifier == "TindFilm") {
+            //get a reference to the destination view controller
+            let destinationVC:TindFilm = segue.destination as! TindFilm
+            
+            //set properties on the destination view controller
+            destinationVC.user = user
+            //etc...
+        }
+    }
+    */
     
     
     

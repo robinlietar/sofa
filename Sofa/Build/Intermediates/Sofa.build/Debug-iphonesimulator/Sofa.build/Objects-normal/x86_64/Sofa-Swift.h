@@ -117,8 +117,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
-@import CoreFoundation;
 @import ObjectiveC;
+@import CoreFoundation;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -138,12 +138,33 @@ SWIFT_CLASS("_TtC4Sofa11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class User;
+@class NetworkCommunication;
+@class NSNotification;
+@class UITextField;
+@class UILabel;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC4Sofa10CreateSofa")
-@interface CreateSofa : UIViewController
+@interface CreateSofa : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified errorLabel;
+@property (nonatomic, strong) User * _Null_unspecified user;
+@property (nonatomic, copy) NSString * _Nullable sofaName;
+@property (nonatomic, strong) NetworkCommunication * _Null_unspecified nc;
+@property (nonatomic, readonly) NSNotificationName _Nonnull notificationName;
+@property (nonatomic, readonly) NSNotificationName _Nonnull notificationName2;
+- (IBAction)goSender:(id _Nonnull)sender;
 - (void)viewDidLoad;
+- (void)dismissKeyboard;
+- (void)keyboardWillShowWithNotification:(NSNotification * _Nonnull)notification;
+- (void)keyboardWillHideWithNotification:(NSNotification * _Nonnull)notification;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
+- (void)connexionAttempt;
+- (void)connexionSucceeded;
+- (void)connexionFailed;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
@@ -162,16 +183,20 @@ SWIFT_CLASS("_TtC4Sofa4Home")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIStoryboardSegue;
 @class UIButton;
 
 SWIFT_CLASS("_TtC4Sofa8HomeSofa")
 @interface HomeSofa : UIViewController
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified createSofa;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified joinSofa;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified headLabel;
+@property (nonatomic, strong) User * _Null_unspecified user;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -179,7 +204,23 @@ SWIFT_CLASS("_TtC4Sofa8HomeSofa")
 
 SWIFT_CLASS("_TtC4Sofa8JoinSofa")
 @interface JoinSofa : UIViewController
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified errorLabel;
+@property (nonatomic, strong) User * _Null_unspecified user;
+@property (nonatomic, copy) NSString * _Nullable sofaName;
+@property (nonatomic, strong) NetworkCommunication * _Null_unspecified nc;
+@property (nonatomic, readonly) NSNotificationName _Nonnull notificationName;
+@property (nonatomic, readonly) NSNotificationName _Nonnull notificationName2;
+- (IBAction)goSender:(id _Nonnull)sender;
 - (void)viewDidLoad;
+- (void)dismissKeyboard;
+- (void)keyboardWillShowWithNotification:(NSNotification * _Nonnull)notification;
+- (void)keyboardWillHideWithNotification:(NSNotification * _Nonnull)notification;
+- (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
+- (void)connexionAttempt;
+- (void)connexionSucceeded;
+- (void)connexionFailed;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
@@ -187,7 +228,6 @@ SWIFT_CLASS("_TtC4Sofa8JoinSofa")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UITextField;
 
 SWIFT_CLASS("_TtC4Sofa5Login")
 @interface Login : UIViewController
@@ -202,22 +242,40 @@ SWIFT_CLASS("_TtC4Sofa5Login")
 @end
 
 @class NSStream;
-@class NSNotification;
 
-SWIFT_CLASS("_TtC4Sofa6SignUp")
-@interface SignUp : UIViewController <NSStreamDelegate, UITextFieldDelegate>
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameField;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
-@property (nonatomic, copy) NSString * _Nullable username;
+SWIFT_CLASS("_TtC4Sofa20NetworkCommunication")
+@interface NetworkCommunication : NSObject <NSStreamDelegate>
 @property (nonatomic, readonly) CFStringRef _Nonnull serverAddress;
 @property (nonatomic, readonly) uint32_t serverPort;
-- (void)viewDidLoad;
+@property (nonatomic, copy) NSString * _Null_unspecified outputRead;
+@property (nonatomic, copy) NSString * _Null_unspecified currentVC;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)initNetwork SWIFT_METHOD_FAMILY(none);
 - (void)sendStringWithMessage:(NSString * _Nonnull)message;
 - (void)stream:(NSStream * _Nonnull)handlestream handleEvent:(NSStreamEvent)eventCode;
+- (void)sendBackOutputWith_out:(NSString * _Nonnull)_out;
+@end
+
+
+SWIFT_CLASS("_TtC4Sofa6SignUp")
+@interface SignUp : UIViewController <UITextFieldDelegate>
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified usernameField;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordField;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified errorLabel;
+- (IBAction)goSender:(id _Nonnull)sender;
+@property (nonatomic, strong) User * _Null_unspecified user;
+@property (nonatomic, copy) NSString * _Nullable username;
+@property (nonatomic, strong) NetworkCommunication * _Null_unspecified nc;
+@property (nonatomic, readonly) NSNotificationName _Nonnull notificationName;
+@property (nonatomic, readonly) NSNotificationName _Nonnull notificationName2;
+- (void)viewDidLoad;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (void)connexionAttempt;
+- (void)connexionSucceeded;
+- (void)connexionFailed;
+- (void)passToTindFilms;
+- (void)parseOutput;
 - (void)dismissKeyboard;
 - (void)keyboardWillShowWithNotification:(NSNotification * _Nonnull)notification;
 - (void)keyboardWillHideWithNotification:(NSNotification * _Nonnull)notification;
@@ -231,14 +289,29 @@ SWIFT_CLASS("_TtC4Sofa6SignUp")
 @class UIImage;
 @class UIPanGestureRecognizer;
 @class UIImageView;
+@class UIView;
+@class UITextView;
 
 SWIFT_CLASS("_TtC4Sofa8TindFilm")
-@interface TindFilm : UIViewController
+@interface TindFilm : UIViewController <UIGestureRecognizerDelegate>
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified likeButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified unlikeButton;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified afficheFilm;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified backAfficheFilm;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified infoView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified subTitleLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified genreLabel;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified synopsisTextView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified starringLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified directorLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified noteLabel;
 @property (nonatomic, copy) NSArray<UIImage *> * _Nonnull afficheImages;
+@property (nonatomic, strong) NetworkCommunication * _Null_unspecified nc;
+@property (nonatomic, copy) NSArray<NSString *> * _Null_unspecified infoFilmArr;
+@property (nonatomic, copy) NSString * _Null_unspecified currentFilm;
+@property (nonatomic, copy) NSArray<NSNumber *> * _Null_unspecified likeFilmArr;
+@property (nonatomic, strong) User * _Null_unspecified user;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
@@ -247,6 +320,10 @@ SWIFT_CLASS("_TtC4Sofa8TindFilm")
 - (IBAction)likeSent:(id _Nonnull)sender;
 - (IBAction)handlePanWithRecognizer:(UIPanGestureRecognizer * _Nonnull)recognizer;
 - (void)increment;
+- (void)sendLikeArray;
+- (void)handleTap;
+- (void)getFilmInfosWith_fid:(NSString * _Nonnull)_fid;
+- (void)parseFilmInfos;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -254,11 +331,17 @@ SWIFT_CLASS("_TtC4Sofa8TindFilm")
 
 SWIFT_CLASS("_TtC4Sofa4User")
 @interface User : NSObject
-@property (nonatomic, copy) NSString * _Nullable login;
+@property (nonatomic, copy) NSString * _Nullable username;
+@property (nonatomic, copy) NSString * _Nullable pwd;
 @property (nonatomic, copy) NSString * _Nullable nom;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull affArrReco;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull idArrReco;
+@property (nonatomic, strong) UIImage * _Null_unspecified firstImage;
+@property (nonatomic, strong) UIImage * _Null_unspecified secondImage;
+@property (nonatomic, strong) UIImage * _Null_unspecified thirdImage;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWith_login:(NSString * _Nonnull)_login _pwd:(NSString * _Nonnull)_pwd;
-- (nonnull instancetype)initWith_id:(NSString * _Nonnull)_id _login:(NSString * _Nonnull)_login _pwd:(NSString * _Nonnull)_pwd _nom:(NSString * _Nonnull)_nom _prenom:(NSString * _Nonnull)_prenom;
+- (nonnull instancetype)initWith_username:(NSString * _Nonnull)_username _pwd:(NSString * _Nonnull)_pwd;
+- (nonnull instancetype)initWith_id:(NSString * _Nonnull)_id _username:(NSString * _Nonnull)_username _pwd:(NSString * _Nonnull)_pwd _nom:(NSString * _Nonnull)_nom _prenom:(NSString * _Nonnull)_prenom;
 @end
 
 @class UITableView;
@@ -267,6 +350,7 @@ SWIFT_CLASS("_TtC4Sofa4User")
 SWIFT_CLASS("_TtC4Sofa9WatchList")
 @interface WatchList : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
+@property (nonatomic, strong) User * _Null_unspecified user;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
@@ -274,6 +358,7 @@ SWIFT_CLASS("_TtC4Sofa9WatchList")
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

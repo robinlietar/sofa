@@ -13,12 +13,16 @@ import FBSDKLoginKit
 class WatchList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
+    public var user:User!
+
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
-        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -48,4 +52,17 @@ class WatchList: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "segueHomeSofa") {
+
+            let destinationVC:HomeSofa = segue.destination as! HomeSofa
+            
+            //set properties on the destination view controller
+            destinationVC.user = user
+            //etc...
+        }
+    }
+    
+    
 }

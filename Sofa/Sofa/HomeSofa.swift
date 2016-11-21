@@ -15,12 +15,17 @@ class HomeSofa: UIViewController {
     @IBOutlet weak var createSofa: UIButton!
     
     @IBOutlet weak var joinSofa: UIButton!
+    @IBOutlet weak var headLabel: UILabel!
+    
+    public var user:User!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         createSofa.imageView?.contentMode = .scaleAspectFit
         joinSofa.imageView?.contentMode = .scaleAspectFit
         
+        headLabel.text = "Hi " + user.username! + " !"
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -40,4 +45,20 @@ class HomeSofa: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "segueWatchList") {
+            let destinationVC:WatchList = segue.destination as! WatchList
+            destinationVC.user = user
+        }
+        if (segue.identifier == "CreateSofa") {
+            let destinationVC:CreateSofa = segue.destination as! CreateSofa
+            destinationVC.user = user
+        }
+        if (segue.identifier == "JoinSofa") {
+            let destinationVC:JoinSofa = segue.destination as! JoinSofa
+            destinationVC.user = user
+        }
+    }
+
 }

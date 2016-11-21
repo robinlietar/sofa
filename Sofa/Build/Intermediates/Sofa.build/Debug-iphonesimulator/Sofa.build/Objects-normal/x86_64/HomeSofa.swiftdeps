@@ -6,182 +6,367 @@ provides-nominal:
 provides-member:
 - ["C4Sofa8HomeSofa", ""]
 provides-dynamic-lookup:
-- "createSofa"
-- "viewWillAppear"
-- "joinSofa"
 - "viewDidLoad"
-- "viewWillDisappear"
+- "createSofa"
+- "joinSofa"
 - "didReceiveMemoryWarning"
+- "viewWillDisappear"
+- "viewWillAppear"
+- "user"
+- "prepare"
+- "headLabel"
 depends-top-level:
-- "UIButton"
-- "AssignmentPrecedence"
-- "HomeSofa"
-- "UIViewController"
+- !private "StringLiteralType"
 - "Bool"
+- "UIButton"
+- !private "+"
+- !private "WatchList"
 - !private "BooleanLiteralType"
+- !private "CreateSofa"
+- !private "JoinSofa"
+- "UILabel"
+- "UIStoryboardSegue"
+- "HomeSofa"
+- "AssignmentPrecedence"
+- !private "=="
+- "User"
+- "CastingPrecedence"
+- "UIViewController"
 depends-member:
+- !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "contentMode"]
 - ["Ps9AnyObject", "createSofa"]
+- !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "headLabel"]
+- !private ["Ps9AnyObject", "identifier"]
 - !private ["Ps9AnyObject", "imageView"]
 - !private ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "joinSofa"]
 - !private ["Ps9AnyObject", "navigationController"]
+- ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "setNavigationBarHidden"]
 - !private ["Ps9AnyObject", "setToolbarHidden"]
+- !private ["Ps9AnyObject", "text"]
+- ["Ps9AnyObject", "user"]
+- !private ["Ps9AnyObject", "username"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", "viewWillDisappear"]
 - ["Ps9AnyObject", ""]
+- !private ["Ps19BinaryFloatingPoint", "Stride"]
+- !private ["Ps17BitwiseOperations", "Stride"]
+- !private ["Ps17BitwiseOperations", "_DisallowMixedSignArithmetic"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "contentMode"]
 - !private ["PSo15CALayerDelegate", "imageView"]
+- !private ["PSo15CALayerDelegate", "text"]
+- !private ["V12CoreGraphics7CGFloat", "Stride"]
+- !private ["V12CoreGraphics7CGFloat", "deinit"]
+- !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "_DisallowMixedSignArithmetic"]
 - !private ["Ps7CVarArg", "contentMode"]
 - ["Ps7CVarArg", "createSofa"]
+- !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["Ps7CVarArg", "headLabel"]
+- !private ["Ps7CVarArg", "identifier"]
 - !private ["Ps7CVarArg", "imageView"]
 - !private ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "joinSofa"]
 - !private ["Ps7CVarArg", "navigationController"]
+- ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "setNavigationBarHidden"]
 - !private ["Ps7CVarArg", "setToolbarHidden"]
+- !private ["Ps7CVarArg", "text"]
+- ["Ps7CVarArg", "user"]
+- !private ["Ps7CVarArg", "username"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewWillAppear"]
 - ["Ps7CVarArg", "viewWillDisappear"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Comparable", "Stride"]
+- !private ["Ps10Comparable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps10Comparable", "init"]
+- ["C4Sofa10CreateSofa", "deinit"]
+- !private ["C4Sofa10CreateSofa", "user"]
+- !private ["Ps28CustomDebugStringConvertible", "Stride"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
 - ["Ps28CustomDebugStringConvertible", "createSofa"]
+- !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps28CustomDebugStringConvertible", "headLabel"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - !private ["Ps28CustomDebugStringConvertible", "imageView"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "joinSofa"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "setNavigationBarHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "setToolbarHidden"]
+- !private ["Ps28CustomDebugStringConvertible", "text"]
+- ["Ps28CustomDebugStringConvertible", "user"]
+- !private ["Ps28CustomDebugStringConvertible", "username"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewWillDisappear"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Stride"]
+- !private ["Ps17CustomReflectable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "_DisallowMixedSignArithmetic"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "contentMode"]
 - ["Ps23CustomStringConvertible", "createSofa"]
+- !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "headLabel"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
 - !private ["Ps23CustomStringConvertible", "imageView"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "joinSofa"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
+- ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "setNavigationBarHidden"]
 - !private ["Ps23CustomStringConvertible", "setToolbarHidden"]
+- !private ["Ps23CustomStringConvertible", "text"]
+- ["Ps23CustomStringConvertible", "user"]
+- !private ["Ps23CustomStringConvertible", "username"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewWillAppear"]
 - ["Ps23CustomStringConvertible", "viewWillDisappear"]
 - ["Ps23CustomStringConvertible", ""]
+- !private ["V10Foundation4Date", "deinit"]
+- !private ["VSC7Decimal", "Stride"]
+- !private ["VSC7Decimal", "deinit"]
+- !private ["V8Dispatch12DispatchTime", "deinit"]
+- !private ["O8Dispatch20DispatchTimeInterval", "deinit"]
+- !private ["V8Dispatch16DispatchWallTime", "deinit"]
+- !private ["Sd", "Stride"]
+- !private ["Sd", "deinit"]
+- !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "contentMode"]
 - ["Ps9Equatable", "createSofa"]
+- !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "headLabel"]
+- !private ["Ps9Equatable", "identifier"]
 - !private ["Ps9Equatable", "imageView"]
 - !private ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "joinSofa"]
 - !private ["Ps9Equatable", "navigationController"]
+- ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "scaleAspectFit"]
 - !private ["Ps9Equatable", "setNavigationBarHidden"]
 - !private ["Ps9Equatable", "setToolbarHidden"]
+- !private ["Ps9Equatable", "text"]
+- ["Ps9Equatable", "user"]
+- !private ["Ps9Equatable", "username"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", "viewWillDisappear"]
 - ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps25ExpressibleByFloatLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
+- !private ["Ps27ExpressibleByIntegerLiteral", "_DisallowMixedSignArithmetic"]
+- !private ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "Stride"]
+- !private ["Sf", "deinit"]
+- !private ["Vs7Float80", "Stride"]
+- !private ["Vs7Float80", "deinit"]
+- !private ["Ps13FloatingPoint", "Stride"]
+- !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "contentMode"]
 - ["Ps8Hashable", "createSofa"]
+- !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "headLabel"]
+- !private ["Ps8Hashable", "identifier"]
 - !private ["Ps8Hashable", "imageView"]
 - !private ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "joinSofa"]
 - !private ["Ps8Hashable", "navigationController"]
+- ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "scaleAspectFit"]
 - !private ["Ps8Hashable", "setNavigationBarHidden"]
 - !private ["Ps8Hashable", "setToolbarHidden"]
+- !private ["Ps8Hashable", "text"]
+- ["Ps8Hashable", "user"]
+- !private ["Ps8Hashable", "username"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", "viewWillDisappear"]
 - ["Ps8Hashable", ""]
 - ["C4Sofa8HomeSofa", "Bool"]
+- !private ["C4Sofa8HomeSofa", "CreateSofa"]
+- !private ["C4Sofa8HomeSofa", "JoinSofa"]
 - ["C4Sofa8HomeSofa", "UIButton"]
+- ["C4Sofa8HomeSofa", "UILabel"]
+- ["C4Sofa8HomeSofa", "UIStoryboardSegue"]
+- ["C4Sofa8HomeSofa", "User"]
+- !private ["C4Sofa8HomeSofa", "WatchList"]
 - ["C4Sofa8HomeSofa", "createSofa"]
 - ["C4Sofa8HomeSofa", "deinit"]
 - ["C4Sofa8HomeSofa", "didReceiveMemoryWarning"]
+- ["C4Sofa8HomeSofa", "headLabel"]
 - ["C4Sofa8HomeSofa", "init"]
 - ["C4Sofa8HomeSofa", "joinSofa"]
 - !private ["C4Sofa8HomeSofa", "navigationController"]
+- ["C4Sofa8HomeSofa", "prepare"]
+- ["C4Sofa8HomeSofa", "user"]
 - ["C4Sofa8HomeSofa", "viewDidLoad"]
 - ["C4Sofa8HomeSofa", "viewWillAppear"]
 - ["C4Sofa8HomeSofa", "viewWillDisappear"]
 - ["SQ", "deinit"]
+- !private ["V10Foundation9IndexPath", "deinit"]
+- !private ["Si", "Stride"]
+- !private ["Si", "deinit"]
+- !private ["Vs5Int16", "Stride"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "Stride"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "Stride"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "Stride"]
+- !private ["Vs4Int8", "deinit"]
+- !private ["Ps7Integer", "Stride"]
+- !private ["Ps7Integer", "_DisallowMixedSignArithmetic"]
+- !private ["Ps17IntegerArithmetic", "Stride"]
+- !private ["Ps17IntegerArithmetic", "_DisallowMixedSignArithmetic"]
+- ["C4Sofa8JoinSofa", "deinit"]
+- !private ["C4Sofa8JoinSofa", "user"]
+- !private ["Ps25LosslessStringConvertible", "Stride"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "init"]
+- !private ["Ps10MirrorPath", "Stride"]
+- !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "contentMode"]
 - ["PSo8NSCoding", "createSofa"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "headLabel"]
 - !private ["PSo8NSCoding", "imageView"]
 - !private ["PSo8NSCoding", "init"]
 - ["PSo8NSCoding", "joinSofa"]
 - !private ["PSo8NSCoding", "navigationController"]
+- ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "setNavigationBarHidden"]
 - !private ["PSo8NSCoding", "setToolbarHidden"]
+- !private ["PSo8NSCoding", "text"]
+- ["PSo8NSCoding", "user"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewWillAppear"]
 - ["PSo8NSCoding", "viewWillDisappear"]
 - ["PSo8NSCoding", ""]
+- !private ["PSo9NSCopying", "init"]
 - ["PSo26NSExtensionRequestHandling", "createSofa"]
 - ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
+- ["PSo26NSExtensionRequestHandling", "headLabel"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
 - ["PSo26NSExtensionRequestHandling", "joinSofa"]
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
+- ["PSo26NSExtensionRequestHandling", "prepare"]
 - !private ["PSo26NSExtensionRequestHandling", "setNavigationBarHidden"]
 - !private ["PSo26NSExtensionRequestHandling", "setToolbarHidden"]
+- ["PSo26NSExtensionRequestHandling", "user"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
 - ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
 - ["PSo26NSExtensionRequestHandling", ""]
+- !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "CreateSofa"]
+- !private ["CSo8NSObject", "JoinSofa"]
 - ["CSo8NSObject", "UIButton"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
+- ["CSo8NSObject", "User"]
+- !private ["CSo8NSObject", "WatchList"]
 - !private ["CSo8NSObject", "contentMode"]
 - ["CSo8NSObject", "createSofa"]
+- !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "headLabel"]
+- !private ["CSo8NSObject", "identifier"]
 - !private ["CSo8NSObject", "imageView"]
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "joinSofa"]
 - !private ["CSo8NSObject", "navigationController"]
+- ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "setNavigationBarHidden"]
 - !private ["CSo8NSObject", "setToolbarHidden"]
+- !private ["CSo8NSObject", "text"]
+- ["CSo8NSObject", "user"]
+- !private ["CSo8NSObject", "username"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
 - ["PSo16NSObjectProtocol", "createSofa"]
+- !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["PSo16NSObjectProtocol", "headLabel"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
 - !private ["PSo16NSObjectProtocol", "imageView"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "joinSofa"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
+- ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "setNavigationBarHidden"]
 - !private ["PSo16NSObjectProtocol", "setToolbarHidden"]
+- !private ["PSo16NSObjectProtocol", "text"]
+- ["PSo16NSObjectProtocol", "user"]
+- !private ["PSo16NSObjectProtocol", "username"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewWillAppear"]
 - ["PSo16NSObjectProtocol", "viewWillDisappear"]
 - ["PSo16NSObjectProtocol", ""]
+- !private ["PSo14NSSecureCoding", "init"]
+- !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
 - !private ["Ps16RawRepresentable", "scaleAspectFit"]
+- !private ["Ps13SignedInteger", "Stride"]
+- !private ["Ps12SignedNumber", "Stride"]
+- !private ["Ps10Strideable", "Stride"]
+- !private ["Ps10Strideable", "_DisallowMixedSignArithmetic"]
+- ["SS", "deinit"]
+- !private ["SS", "init"]
+- !private ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "contentMode"]
 - !private ["PSo29UIAccessibilityIdentification", "imageView"]
+- !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "contentMode"]
 - !private ["PSo12UIAppearance", "imageView"]
+- !private ["PSo12UIAppearance", "text"]
 - !private ["PSo21UIAppearanceContainer", "contentMode"]
 - ["PSo21UIAppearanceContainer", "createSofa"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo21UIAppearanceContainer", "headLabel"]
 - !private ["PSo21UIAppearanceContainer", "imageView"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - ["PSo21UIAppearanceContainer", "joinSofa"]
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
+- ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "setNavigationBarHidden"]
 - !private ["PSo21UIAppearanceContainer", "setToolbarHidden"]
+- !private ["PSo21UIAppearanceContainer", "text"]
+- ["PSo21UIAppearanceContainer", "user"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewWillAppear"]
 - ["PSo21UIAppearanceContainer", "viewWillDisappear"]
@@ -189,164 +374,354 @@ depends-member:
 - !private ["CSo8UIButton", "imageView"]
 - ["PSo18UIContentContainer", "createSofa"]
 - ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
+- ["PSo18UIContentContainer", "headLabel"]
 - !private ["PSo18UIContentContainer", "init"]
 - ["PSo18UIContentContainer", "joinSofa"]
 - !private ["PSo18UIContentContainer", "navigationController"]
+- ["PSo18UIContentContainer", "prepare"]
 - !private ["PSo18UIContentContainer", "setNavigationBarHidden"]
 - !private ["PSo18UIContentContainer", "setToolbarHidden"]
+- ["PSo18UIContentContainer", "user"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "viewWillDisappear"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["CSo9UIControl", "imageView"]
 - !private ["PSo17UICoordinateSpace", "contentMode"]
 - !private ["PSo17UICoordinateSpace", "imageView"]
+- !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "contentMode"]
 - !private ["PSo13UIDynamicItem", "imageView"]
+- !private ["PSo13UIDynamicItem", "text"]
 - !private ["PSo18UIFocusEnvironment", "contentMode"]
 - ["PSo18UIFocusEnvironment", "createSofa"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UIFocusEnvironment", "headLabel"]
 - !private ["PSo18UIFocusEnvironment", "imageView"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - ["PSo18UIFocusEnvironment", "joinSofa"]
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
+- ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "setNavigationBarHidden"]
 - !private ["PSo18UIFocusEnvironment", "setToolbarHidden"]
+- !private ["PSo18UIFocusEnvironment", "text"]
+- ["PSo18UIFocusEnvironment", "user"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewWillAppear"]
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "contentMode"]
 - !private ["PSo11UIFocusItem", "imageView"]
+- !private ["PSo11UIFocusItem", "text"]
 - !private ["CSo11UIImageView", "contentMode"]
 - ["CSo11UIImageView", "deinit"]
+- !private ["CSo7UILabel", "text"]
 - ["CSo22UINavigationController", "deinit"]
 - !private ["CSo22UINavigationController", "setNavigationBarHidden"]
 - !private ["CSo22UINavigationController", "setToolbarHidden"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "CreateSofa"]
+- !private ["CSo11UIResponder", "JoinSofa"]
 - ["CSo11UIResponder", "UIButton"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
+- ["CSo11UIResponder", "User"]
+- !private ["CSo11UIResponder", "WatchList"]
 - !private ["CSo11UIResponder", "contentMode"]
 - ["CSo11UIResponder", "createSofa"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "headLabel"]
 - !private ["CSo11UIResponder", "imageView"]
 - ["CSo11UIResponder", "init"]
 - ["CSo11UIResponder", "joinSofa"]
 - !private ["CSo11UIResponder", "navigationController"]
+- ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "setNavigationBarHidden"]
 - !private ["CSo11UIResponder", "setToolbarHidden"]
+- !private ["CSo11UIResponder", "text"]
+- ["CSo11UIResponder", "user"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewWillAppear"]
 - ["CSo11UIResponder", "viewWillDisappear"]
 - !private ["PSo30UIResponderStandardEditActions", "contentMode"]
 - ["PSo30UIResponderStandardEditActions", "createSofa"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["PSo30UIResponderStandardEditActions", "headLabel"]
 - !private ["PSo30UIResponderStandardEditActions", "imageView"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - ["PSo30UIResponderStandardEditActions", "joinSofa"]
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "setNavigationBarHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "setToolbarHidden"]
+- !private ["PSo30UIResponderStandardEditActions", "text"]
+- ["PSo30UIResponderStandardEditActions", "user"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
 - ["PSo30UIResponderStandardEditActions", "viewWillDisappear"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["PSo20UIScrollViewDelegate", "user"]
 - ["PSo16UIStateRestoring", "createSofa"]
 - ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
+- ["PSo16UIStateRestoring", "headLabel"]
 - !private ["PSo16UIStateRestoring", "init"]
 - ["PSo16UIStateRestoring", "joinSofa"]
 - !private ["PSo16UIStateRestoring", "navigationController"]
+- ["PSo16UIStateRestoring", "prepare"]
 - !private ["PSo16UIStateRestoring", "setNavigationBarHidden"]
 - !private ["PSo16UIStateRestoring", "setToolbarHidden"]
+- ["PSo16UIStateRestoring", "user"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo17UIStoryboardSegue", "deinit"]
+- !private ["CSo17UIStoryboardSegue", "destination"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
+- !private ["PSo21UITableViewDataSource", "user"]
+- !private ["PSo19UITableViewDelegate", "user"]
+- !private ["PSo19UITextFieldDelegate", "user"]
 - !private ["PSo18UITraitEnvironment", "contentMode"]
 - ["PSo18UITraitEnvironment", "createSofa"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["PSo18UITraitEnvironment", "headLabel"]
 - !private ["PSo18UITraitEnvironment", "imageView"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - ["PSo18UITraitEnvironment", "joinSofa"]
 - !private ["PSo18UITraitEnvironment", "navigationController"]
+- ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "setNavigationBarHidden"]
 - !private ["PSo18UITraitEnvironment", "setToolbarHidden"]
+- !private ["PSo18UITraitEnvironment", "text"]
+- ["PSo18UITraitEnvironment", "user"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewWillAppear"]
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "contentMode"]
 - !private ["CSo6UIView", "imageView"]
+- !private ["CSo6UIView", "text"]
 - ["OSC17UIViewContentMode", "deinit"]
 - !private ["OSC17UIViewContentMode", "scaleAspectFit"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "CreateSofa"]
+- !private ["CSo16UIViewController", "JoinSofa"]
 - ["CSo16UIViewController", "UIButton"]
+- ["CSo16UIViewController", "UILabel"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
+- ["CSo16UIViewController", "User"]
+- !private ["CSo16UIViewController", "WatchList"]
 - ["CSo16UIViewController", "createSofa"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
+- ["CSo16UIViewController", "headLabel"]
 - ["CSo16UIViewController", "init"]
 - ["CSo16UIViewController", "joinSofa"]
 - !private ["CSo16UIViewController", "navigationController"]
+- ["CSo16UIViewController", "prepare"]
 - !private ["CSo16UIViewController", "setNavigationBarHidden"]
 - !private ["CSo16UIViewController", "setToolbarHidden"]
+- ["CSo16UIViewController", "user"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewWillAppear"]
 - ["CSo16UIViewController", "viewWillDisappear"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "Stride"]
+- !private ["Su", "_DisallowMixedSignArithmetic"]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "Stride"]
+- !private ["Vs6UInt16", "_DisallowMixedSignArithmetic"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "Stride"]
+- !private ["Vs6UInt32", "_DisallowMixedSignArithmetic"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "Stride"]
+- !private ["Vs6UInt64", "_DisallowMixedSignArithmetic"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "Stride"]
+- !private ["Vs5UInt8", "_DisallowMixedSignArithmetic"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Ps15UnsignedInteger", "Stride"]
+- !private ["Ps15UnsignedInteger", "_DisallowMixedSignArithmetic"]
+- !private ["C4Sofa4User", "username"]
+- ["C4Sofa9WatchList", "deinit"]
+- !private ["C4Sofa9WatchList", "user"]
+- !private ["Ps15_CVarArgAligned", "Stride"]
+- !private ["Ps15_CVarArgAligned", "_DisallowMixedSignArithmetic"]
+- !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "contentMode"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "imageView"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "Stride"]
+- !private ["Ps28_DisallowMixedSignArithmetic", "_DisallowMixedSignArithmetic"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
+- !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
+- !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisallowMixedSignArithmetic"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
+- !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "contentMode"]
 - ["Ps9_Hashable", "createSofa"]
+- !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["Ps9_Hashable", "headLabel"]
+- !private ["Ps9_Hashable", "identifier"]
 - !private ["Ps9_Hashable", "imageView"]
 - !private ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "joinSofa"]
 - !private ["Ps9_Hashable", "navigationController"]
+- ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "scaleAspectFit"]
 - !private ["Ps9_Hashable", "setNavigationBarHidden"]
 - !private ["Ps9_Hashable", "setToolbarHidden"]
+- !private ["Ps9_Hashable", "text"]
+- ["Ps9_Hashable", "user"]
+- !private ["Ps9_Hashable", "username"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", "viewWillDisappear"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps14_Incrementable", "Stride"]
+- !private ["Ps14_Incrementable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps8_Integer", "Stride"]
+- !private ["Ps8_Integer", "_DisallowMixedSignArithmetic"]
+- !private ["Ps18_IntegerArithmetic", "Stride"]
+- !private ["Ps18_IntegerArithmetic", "_DisallowMixedSignArithmetic"]
+- !private ["Ps21_ObjectiveCBridgeable", "Stride"]
+- !private ["Ps21_ObjectiveCBridgeable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
+- !private ["Ps14_SignedInteger", "Stride"]
+- !private ["Ps11_Strideable", "Stride"]
+- !private ["Ps11_Strideable", "_DisallowMixedSignArithmetic"]
+- !private ["Ps14_StringElement", "Stride"]
+- !private ["Ps14_StringElement", "_DisallowMixedSignArithmetic"]
 depends-nominal:
+- !private "Ps16AbsoluteValuable"
 - "Ps9AnyObject"
+- !private "Ps19BinaryFloatingPoint"
+- !private "Ps17BitwiseOperations"
 - "Sb"
 - !private "PSo15CALayerDelegate"
+- !private "V12CoreGraphics7CGFloat"
 - "Ps7CVarArg"
+- !private "Ps10Comparable"
+- "C4Sofa10CreateSofa"
 - "Ps28CustomDebugStringConvertible"
+- !private "Ps29CustomPlaygroundQuickLookable"
+- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
+- !private "V10Foundation4Date"
+- !private "VSC7Decimal"
+- !private "V8Dispatch12DispatchTime"
+- !private "O8Dispatch20DispatchTimeInterval"
+- !private "V8Dispatch16DispatchWallTime"
+- !private "Sd"
 - "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
+- !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
+- !private "Ps25ExpressibleByFloatLiteral"
+- !private "Ps27ExpressibleByIntegerLiteral"
+- !private "Ps32ExpressibleByStringInterpolation"
+- !private "Ps26ExpressibleByStringLiteral"
+- !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
+- !private "Vs7Float80"
+- !private "Ps13FloatingPoint"
 - "Ps8Hashable"
 - "C4Sofa8HomeSofa"
 - "SQ"
+- !private "V10Foundation9IndexPath"
+- !private "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
+- !private "Ps7Integer"
+- !private "Ps17IntegerArithmetic"
+- "C4Sofa8JoinSofa"
+- !private "Ps25LosslessStringConvertible"
+- !private "Ps10MirrorPath"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
+- !private "PSo9NSCopying"
 - "PSo26NSExtensionRequestHandling"
+- !private "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
+- !private "PSo14NSSecureCoding"
+- !private "CSo8NSString"
 - "Sq"
 - !private "Ps16RawRepresentable"
+- !private "Ps13SignedInteger"
+- !private "Ps12SignedNumber"
+- !private "Ps10Strideable"
+- "SS"
+- !private "Ps16TextOutputStream"
+- !private "Ps20TextOutputStreamable"
 - !private "PSo29UIAccessibilityIdentification"
 - !private "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
 - !private "CSo8UIButton"
 - "PSo18UIContentContainer"
+- !private "PSo30UIContentSizeCategoryAdjusting"
 - !private "CSo9UIControl"
 - !private "PSo17UICoordinateSpace"
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
 - "CSo11UIImageView"
+- !private "CSo7UILabel"
 - "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- !private "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
+- "CSo17UIStoryboardSegue"
+- !private "PSo21UITableViewDataSource"
+- !private "PSo19UITableViewDelegate"
+- !private "PSo19UITextFieldDelegate"
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "OSC17UIViewContentMode"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Ps15UnsignedInteger"
+- !private "C4Sofa4User"
+- "C4Sofa9WatchList"
+- !private "Ps15_CVarArgAligned"
+- !private "Ps22_CVarArgPassedAsDouble"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps28_DisallowMixedSignArithmetic"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
+- !private "Ps33_ExpressibleByBuiltinFloatLiteral"
+- !private "Ps35_ExpressibleByBuiltinIntegerLiteral"
+- !private "Ps34_ExpressibleByBuiltinStringLiteral"
+- !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
+- !private "Ps41_ExpressibleByBuiltinUnicodeScalarLiteral"
+- !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
+- !private "Ps14_Incrementable"
+- !private "Ps8_Integer"
+- !private "Ps18_IntegerArithmetic"
+- !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
+- !private "Ps14_SignedInteger"
+- !private "Ps11_Strideable"
+- !private "Ps14_StringElement"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -412,4 +787,21 @@ depends-external:
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "9a005718dea6e2dc1ead8d8d11ad2db0"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+interface-hash: "217f1a901286ce4c8f2ed8c5f85e1d55"

@@ -12,6 +12,7 @@ pod "FBSDKCoreKit";
 pod "FBSDKLoginKit";
 pod "FBSDKShareKit";
 pod "FBSDKMessengerShareKit";
+pod 'SDWebImage’;
 
   target 'SofaTests' do
     inherit! :search_paths

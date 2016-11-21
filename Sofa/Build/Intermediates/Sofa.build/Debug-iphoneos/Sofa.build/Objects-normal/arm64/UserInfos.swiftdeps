@@ -6,141 +6,223 @@ provides-nominal:
 provides-member:
 - ["C4Sofa4User", ""]
 provides-dynamic-lookup:
+- "secondImage"
+- "idArrReco"
 - "nom"
+- "firstImage"
+- "affArrReco"
+- "username"
 depends-top-level:
-- "String"
-- "AssignmentPrecedence"
 - "Int"
-- "User"
 - !private "StringLiteralType"
+- "User"
+- "String"
+- "UIImage"
 - "NSObject"
+- !private "Array"
+- "AssignmentPrecedence"
 depends-member:
 - ["Ps9AnyObject", "addMovie"]
+- ["Ps9AnyObject", "affArrReco"]
+- ["Ps9AnyObject", "firstImage"]
 - ["Ps9AnyObject", "id"]
+- ["Ps9AnyObject", "idArrReco"]
 - ["Ps9AnyObject", "init"]
-- ["Ps9AnyObject", "login"]
 - ["Ps9AnyObject", "nom"]
 - ["Ps9AnyObject", "prenom"]
 - ["Ps9AnyObject", "pwd"]
+- ["Ps9AnyObject", "secondImage"]
+- ["Ps9AnyObject", "username"]
 - ["Ps9AnyObject", ""]
+- !private ["Sa", "Element"]
+- ["Sa", "deinit"]
+- !private ["Ps23BidirectionalCollection", "Element"]
+- !private ["Ps22BidirectionalIndexable", "Element"]
+- !private ["Ps7CVarArg", "Element"]
 - ["Ps7CVarArg", "addMovie"]
+- ["Ps7CVarArg", "affArrReco"]
+- ["Ps7CVarArg", "firstImage"]
 - ["Ps7CVarArg", "id"]
+- ["Ps7CVarArg", "idArrReco"]
 - ["Ps7CVarArg", "init"]
-- ["Ps7CVarArg", "login"]
 - ["Ps7CVarArg", "nom"]
 - ["Ps7CVarArg", "prenom"]
 - ["Ps7CVarArg", "pwd"]
+- ["Ps7CVarArg", "secondImage"]
+- ["Ps7CVarArg", "username"]
 - ["Ps7CVarArg", ""]
+- !private ["Ps10Collection", "Element"]
 - !private ["Ps10Comparable", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "Element"]
 - ["Ps28CustomDebugStringConvertible", "addMovie"]
+- ["Ps28CustomDebugStringConvertible", "affArrReco"]
+- ["Ps28CustomDebugStringConvertible", "firstImage"]
 - ["Ps28CustomDebugStringConvertible", "id"]
+- ["Ps28CustomDebugStringConvertible", "idArrReco"]
 - ["Ps28CustomDebugStringConvertible", "init"]
-- ["Ps28CustomDebugStringConvertible", "login"]
 - ["Ps28CustomDebugStringConvertible", "nom"]
 - ["Ps28CustomDebugStringConvertible", "prenom"]
 - ["Ps28CustomDebugStringConvertible", "pwd"]
+- ["Ps28CustomDebugStringConvertible", "secondImage"]
+- ["Ps28CustomDebugStringConvertible", "username"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "Element"]
 - !private ["Ps17CustomReflectable", "init"]
+- !private ["Ps23CustomStringConvertible", "Element"]
 - ["Ps23CustomStringConvertible", "addMovie"]
+- ["Ps23CustomStringConvertible", "affArrReco"]
+- ["Ps23CustomStringConvertible", "firstImage"]
 - ["Ps23CustomStringConvertible", "id"]
+- ["Ps23CustomStringConvertible", "idArrReco"]
 - ["Ps23CustomStringConvertible", "init"]
-- ["Ps23CustomStringConvertible", "login"]
 - ["Ps23CustomStringConvertible", "nom"]
 - ["Ps23CustomStringConvertible", "prenom"]
 - ["Ps23CustomStringConvertible", "pwd"]
+- ["Ps23CustomStringConvertible", "secondImage"]
+- ["Ps23CustomStringConvertible", "username"]
 - ["Ps23CustomStringConvertible", ""]
 - ["Ps9Equatable", "addMovie"]
+- ["Ps9Equatable", "affArrReco"]
+- ["Ps9Equatable", "firstImage"]
 - ["Ps9Equatable", "id"]
+- ["Ps9Equatable", "idArrReco"]
 - ["Ps9Equatable", "init"]
-- ["Ps9Equatable", "login"]
 - ["Ps9Equatable", "nom"]
 - ["Ps9Equatable", "prenom"]
 - ["Ps9Equatable", "pwd"]
+- ["Ps9Equatable", "secondImage"]
+- ["Ps9Equatable", "username"]
 - ["Ps9Equatable", ""]
+- !private ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - ["Ps8Hashable", "addMovie"]
+- ["Ps8Hashable", "affArrReco"]
+- ["Ps8Hashable", "firstImage"]
 - ["Ps8Hashable", "id"]
+- ["Ps8Hashable", "idArrReco"]
 - ["Ps8Hashable", "init"]
-- ["Ps8Hashable", "login"]
 - ["Ps8Hashable", "nom"]
 - ["Ps8Hashable", "prenom"]
 - ["Ps8Hashable", "pwd"]
+- ["Ps8Hashable", "secondImage"]
+- ["Ps8Hashable", "username"]
 - ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
+- !private ["Ps9Indexable", "Element"]
+- !private ["Ps13IndexableBase", "Element"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
+- !private ["Ps17MutableCollection", "Element"]
+- !private ["Ps16MutableIndexable", "Element"]
 - !private ["PSo8NSCoding", "init"]
 - !private ["PSo9NSCopying", "init"]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Int"]
 - ["CSo8NSObject", "String"]
+- ["CSo8NSObject", "UIImage"]
 - ["CSo8NSObject", "addMovie"]
+- ["CSo8NSObject", "affArrReco"]
 - ["CSo8NSObject", "deinit"]
+- ["CSo8NSObject", "firstImage"]
 - ["CSo8NSObject", "id"]
+- ["CSo8NSObject", "idArrReco"]
 - ["CSo8NSObject", "init"]
-- ["CSo8NSObject", "login"]
 - ["CSo8NSObject", "nom"]
 - ["CSo8NSObject", "prenom"]
 - ["CSo8NSObject", "pwd"]
+- ["CSo8NSObject", "secondImage"]
+- ["CSo8NSObject", "username"]
 - ["CSo8NSObject", ""]
 - ["PSo16NSObjectProtocol", "addMovie"]
+- ["PSo16NSObjectProtocol", "affArrReco"]
+- ["PSo16NSObjectProtocol", "firstImage"]
 - ["PSo16NSObjectProtocol", "id"]
+- ["PSo16NSObjectProtocol", "idArrReco"]
 - ["PSo16NSObjectProtocol", "init"]
-- ["PSo16NSObjectProtocol", "login"]
 - ["PSo16NSObjectProtocol", "nom"]
 - ["PSo16NSObjectProtocol", "prenom"]
 - ["PSo16NSObjectProtocol", "pwd"]
+- ["PSo16NSObjectProtocol", "secondImage"]
+- ["PSo16NSObjectProtocol", "username"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
 - !private ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
+- !private ["Ps22RandomAccessCollection", "Element"]
+- !private ["Ps21RandomAccessIndexable", "Element"]
+- !private ["Ps26RangeReplaceableCollection", "Element"]
+- !private ["Ps25RangeReplaceableIndexable", "Element"]
+- !private ["Ps8Sequence", "Element"]
 - ["SS", "deinit"]
 - !private ["SS", "init"]
 - !private ["Ps16TextOutputStream", "init"]
 - !private ["Ps20TextOutputStreamable", "init"]
 - ["C4Sofa4User", "Int"]
 - ["C4Sofa4User", "String"]
+- ["C4Sofa4User", "UIImage"]
 - ["C4Sofa4User", "addMovie"]
+- ["C4Sofa4User", "affArrReco"]
 - ["C4Sofa4User", "deinit"]
+- ["C4Sofa4User", "firstImage"]
 - !private ["C4Sofa4User", "id"]
+- ["C4Sofa4User", "idArrReco"]
 - ["C4Sofa4User", "init"]
-- !private ["C4Sofa4User", "login"]
 - ["C4Sofa4User", "nom"]
 - !private ["C4Sofa4User", "prenom"]
 - !private ["C4Sofa4User", "pwd"]
+- ["C4Sofa4User", "secondImage"]
+- ["C4Sofa4User", "username"]
+- !private ["Ps14_ArrayProtocol", "Element"]
+- !private ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - ["Ps9_Hashable", "addMovie"]
+- ["Ps9_Hashable", "affArrReco"]
+- ["Ps9_Hashable", "firstImage"]
 - ["Ps9_Hashable", "id"]
+- ["Ps9_Hashable", "idArrReco"]
 - ["Ps9_Hashable", "init"]
-- ["Ps9_Hashable", "login"]
 - ["Ps9_Hashable", "nom"]
 - ["Ps9_Hashable", "prenom"]
 - ["Ps9_Hashable", "pwd"]
+- ["Ps9_Hashable", "secondImage"]
+- ["Ps9_Hashable", "username"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
 depends-nominal:
 - "Ps9AnyObject"
+- "Sa"
+- !private "Ps23BidirectionalCollection"
+- !private "Ps22BidirectionalIndexable"
 - "Ps7CVarArg"
+- !private "Ps10Collection"
 - !private "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
 - !private "Ps29CustomPlaygroundQuickLookable"
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps25ExpressibleByArrayLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
+- "SQ"
+- !private "Ps9Indexable"
+- !private "Ps13IndexableBase"
 - !private "Ps25LosslessStringConvertible"
 - !private "Ps10MirrorPath"
+- !private "Ps17MutableCollection"
+- !private "Ps16MutableIndexable"
 - !private "PSo8NSCoding"
 - !private "PSo9NSCopying"
 - !private "PSo16NSMutableCopying"
@@ -149,10 +231,17 @@ depends-nominal:
 - !private "PSo14NSSecureCoding"
 - !private "CSo8NSString"
 - "Sq"
+- !private "Ps22RandomAccessCollection"
+- !private "Ps21RandomAccessIndexable"
+- !private "Ps26RangeReplaceableCollection"
+- !private "Ps25RangeReplaceableIndexable"
+- !private "Ps8Sequence"
 - "SS"
 - !private "Ps16TextOutputStream"
 - !private "Ps20TextOutputStreamable"
 - "C4Sofa4User"
+- !private "Ps14_ArrayProtocol"
+- !private "Ps24_DestructorSafeContainer"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
@@ -170,6 +259,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/Bolts.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/Bolts/Bolts.framework/Headers/BFTaskCompletionSource.h"
@@ -224,4 +314,21 @@ depends-external:
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "07fb0b3206ffa978cc125bd1857b0e18"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphoneos/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+interface-hash: "b684cbbd8c1268ec33f950b6dedfb561"

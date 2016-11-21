@@ -15,6 +15,12 @@
     <string>1818913335040163</string>
     <key>FacebookDisplayName</key>
     <string>Sofa</string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <!--Include to allow all connections (DANGER)-->
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
     <key>LSApplicationQueriesSchemes</key>
     <array>
         <string>fbapi</string>

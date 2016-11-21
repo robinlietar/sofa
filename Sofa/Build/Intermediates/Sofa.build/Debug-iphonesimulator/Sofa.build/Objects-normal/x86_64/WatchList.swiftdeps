@@ -6,35 +6,46 @@ provides-nominal:
 provides-member:
 - ["C4Sofa9WatchList", ""]
 provides-dynamic-lookup:
-- "viewDidLoad"
-- "didReceiveMemoryWarning"
-- "viewWillAppear"
+- "user"
 - "viewWillDisappear"
+- "viewWillAppear"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
+- "didReceiveMemoryWarning"
+- "prepare"
+- "viewDidLoad"
 depends-top-level:
-- "UIViewController"
-- !private "StringLiteralType"
-- "UITableViewCell"
-- !private "BooleanLiteralType"
-- "Bool"
+- "User"
 - "WatchList"
+- !private "=="
+- "CastingPrecedence"
+- "AssignmentPrecedence"
 - "Int"
-- "UITableView"
+- "UIViewController"
+- "Bool"
+- !private "HomeSofa"
+- "UITableViewCell"
+- "UIStoryboardSegue"
+- "UITableViewDataSource"
 - "IndexPath"
 - "UITableViewDelegate"
-- "UITableViewDataSource"
+- !private "BooleanLiteralType"
+- "UITableView"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UITableViewCell"]
+- !private ["Ps9AnyObject", "destination"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "identifier"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedView"]
 - ["Ps9AnyObject", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- ["Ps9AnyObject", "prepare"]
 - !private ["Ps9AnyObject", "register"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
@@ -53,23 +64,28 @@ depends-member:
 - !private ["Ps9AnyObject", "setNavigationBarHidden"]
 - !private ["Ps9AnyObject", "setToolbarHidden"]
 - ["Ps9AnyObject", "tableView"]
+- ["Ps9AnyObject", "user"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZooming"]
 - ["Ps9AnyObject", "viewForZoomingInScrollView"]
 - ["Ps9AnyObject", "viewWillAppear"]
 - ["Ps9AnyObject", "viewWillDisappear"]
 - ["Ps9AnyObject", ""]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "register"]
 - !private ["Ps7CVarArg", "UITableViewCell"]
+- !private ["Ps7CVarArg", "destination"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "identifier"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedView"]
 - ["Ps7CVarArg", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- ["Ps7CVarArg", "prepare"]
 - !private ["Ps7CVarArg", "register"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
 - ["Ps7CVarArg", "scrollViewDidEndDragging"]
@@ -88,6 +104,7 @@ depends-member:
 - !private ["Ps7CVarArg", "setNavigationBarHidden"]
 - !private ["Ps7CVarArg", "setToolbarHidden"]
 - ["Ps7CVarArg", "tableView"]
+- ["Ps7CVarArg", "user"]
 - ["Ps7CVarArg", "viewDidLoad"]
 - ["Ps7CVarArg", "viewForZooming"]
 - ["Ps7CVarArg", "viewForZoomingInScrollView"]
@@ -96,13 +113,16 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "UITableViewCell"]
+- !private ["Ps28CustomDebugStringConvertible", "destination"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "identifier"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps28CustomDebugStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- ["Ps28CustomDebugStringConvertible", "prepare"]
 - !private ["Ps28CustomDebugStringConvertible", "register"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDragging"]
@@ -121,22 +141,29 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "setNavigationBarHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "setToolbarHidden"]
 - ["Ps28CustomDebugStringConvertible", "tableView"]
+- ["Ps28CustomDebugStringConvertible", "user"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
 - ["Ps28CustomDebugStringConvertible", "viewForZooming"]
 - ["Ps28CustomDebugStringConvertible", "viewForZoomingInScrollView"]
 - ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
 - ["Ps28CustomDebugStringConvertible", "viewWillDisappear"]
 - ["Ps28CustomDebugStringConvertible", ""]
+- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "init"]
+- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "init"]
 - !private ["Ps23CustomStringConvertible", "UITableViewCell"]
+- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "destination"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "identifier"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedView"]
 - ["Ps23CustomStringConvertible", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- ["Ps23CustomStringConvertible", "prepare"]
 - !private ["Ps23CustomStringConvertible", "register"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDragging"]
@@ -155,6 +182,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "setNavigationBarHidden"]
 - !private ["Ps23CustomStringConvertible", "setToolbarHidden"]
 - ["Ps23CustomStringConvertible", "tableView"]
+- ["Ps23CustomStringConvertible", "user"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
 - ["Ps23CustomStringConvertible", "viewForZooming"]
 - ["Ps23CustomStringConvertible", "viewForZoomingInScrollView"]
@@ -162,13 +190,17 @@ depends-member:
 - ["Ps23CustomStringConvertible", "viewWillDisappear"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["Ps9Equatable", "UITableViewCell"]
+- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
+- !private ["Ps9Equatable", "destination"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "identifier"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedView"]
 - ["Ps9Equatable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9Equatable", "init"]
 - !private ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- ["Ps9Equatable", "prepare"]
 - !private ["Ps9Equatable", "register"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
 - ["Ps9Equatable", "scrollViewDidEndDragging"]
@@ -187,24 +219,30 @@ depends-member:
 - !private ["Ps9Equatable", "setNavigationBarHidden"]
 - !private ["Ps9Equatable", "setToolbarHidden"]
 - ["Ps9Equatable", "tableView"]
+- ["Ps9Equatable", "user"]
 - ["Ps9Equatable", "viewDidLoad"]
 - ["Ps9Equatable", "viewForZooming"]
 - ["Ps9Equatable", "viewForZoomingInScrollView"]
 - ["Ps9Equatable", "viewWillAppear"]
 - ["Ps9Equatable", "viewWillDisappear"]
 - ["Ps9Equatable", ""]
+- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps32ExpressibleByStringInterpolation", "init"]
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Ps8Hashable", "UITableViewCell"]
+- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps8Hashable", "destination"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "identifier"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps8Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps8Hashable", "init"]
 - !private ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- ["Ps8Hashable", "prepare"]
 - !private ["Ps8Hashable", "register"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps8Hashable", "scrollViewDidEndDragging"]
@@ -223,14 +261,18 @@ depends-member:
 - !private ["Ps8Hashable", "setNavigationBarHidden"]
 - !private ["Ps8Hashable", "setToolbarHidden"]
 - ["Ps8Hashable", "tableView"]
+- ["Ps8Hashable", "user"]
 - ["Ps8Hashable", "viewDidLoad"]
 - ["Ps8Hashable", "viewForZooming"]
 - ["Ps8Hashable", "viewForZoomingInScrollView"]
 - ["Ps8Hashable", "viewWillAppear"]
 - ["Ps8Hashable", "viewWillDisappear"]
 - ["Ps8Hashable", ""]
+- ["C4Sofa8HomeSofa", "deinit"]
+- !private ["C4Sofa8HomeSofa", "user"]
 - ["SQ", "deinit"]
 - ["Si", "deinit"]
+- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "init"]
 - ["CSo7NSCoder", "deinit"]
@@ -242,6 +284,7 @@ depends-member:
 - !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- ["PSo8NSCoding", "prepare"]
 - !private ["PSo8NSCoding", "register"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -260,6 +303,7 @@ depends-member:
 - !private ["PSo8NSCoding", "setNavigationBarHidden"]
 - !private ["PSo8NSCoding", "setToolbarHidden"]
 - ["PSo8NSCoding", "tableView"]
+- ["PSo8NSCoding", "user"]
 - ["PSo8NSCoding", "viewDidLoad"]
 - ["PSo8NSCoding", "viewForZooming"]
 - ["PSo8NSCoding", "viewForZoomingInScrollView"]
@@ -275,6 +319,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- ["PSo26NSExtensionRequestHandling", "prepare"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -292,6 +337,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "setNavigationBarHidden"]
 - !private ["PSo26NSExtensionRequestHandling", "setToolbarHidden"]
 - ["PSo26NSExtensionRequestHandling", "tableView"]
+- ["PSo26NSExtensionRequestHandling", "user"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
 - ["PSo26NSExtensionRequestHandling", "viewForZoomingInScrollView"]
@@ -300,17 +346,23 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", ""]
 - !private ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "Bool"]
+- !private ["CSo8NSObject", "HomeSofa"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
+- ["CSo8NSObject", "UIStoryboardSegue"]
 - ["CSo8NSObject", "UITableView"]
 - ["CSo8NSObject", "UITableViewCell"]
+- ["CSo8NSObject", "User"]
+- !private ["CSo8NSObject", "destination"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "identifier"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedView"]
 - ["CSo8NSObject", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- ["CSo8NSObject", "prepare"]
 - !private ["CSo8NSObject", "register"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -329,19 +381,23 @@ depends-member:
 - !private ["CSo8NSObject", "setNavigationBarHidden"]
 - !private ["CSo8NSObject", "setToolbarHidden"]
 - ["CSo8NSObject", "tableView"]
+- ["CSo8NSObject", "user"]
 - ["CSo8NSObject", "viewDidLoad"]
 - ["CSo8NSObject", "viewForZooming"]
 - ["CSo8NSObject", "viewForZoomingInScrollView"]
 - ["CSo8NSObject", "viewWillAppear"]
 - ["CSo8NSObject", "viewWillDisappear"]
 - !private ["PSo16NSObjectProtocol", "UITableViewCell"]
+- !private ["PSo16NSObjectProtocol", "destination"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "identifier"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedView"]
 - ["PSo16NSObjectProtocol", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- ["PSo16NSObjectProtocol", "prepare"]
 - !private ["PSo16NSObjectProtocol", "register"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -360,6 +416,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "setNavigationBarHidden"]
 - !private ["PSo16NSObjectProtocol", "setToolbarHidden"]
 - ["PSo16NSObjectProtocol", "tableView"]
+- ["PSo16NSObjectProtocol", "user"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
 - ["PSo16NSObjectProtocol", "viewForZooming"]
 - ["PSo16NSObjectProtocol", "viewForZoomingInScrollView"]
@@ -385,6 +442,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- ["PSo21UIAppearanceContainer", "prepare"]
 - !private ["PSo21UIAppearanceContainer", "register"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
@@ -403,6 +461,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "setNavigationBarHidden"]
 - !private ["PSo21UIAppearanceContainer", "setToolbarHidden"]
 - ["PSo21UIAppearanceContainer", "tableView"]
+- ["PSo21UIAppearanceContainer", "user"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
 - ["PSo21UIAppearanceContainer", "viewForZoomingInScrollView"]
@@ -417,6 +476,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- ["PSo18UIContentContainer", "prepare"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -434,6 +494,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "setNavigationBarHidden"]
 - !private ["PSo18UIContentContainer", "setToolbarHidden"]
 - ["PSo18UIContentContainer", "tableView"]
+- ["PSo18UIContentContainer", "user"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
@@ -452,6 +513,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UIFocusEnvironment", "prepare"]
 - !private ["PSo18UIFocusEnvironment", "register"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
@@ -470,6 +532,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "setNavigationBarHidden"]
 - !private ["PSo18UIFocusEnvironment", "setToolbarHidden"]
 - ["PSo18UIFocusEnvironment", "tableView"]
+- ["PSo18UIFocusEnvironment", "user"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
 - ["PSo18UIFocusEnvironment", "viewForZoomingInScrollView"]
@@ -483,10 +546,13 @@ depends-member:
 - !private ["CSo22UINavigationController", "setNavigationBarHidden"]
 - !private ["CSo22UINavigationController", "setToolbarHidden"]
 - ["CSo11UIResponder", "Bool"]
+- !private ["CSo11UIResponder", "HomeSofa"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
+- ["CSo11UIResponder", "UIStoryboardSegue"]
 - ["CSo11UIResponder", "UITableView"]
 - ["CSo11UIResponder", "UITableViewCell"]
+- ["CSo11UIResponder", "User"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedView"]
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
@@ -494,6 +560,7 @@ depends-member:
 - !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- ["CSo11UIResponder", "prepare"]
 - !private ["CSo11UIResponder", "register"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
@@ -512,6 +579,7 @@ depends-member:
 - !private ["CSo11UIResponder", "setNavigationBarHidden"]
 - !private ["CSo11UIResponder", "setToolbarHidden"]
 - ["CSo11UIResponder", "tableView"]
+- ["CSo11UIResponder", "user"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
 - ["CSo11UIResponder", "viewForZoomingInScrollView"]
@@ -525,6 +593,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
+- ["PSo30UIResponderStandardEditActions", "prepare"]
 - !private ["PSo30UIResponderStandardEditActions", "register"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDecelerating"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDragging"]
@@ -543,6 +612,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "setNavigationBarHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "setToolbarHidden"]
 - ["PSo30UIResponderStandardEditActions", "tableView"]
+- ["PSo30UIResponderStandardEditActions", "user"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
 - ["PSo30UIResponderStandardEditActions", "viewForZoomingInScrollView"]
@@ -571,6 +641,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitles"]
 - ["PSo20UIScrollViewDelegate", "sectionIndexTitlesForTableView"]
 - ["PSo20UIScrollViewDelegate", "tableView"]
+- !private ["PSo20UIScrollViewDelegate", "user"]
 - ["PSo20UIScrollViewDelegate", "viewForZooming"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo20UIScrollViewDelegate", ""]
@@ -582,6 +653,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- ["PSo16UIStateRestoring", "prepare"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -599,12 +671,16 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "setNavigationBarHidden"]
 - !private ["PSo16UIStateRestoring", "setToolbarHidden"]
 - ["PSo16UIStateRestoring", "tableView"]
+- ["PSo16UIStateRestoring", "user"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
 - ["PSo16UIStateRestoring", "viewForZoomingInScrollView"]
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo17UIStoryboardSegue", "deinit"]
+- !private ["CSo17UIStoryboardSegue", "destination"]
+- !private ["CSo17UIStoryboardSegue", "identifier"]
 - !private ["CSo11UITableView", "register"]
 - ["CSo15UITableViewCell", "deinit"]
 - !private ["CSo15UITableViewCell", "init"]
@@ -629,6 +705,7 @@ depends-member:
 - ["PSo21UITableViewDataSource", "sectionIndexTitles"]
 - ["PSo21UITableViewDataSource", "sectionIndexTitlesForTableView"]
 - ["PSo21UITableViewDataSource", "tableView"]
+- !private ["PSo21UITableViewDataSource", "user"]
 - ["PSo21UITableViewDataSource", "viewForZooming"]
 - ["PSo21UITableViewDataSource", "viewForZoomingInScrollView"]
 - ["PSo21UITableViewDataSource", ""]
@@ -653,6 +730,7 @@ depends-member:
 - ["PSo19UITableViewDelegate", "sectionIndexTitles"]
 - ["PSo19UITableViewDelegate", "sectionIndexTitlesForTableView"]
 - ["PSo19UITableViewDelegate", "tableView"]
+- !private ["PSo19UITableViewDelegate", "user"]
 - ["PSo19UITableViewDelegate", "viewForZooming"]
 - ["PSo19UITableViewDelegate", "viewForZoomingInScrollView"]
 - ["PSo19UITableViewDelegate", ""]
@@ -664,6 +742,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- ["PSo18UITraitEnvironment", "prepare"]
 - !private ["PSo18UITraitEnvironment", "register"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
@@ -682,6 +761,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "setNavigationBarHidden"]
 - !private ["PSo18UITraitEnvironment", "setToolbarHidden"]
 - ["PSo18UITraitEnvironment", "tableView"]
+- ["PSo18UITraitEnvironment", "user"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
 - ["PSo18UITraitEnvironment", "viewForZoomingInScrollView"]
@@ -691,10 +771,13 @@ depends-member:
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "register"]
 - ["CSo16UIViewController", "Bool"]
+- !private ["CSo16UIViewController", "HomeSofa"]
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
+- ["CSo16UIViewController", "UIStoryboardSegue"]
 - ["CSo16UIViewController", "UITableView"]
 - ["CSo16UIViewController", "UITableViewCell"]
+- ["CSo16UIViewController", "User"]
 - ["CSo16UIViewController", "deinit"]
 - ["CSo16UIViewController", "didReceiveMemoryWarning"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
@@ -703,6 +786,7 @@ depends-member:
 - !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- ["CSo16UIViewController", "prepare"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -720,6 +804,7 @@ depends-member:
 - !private ["CSo16UIViewController", "setNavigationBarHidden"]
 - !private ["CSo16UIViewController", "setToolbarHidden"]
 - ["CSo16UIViewController", "tableView"]
+- ["CSo16UIViewController", "user"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
@@ -727,10 +812,13 @@ depends-member:
 - ["CSo16UIViewController", "viewWillDisappear"]
 - ["CSo16UIViewController", ""]
 - ["C4Sofa9WatchList", "Bool"]
+- !private ["C4Sofa9WatchList", "HomeSofa"]
 - ["C4Sofa9WatchList", "IndexPath"]
 - ["C4Sofa9WatchList", "Int"]
+- ["C4Sofa9WatchList", "UIStoryboardSegue"]
 - ["C4Sofa9WatchList", "UITableView"]
 - ["C4Sofa9WatchList", "UITableViewCell"]
+- ["C4Sofa9WatchList", "User"]
 - ["C4Sofa9WatchList", "deinit"]
 - ["C4Sofa9WatchList", "didReceiveMemoryWarning"]
 - ["C4Sofa9WatchList", "indexPathForPreferredFocusedView"]
@@ -739,6 +827,7 @@ depends-member:
 - !private ["C4Sofa9WatchList", "navigationController"]
 - ["C4Sofa9WatchList", "numberOfSections"]
 - ["C4Sofa9WatchList", "numberOfSectionsInTableView"]
+- ["C4Sofa9WatchList", "prepare"]
 - ["C4Sofa9WatchList", "scrollViewDidEndDecelerating"]
 - ["C4Sofa9WatchList", "scrollViewDidEndDragging"]
 - ["C4Sofa9WatchList", "scrollViewDidEndScrollingAnimation"]
@@ -754,6 +843,7 @@ depends-member:
 - ["C4Sofa9WatchList", "sectionIndexTitles"]
 - ["C4Sofa9WatchList", "sectionIndexTitlesForTableView"]
 - ["C4Sofa9WatchList", "tableView"]
+- ["C4Sofa9WatchList", "user"]
 - ["C4Sofa9WatchList", "viewDidLoad"]
 - ["C4Sofa9WatchList", "viewForZooming"]
 - ["C4Sofa9WatchList", "viewForZoomingInScrollView"]
@@ -761,19 +851,24 @@ depends-member:
 - ["C4Sofa9WatchList", "viewWillDisappear"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "register"]
+- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
 - !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
 - !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "UITableViewCell"]
+- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
+- !private ["Ps9_Hashable", "destination"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "identifier"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedView"]
 - ["Ps9_Hashable", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["Ps9_Hashable", "init"]
 - !private ["Ps9_Hashable", "navigationController"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- ["Ps9_Hashable", "prepare"]
 - !private ["Ps9_Hashable", "register"]
 - ["Ps9_Hashable", "scrollViewDidEndDecelerating"]
 - ["Ps9_Hashable", "scrollViewDidEndDragging"]
@@ -792,13 +887,16 @@ depends-member:
 - !private ["Ps9_Hashable", "setNavigationBarHidden"]
 - !private ["Ps9_Hashable", "setToolbarHidden"]
 - ["Ps9_Hashable", "tableView"]
+- ["Ps9_Hashable", "user"]
 - ["Ps9_Hashable", "viewDidLoad"]
 - ["Ps9_Hashable", "viewForZooming"]
 - ["Ps9_Hashable", "viewForZoomingInScrollView"]
 - ["Ps9_Hashable", "viewWillAppear"]
 - ["Ps9_Hashable", "viewWillDisappear"]
 - ["Ps9_Hashable", ""]
+- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "init"]
+- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
 - "Sb"
@@ -810,11 +908,13 @@ depends-nominal:
 - !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
+- !private "Ps27ExpressibleByBooleanLiteral"
 - !private "Ps43ExpressibleByExtendedGraphemeClusterLiteral"
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
 - "Ps8Hashable"
+- "C4Sofa8HomeSofa"
 - "SQ"
 - "Si"
 - !private "Ps25LosslessStringConvertible"
@@ -847,6 +947,7 @@ depends-nominal:
 - !private "CSo12UIScrollView"
 - "PSo20UIScrollViewDelegate"
 - "PSo16UIStateRestoring"
+- "CSo17UIStoryboardSegue"
 - !private "CSo11UITableView"
 - "CSo15UITableViewCell"
 - "PSo21UITableViewDataSource"
@@ -856,6 +957,7 @@ depends-nominal:
 - "CSo16UIViewController"
 - "C4Sofa9WatchList"
 - !private "Ps37_DefaultCustomPlaygroundQuickLookable"
+- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
 - !private "Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral"
 - !private "Ps34_ExpressibleByBuiltinStringLiteral"
 - !private "Ps39_ExpressibleByBuiltinUTF16StringLiteral"
@@ -863,6 +965,7 @@ depends-nominal:
 - !private "Ps35_HasCustomAnyHashableRepresentation"
 - "Ps9_Hashable"
 - !private "Ps21_ObjectiveCBridgeable"
+- !private "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -928,4 +1031,21 @@ depends-external:
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
-interface-hash: "6e55f3b433b360e08b6c1de3acaa3eeb"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIView+WebCacheOperation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+WebCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImageView+HighlightedWebCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+MultiFormat.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIImage+GIF.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/UIButton+WebCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImagePrefetcher.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageManager.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloaderOperation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageOperation.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDownloader.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageDecoder.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImageCompat.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDImageCache.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
+interface-hash: "cb240c1ec5a04f07cf840d28de5d5164"

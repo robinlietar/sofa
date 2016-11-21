@@ -44,6 +44,8 @@
 		635772B61DC79F80009808AC /* HomeSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635772B51DC79F80009808AC /* HomeSofa.swift */; };
 		636D26601DCA2A5F0012A639 /* db_data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 636D265E1DCA2A5F0012A639 /* db_data.csv */; };
 		636D26611DCA2A5F0012A639 /* sorting_films.csv in Resources */ = {isa = PBXBuildFile; fileRef = 636D265F1DCA2A5F0012A639 /* sorting_films.csv */; };
+		639101111DDC99530095A128 /* NetworkCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639101101DDC99530095A128 /* NetworkCommunication.swift */; };
+		639D76DD1DE067CB00FA5752 /* SofaWaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D76DC1DE067CB00FA5752 /* SofaWaiting.swift */; };
 		63DBE7FB1DC7AEF1001C1F89 /* CreateSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */; };
 		63DBE7FD1DC7AEFD001C1F89 /* JoinSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */; };
 		63DBE8011DC7F3D9001C1F89 /* arnacoeur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63DBE7FE1DC7F3D9001C1F89 /* arnacoeur.jpg */; };
@@ -124,6 +126,8 @@
 		635772B51DC79F80009808AC /* HomeSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeSofa.swift; sourceTree = "<group>"; };
 		636D265E1DCA2A5F0012A639 /* db_data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = db_data.csv; path = ../../../../Downloads/sofa/db_data.csv; sourceTree = "<group>"; };
 		636D265F1DCA2A5F0012A639 /* sorting_films.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sorting_films.csv; path = ../../../../Downloads/sofa/sorting_films.csv; sourceTree = "<group>"; };
+		639101101DDC99530095A128 /* NetworkCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCommunication.swift; sourceTree = "<group>"; };
+		639D76DC1DE067CB00FA5752 /* SofaWaiting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SofaWaiting.swift; sourceTree = "<group>"; };
 		63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSofa.swift; sourceTree = "<group>"; };
 		63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinSofa.swift; sourceTree = "<group>"; };
 		63DBE7FE1DC7F3D9001C1F89 /* arnacoeur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arnacoeur.jpg; sourceTree = "<group>"; };
@@ -208,15 +212,17 @@
 			children = (
 				632FB9761DC682F6003EA4A2 /* AppDelegate.swift */,
 				632FB9781DC682F6003EA4A2 /* Home.swift */,
+				639101101DDC99530095A128 /* NetworkCommunication.swift */,
+				63DBE8041DC7FCF4001C1F89 /* UserInfos.swift */,
 				634BE5F41DC7572C0015D735 /* Login.swift */,
 				634BE5F61DC757B70015D735 /* SignUp.swift */,
-				63DBE8041DC7FCF4001C1F89 /* UserInfos.swift */,
 				634BE5F81DC757D90015D735 /* TindFilm.swift */,
 				635772B51DC79F80009808AC /* HomeSofa.swift */,
-				63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */,
-				632FB97A1DC682F6003EA4A2 /* Main.storyboard */,
-				63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */,
 				63E202691DC7A9D400FE78B7 /* WatchList.swift */,
+				63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */,
+				63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */,
+				639D76DC1DE067CB00FA5752 /* SofaWaiting.swift */,
+				632FB97A1DC682F6003EA4A2 /* Main.storyboard */,
 				632FB97D1DC682F6003EA4A2 /* Assets.xcassets */,
 				632FB97F1DC682F6003EA4A2 /* LaunchScreen.storyboard */,
 				632FB9821DC682F6003EA4A2 /* Info.plist */,
@@ -638,10 +644,12 @@
 				63DBE7FB1DC7AEF1001C1F89 /* CreateSofa.swift in Sources */,
 				634BE5F51DC7572C0015D735 /* Login.swift in Sources */,
 				635772B61DC79F80009808AC /* HomeSofa.swift in Sources */,
+				639101111DDC99530095A128 /* NetworkCommunication.swift in Sources */,
 				634BE5F71DC757B70015D735 /* SignUp.swift in Sources */,
 				63DBE8051DC7FCF4001C1F89 /* UserInfos.swift in Sources */,
 				634BE5F91DC757D90015D735 /* TindFilm.swift in Sources */,
 				632FB9791DC682F6003EA4A2 /* Home.swift in Sources */,
+				639D76DD1DE067CB00FA5752 /* SofaWaiting.swift in Sources */,
 				63E2026A1DC7A9D400FE78B7 /* WatchList.swift in Sources */,
 				632FB9771DC682F6003EA4A2 /* AppDelegate.swift in Sources */,
 				63DBE7FD1DC7AEFD001C1F89 /* JoinSofa.swift in Sources */,
