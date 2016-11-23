@@ -22,6 +22,7 @@ class CreateSofa: UIViewController, UITextFieldDelegate {
     let notificationName2 = Notification.Name("CreateSofa.ConnexionFailed")
     
     @IBAction func goSender(_ sender: Any) {
+        connexionAttempt()
     }
     
     
@@ -40,6 +41,10 @@ class CreateSofa: UIViewController, UITextFieldDelegate {
         //tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
+        
+        // delegate Textfield
+        nameLabel.delegate = self
+
         
         //initNetwork()
         nc = NetworkCommunication()
@@ -120,6 +125,12 @@ class CreateSofa: UIViewController, UITextFieldDelegate {
         
         NotificationCenter.default.removeObserver(self, name: notificationName, object: nil);
         NotificationCenter.default.removeObserver(self, name: notificationName2, object: nil);
+        
+        let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "SofaWaiting") as? SofaWaiting
+        mapViewControllerObj?.user = user
+        mapViewControllerObj?.sofaName = sofaName
+
+        self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)
         
     }
     

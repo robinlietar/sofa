@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -212,12 +213,23 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incorrect username or password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-ao-UlE">
+                                <rect key="frame" x="31" y="164.5" width="259" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="l7M-5B-zTs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
+                                <color key="textColor" red="0.83921568629999999" green="0.23137254900000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.62745098040000002" green="0.81960784310000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="fHK-Hu-GJI" firstAttribute="top" secondItem="8hx-ao-UlE" secondAttribute="bottom" constant="29.5" id="7qz-EX-S7s"/>
                             <constraint firstItem="7Ln-6w-wfS" firstAttribute="leading" secondItem="baa-8T-zzG" secondAttribute="leadingMargin" constant="22" id="IKc-pL-RWy"/>
                             <constraint firstItem="ezT-Wf-p99" firstAttribute="top" secondItem="7Ln-6w-wfS" secondAttribute="bottom" constant="49" id="Iqa-0d-v9W"/>
                             <constraint firstItem="fHK-Hu-GJI" firstAttribute="centerX" secondItem="baa-8T-zzG" secondAttribute="centerX" id="KbP-Yi-nhx"/>
+                            <constraint firstItem="8hx-ao-UlE" firstAttribute="centerX" secondItem="baa-8T-zzG" secondAttribute="centerX" id="NTG-0n-V31"/>
                             <constraint firstItem="c9X-6L-Ra1" firstAttribute="leading" secondItem="baa-8T-zzG" secondAttribute="leadingMargin" constant="22" id="SYh-MM-HAf"/>
                             <constraint firstItem="6LU-PC-nML" firstAttribute="top" secondItem="wtC-DH-hSD" secondAttribute="bottom" constant="2" id="Ww5-ej-ZtC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="c9X-6L-Ra1" secondAttribute="trailing" constant="21" id="b6C-nZ-Htf"/>
@@ -232,6 +244,7 @@
                     </view>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
+                        <outlet property="errorLabel" destination="8hx-ao-UlE" id="Q8i-zq-Ozx"/>
                         <outlet property="passwordField" destination="7Ln-6w-wfS" id="SKa-gt-Pxk"/>
                         <outlet property="usernameField" destination="c9X-6L-Ra1" id="YvZ-Ms-7Bn"/>
                     </connections>
@@ -521,8 +534,8 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This username is already used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWf-Gx-6s7">
-                                <rect key="frame" x="40" y="247.5" width="240.5" height="25"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sofa not found" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWf-Gx-6s7">
+                                <rect key="frame" x="100" y="247.5" width="120.5" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="e59-f1-swy"/>
                                 </constraints>
@@ -858,7 +871,7 @@
         <!--Sofa Waiting-->
         <scene sceneID="VtX-9w-c6d">
             <objects>
-                <viewController storyboardIdentifier="SofaWaiting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4we-xT-CTP" customClass="SofaWaiting" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SofaWaiting" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4we-xT-CTP" customClass="SofaWaiting" customModule="Sofa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ak1-9C-Pqc"/>
                         <viewControllerLayoutGuide type="bottom" id="I27-ER-BiW"/>
@@ -867,20 +880,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  Sofa's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m7A-jw-COV">
-                                <rect key="frame" x="38" y="419" width="245" height="40"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="lR2-kO-qfH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="6"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLc-E8-LAO">
                                 <rect key="frame" x="38" y="508" width="244" height="40"/>
                                 <color key="backgroundColor" red="0.83921568629999999" green="0.23137254900000001" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -897,35 +896,49 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="goSender:" destination="4we-xT-CTP" eventType="touchUpInside" id="GsS-77-4cd"/>
+                                    <action selector="goSender:" destination="4we-xT-CTP" eventType="touchUpInside" id="2bt-g5-Pav"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Sofa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mJ-av-yDl">
-                                <rect key="frame" x="94" y="150" width="133" height="35"/>
-                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Sofa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mJ-av-yDl">
+                                <rect key="frame" x="118" y="28" width="85" height="27.5"/>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This username is already used" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hN-4N-8hz">
-                                <rect key="frame" x="40" y="248" width="241" height="25"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="25" id="E5U-lW-6c7"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of people on your sofa : 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UqK-Hl-79a">
+                                <rect key="frame" x="20" y="87" width="280" height="25"/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="18"/>
-                                <color key="textColor" red="0.83921568629999999" green="0.23137254900000001" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCc-sG-5Fg">
+                                <rect key="frame" x="85" y="174" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bCc-sG-5Fg" secondAttribute="height" multiplier="1:1" id="3gQ-mF-FDh"/>
+                                    <constraint firstAttribute="height" constant="150" id="G4g-az-iwc"/>
+                                </constraints>
+                                <state key="normal" image="refresh.png">
+                                    <color key="titleColor" red="0.031372549020000001" green="0.18823529410000001" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="refreshSender:" destination="4we-xT-CTP" eventType="touchUpInside" id="9be-oM-F1d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.62745098040000002" green="0.81960784310000001" blue="0.82745098039999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="m7A-jw-COV" firstAttribute="leading" secondItem="Tl4-S5-WaY" secondAttribute="leadingMargin" constant="22" id="FRV-XF-hMF"/>
-                            <constraint firstItem="6hN-4N-8hz" firstAttribute="top" secondItem="7mJ-av-yDl" secondAttribute="bottom" constant="63" id="Lj8-Ci-E2j"/>
-                            <constraint firstItem="7mJ-av-yDl" firstAttribute="top" secondItem="ak1-9C-Pqc" secondAttribute="bottom" constant="130" id="PNI-9z-YYK"/>
-                            <constraint firstItem="6hN-4N-8hz" firstAttribute="centerX" secondItem="Tl4-S5-WaY" secondAttribute="centerX" id="Pgc-3Z-KWx"/>
+                            <constraint firstItem="bCc-sG-5Fg" firstAttribute="top" secondItem="UqK-Hl-79a" secondAttribute="bottom" constant="62" id="K8e-vF-5nQ"/>
+                            <constraint firstItem="UqK-Hl-79a" firstAttribute="centerX" secondItem="Tl4-S5-WaY" secondAttribute="centerX" id="OFl-3d-RD0"/>
+                            <constraint firstItem="7mJ-av-yDl" firstAttribute="top" secondItem="ak1-9C-Pqc" secondAttribute="bottom" constant="8" id="PNI-9z-YYK"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WLc-E8-LAO" secondAttribute="trailing" constant="22" id="SnK-rg-DGI"/>
+                            <constraint firstItem="bCc-sG-5Fg" firstAttribute="centerX" secondItem="Tl4-S5-WaY" secondAttribute="centerX" id="UVk-LF-mrs"/>
+                            <constraint firstItem="UqK-Hl-79a" firstAttribute="top" secondItem="7mJ-av-yDl" secondAttribute="bottom" constant="31.5" id="bEc-Sd-vq5"/>
                             <constraint firstItem="7mJ-av-yDl" firstAttribute="centerX" secondItem="Tl4-S5-WaY" secondAttribute="centerX" id="e0i-XD-jhy"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="m7A-jw-COV" secondAttribute="trailing" constant="21" id="fDw-zC-xvC"/>
-                            <constraint firstItem="WLc-E8-LAO" firstAttribute="top" secondItem="m7A-jw-COV" secondAttribute="bottom" constant="49" id="hJy-mt-We4"/>
                             <constraint firstItem="I27-ER-BiW" firstAttribute="top" secondItem="WLc-E8-LAO" secondAttribute="bottom" constant="20" id="hvL-lS-Up7"/>
                             <constraint firstItem="WLc-E8-LAO" firstAttribute="leading" secondItem="Tl4-S5-WaY" secondAttribute="leadingMargin" constant="22" id="iAJ-IE-Moo"/>
                         </constraints>
@@ -935,8 +948,8 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="errorLabel" destination="6hN-4N-8hz" id="egZ-Kh-DUV"/>
-                        <outlet property="nameLabel" destination="m7A-jw-COV" id="0dC-mG-gQC"/>
+                        <outlet property="numberPeopleLabel" destination="UqK-Hl-79a" id="YtC-K3-qjX"/>
+                        <outlet property="sofaLabel" destination="7mJ-av-yDl" id="7iZ-ql-QIh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x4O-Et-Cfb" sceneMemberID="firstResponder"/>
@@ -951,6 +964,7 @@
         <image name="SofaLogo.png" width="276" height="126"/>
         <image name="SpiderMan_affiche.jpg" width="950" height="1406"/>
         <image name="like.png" width="516" height="516"/>
+        <image name="refresh.png" width="513" height="513"/>
         <image name="unlike.png" width="516" height="516"/>
     </resources>
     <inferredMetricsTieBreakers>

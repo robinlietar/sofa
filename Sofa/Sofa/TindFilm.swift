@@ -232,8 +232,6 @@ class TindFilm: UIViewController, UIGestureRecognizerDelegate {
                     (value: Bool) in
                     if (transition){
                         recognizer.view!.center.x = self.view.bounds.size.width/2
-                        let image: UIImage = UIImage(named: "Juste-la-fin-du-monde.jpg")!
-                        self.afficheFilm.image = image
                         self.increment()
                     }
                     self.unlikeButton.alpha = 1
@@ -258,6 +256,7 @@ class TindFilm: UIViewController, UIGestureRecognizerDelegate {
         }
         else if (self.cpt == 9){
             currentFilm = user.idArrReco[cpt]
+            self.user.firstImage = self.user.secondImage
             self.afficheFilm.image = user.firstImage
             self.backAfficheFilm.isHidden = true
             getFilmInfos(_fid: currentFilm)

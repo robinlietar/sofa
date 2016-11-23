@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import FBSDKLoginKit
 
-class JoinSofa: UIViewController {
+class JoinSofa: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nameLabel: UITextField!
     @IBOutlet weak var errorLabel: UILabel!
@@ -39,6 +39,10 @@ class JoinSofa: UIViewController {
         //tap.cancelsTouchesInView = false
         
         view.addGestureRecognizer(tap)
+        
+        // delegate Textfield
+        nameLabel.delegate = self
+
         
         //initNetwork()
         nc = NetworkCommunication()

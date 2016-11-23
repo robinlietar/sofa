@@ -6,52 +6,53 @@ provides-nominal:
 provides-member:
 - ["C4Sofa10CreateSofa", ""]
 provides-dynamic-lookup:
-- "textFieldDidEndEditing"
+- "nc"
 - "connexionAttempt"
 - "textFieldShouldReturn"
+- "user"
 - "didReceiveMemoryWarning"
-- "connexionSucceeded"
 - "notificationName"
-- "nc"
 - "keyboardWillShow"
 - "nameLabel"
 - "connexionFailed"
-- "user"
-- "goSender"
-- "viewDidLoad"
-- "viewWillDisappear"
 - "keyboardWillHide"
+- "goSender"
+- "sofaName"
 - "viewWillAppear"
+- "dismissKeyboard"
+- "viewWillDisappear"
+- "connexionSucceeded"
+- "viewDidLoad"
+- "textFieldDidEndEditing"
 - "errorLabel"
 - "notificationName2"
-- "sofaName"
-- "dismissKeyboard"
 depends-top-level:
-- "NSNotification"
-- !private "BooleanLiteralType"
-- "UILabel"
-- !private "print"
-- !private "-="
-- "User"
-- "StringLiteralType"
-- "UITextFieldDelegate"
-- "NetworkCommunication"
-- !private "!="
-- "UIViewController"
-- "CastingPrecedence"
-- "Bool"
-- "String"
-- "UITextField"
-- "AssignmentPrecedence"
-- !private "NotificationCenter"
-- !private "UITapGestureRecognizer"
 - !private "UIKeyboardFrameBeginUserInfoKey"
+- "UILabel"
+- "NetworkCommunication"
+- "UIViewController"
+- !private "UITapGestureRecognizer"
+- !private "!="
+- "UITextFieldDelegate"
+- "CastingPrecedence"
 - !private "+"
-- !private "=="
-- "CreateSofa"
+- "AssignmentPrecedence"
+- "NSNotification"
+- "User"
 - "Notification"
-- !private "NSValue"
+- !private "=="
+- !private "SofaWaiting"
+- "UITextField"
+- "StringLiteralType"
+- "Bool"
+- "CreateSofa"
+- !private "BooleanLiteralType"
+- "String"
+- !private "print"
 - !private "+="
+- !private "-="
+- !private "NotificationCenter"
+- !private "NSValue"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "CreateSofa"]
@@ -70,6 +71,7 @@ depends-member:
 - ["Ps9AnyObject", "connexionSucceeded"]
 - !private ["Ps9AnyObject", "currentVC"]
 - !private ["Ps9AnyObject", "default"]
+- !private ["Ps9AnyObject", "delegate"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
 - ["Ps9AnyObject", "dismissKeyboard"]
 - !private ["Ps9AnyObject", "endEditing"]
@@ -77,6 +79,7 @@ depends-member:
 - !private ["Ps9AnyObject", "frame"]
 - ["Ps9AnyObject", "goSender"]
 - ["Ps9AnyObject", "init"]
+- !private ["Ps9AnyObject", "instantiateViewController"]
 - !private ["Ps9AnyObject", "isHidden"]
 - ["Ps9AnyObject", "keyboardWillHide"]
 - ["Ps9AnyObject", "keyboardWillShow"]
@@ -86,12 +89,14 @@ depends-member:
 - ["Ps9AnyObject", "notificationName"]
 - ["Ps9AnyObject", "notificationName2"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "pushViewController"]
 - !private ["Ps9AnyObject", "removeObserver"]
 - !private ["Ps9AnyObject", "resignFirstResponder"]
 - !private ["Ps9AnyObject", "sendString"]
 - !private ["Ps9AnyObject", "setNavigationBarHidden"]
 - !private ["Ps9AnyObject", "setToolbarHidden"]
 - ["Ps9AnyObject", "sofaName"]
+- !private ["Ps9AnyObject", "storyboard"]
 - !private ["Ps9AnyObject", "text"]
 - ["Ps9AnyObject", "textField"]
 - ["Ps9AnyObject", "textFieldDidBeginEditing"]
@@ -113,6 +118,7 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "addGestureRecognizer"]
+- !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "endEditing"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "isHidden"]
@@ -146,6 +152,7 @@ depends-member:
 - ["Ps7CVarArg", "connexionSucceeded"]
 - !private ["Ps7CVarArg", "currentVC"]
 - !private ["Ps7CVarArg", "default"]
+- !private ["Ps7CVarArg", "delegate"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
 - ["Ps7CVarArg", "dismissKeyboard"]
 - !private ["Ps7CVarArg", "endEditing"]
@@ -153,6 +160,7 @@ depends-member:
 - !private ["Ps7CVarArg", "frame"]
 - ["Ps7CVarArg", "goSender"]
 - ["Ps7CVarArg", "init"]
+- !private ["Ps7CVarArg", "instantiateViewController"]
 - !private ["Ps7CVarArg", "isHidden"]
 - ["Ps7CVarArg", "keyboardWillHide"]
 - ["Ps7CVarArg", "keyboardWillShow"]
@@ -162,12 +170,14 @@ depends-member:
 - ["Ps7CVarArg", "notificationName"]
 - ["Ps7CVarArg", "notificationName2"]
 - !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "pushViewController"]
 - !private ["Ps7CVarArg", "removeObserver"]
 - !private ["Ps7CVarArg", "resignFirstResponder"]
 - !private ["Ps7CVarArg", "sendString"]
 - !private ["Ps7CVarArg", "setNavigationBarHidden"]
 - !private ["Ps7CVarArg", "setToolbarHidden"]
 - ["Ps7CVarArg", "sofaName"]
+- !private ["Ps7CVarArg", "storyboard"]
 - !private ["Ps7CVarArg", "subscript"]
 - !private ["Ps7CVarArg", "text"]
 - ["Ps7CVarArg", "textField"]
@@ -202,6 +212,7 @@ depends-member:
 - ["C4Sofa10CreateSofa", "NetworkCommunication"]
 - ["C4Sofa10CreateSofa", "Notification"]
 - !private ["C4Sofa10CreateSofa", "NotificationCenter"]
+- !private ["C4Sofa10CreateSofa", "SofaWaiting"]
 - ["C4Sofa10CreateSofa", "String"]
 - !private ["C4Sofa10CreateSofa", "UIKeyboardFrameBeginUserInfoKey"]
 - ["C4Sofa10CreateSofa", "UILabel"]
@@ -226,6 +237,7 @@ depends-member:
 - ["C4Sofa10CreateSofa", "notificationName2"]
 - !private ["C4Sofa10CreateSofa", "print"]
 - ["C4Sofa10CreateSofa", "sofaName"]
+- !private ["C4Sofa10CreateSofa", "storyboard"]
 - ["C4Sofa10CreateSofa", "textField"]
 - ["C4Sofa10CreateSofa", "textFieldDidBeginEditing"]
 - ["C4Sofa10CreateSofa", "textFieldDidEndEditing"]
@@ -259,6 +271,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "connexionSucceeded"]
 - !private ["Ps28CustomDebugStringConvertible", "currentVC"]
 - !private ["Ps28CustomDebugStringConvertible", "default"]
+- !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps28CustomDebugStringConvertible", "dismissKeyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "endEditing"]
@@ -267,6 +280,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "goSender"]
 - !private ["Ps28CustomDebugStringConvertible", "height"]
 - ["Ps28CustomDebugStringConvertible", "init"]
+- !private ["Ps28CustomDebugStringConvertible", "instantiateViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "isHidden"]
 - ["Ps28CustomDebugStringConvertible", "keyboardWillHide"]
 - ["Ps28CustomDebugStringConvertible", "keyboardWillShow"]
@@ -277,12 +291,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "notificationName2"]
 - !private ["Ps28CustomDebugStringConvertible", "origin"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "pushViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "removeObserver"]
 - !private ["Ps28CustomDebugStringConvertible", "resignFirstResponder"]
 - !private ["Ps28CustomDebugStringConvertible", "sendString"]
 - !private ["Ps28CustomDebugStringConvertible", "setNavigationBarHidden"]
 - !private ["Ps28CustomDebugStringConvertible", "setToolbarHidden"]
 - ["Ps28CustomDebugStringConvertible", "sofaName"]
+- !private ["Ps28CustomDebugStringConvertible", "storyboard"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - ["Ps28CustomDebugStringConvertible", "textField"]
@@ -343,6 +359,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "connexionSucceeded"]
 - !private ["Ps23CustomStringConvertible", "currentVC"]
 - !private ["Ps23CustomStringConvertible", "default"]
+- !private ["Ps23CustomStringConvertible", "delegate"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
 - ["Ps23CustomStringConvertible", "dismissKeyboard"]
 - !private ["Ps23CustomStringConvertible", "endEditing"]
@@ -350,6 +367,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "frame"]
 - ["Ps23CustomStringConvertible", "goSender"]
 - ["Ps23CustomStringConvertible", "init"]
+- !private ["Ps23CustomStringConvertible", "instantiateViewController"]
 - !private ["Ps23CustomStringConvertible", "isHidden"]
 - ["Ps23CustomStringConvertible", "keyboardWillHide"]
 - ["Ps23CustomStringConvertible", "keyboardWillShow"]
@@ -359,12 +377,14 @@ depends-member:
 - ["Ps23CustomStringConvertible", "notificationName"]
 - ["Ps23CustomStringConvertible", "notificationName2"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "pushViewController"]
 - !private ["Ps23CustomStringConvertible", "removeObserver"]
 - !private ["Ps23CustomStringConvertible", "resignFirstResponder"]
 - !private ["Ps23CustomStringConvertible", "sendString"]
 - !private ["Ps23CustomStringConvertible", "setNavigationBarHidden"]
 - !private ["Ps23CustomStringConvertible", "setToolbarHidden"]
 - ["Ps23CustomStringConvertible", "sofaName"]
+- !private ["Ps23CustomStringConvertible", "storyboard"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
 - !private ["Ps23CustomStringConvertible", "text"]
 - ["Ps23CustomStringConvertible", "textField"]
@@ -416,6 +436,7 @@ depends-member:
 - ["Ps9Equatable", "connexionSucceeded"]
 - !private ["Ps9Equatable", "currentVC"]
 - !private ["Ps9Equatable", "default"]
+- !private ["Ps9Equatable", "delegate"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
 - ["Ps9Equatable", "dismissKeyboard"]
 - !private ["Ps9Equatable", "endEditing"]
@@ -424,6 +445,7 @@ depends-member:
 - ["Ps9Equatable", "goSender"]
 - !private ["Ps9Equatable", "height"]
 - ["Ps9Equatable", "init"]
+- !private ["Ps9Equatable", "instantiateViewController"]
 - !private ["Ps9Equatable", "isHidden"]
 - ["Ps9Equatable", "keyboardWillHide"]
 - ["Ps9Equatable", "keyboardWillShow"]
@@ -434,12 +456,14 @@ depends-member:
 - ["Ps9Equatable", "notificationName2"]
 - !private ["Ps9Equatable", "origin"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "pushViewController"]
 - !private ["Ps9Equatable", "removeObserver"]
 - !private ["Ps9Equatable", "resignFirstResponder"]
 - !private ["Ps9Equatable", "sendString"]
 - !private ["Ps9Equatable", "setNavigationBarHidden"]
 - !private ["Ps9Equatable", "setToolbarHidden"]
 - ["Ps9Equatable", "sofaName"]
+- !private ["Ps9Equatable", "storyboard"]
 - !private ["Ps9Equatable", "text"]
 - ["Ps9Equatable", "textField"]
 - ["Ps9Equatable", "textFieldDidBeginEditing"]
@@ -495,6 +519,7 @@ depends-member:
 - ["Ps8Hashable", "connexionSucceeded"]
 - !private ["Ps8Hashable", "currentVC"]
 - !private ["Ps8Hashable", "default"]
+- !private ["Ps8Hashable", "delegate"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
 - ["Ps8Hashable", "dismissKeyboard"]
 - !private ["Ps8Hashable", "endEditing"]
@@ -502,6 +527,7 @@ depends-member:
 - !private ["Ps8Hashable", "frame"]
 - ["Ps8Hashable", "goSender"]
 - ["Ps8Hashable", "init"]
+- !private ["Ps8Hashable", "instantiateViewController"]
 - !private ["Ps8Hashable", "isHidden"]
 - ["Ps8Hashable", "keyboardWillHide"]
 - ["Ps8Hashable", "keyboardWillShow"]
@@ -511,12 +537,14 @@ depends-member:
 - ["Ps8Hashable", "notificationName"]
 - ["Ps8Hashable", "notificationName2"]
 - !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "pushViewController"]
 - !private ["Ps8Hashable", "removeObserver"]
 - !private ["Ps8Hashable", "resignFirstResponder"]
 - !private ["Ps8Hashable", "sendString"]
 - !private ["Ps8Hashable", "setNavigationBarHidden"]
 - !private ["Ps8Hashable", "setToolbarHidden"]
 - ["Ps8Hashable", "sofaName"]
+- !private ["Ps8Hashable", "storyboard"]
 - !private ["Ps8Hashable", "text"]
 - ["Ps8Hashable", "textField"]
 - ["Ps8Hashable", "textFieldDidBeginEditing"]
@@ -581,6 +609,7 @@ depends-member:
 - ["PSo8NSCoding", "connexionAttempt"]
 - ["PSo8NSCoding", "connexionFailed"]
 - ["PSo8NSCoding", "connexionSucceeded"]
+- !private ["PSo8NSCoding", "delegate"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
 - ["PSo8NSCoding", "dismissKeyboard"]
 - !private ["PSo8NSCoding", "endEditing"]
@@ -597,10 +626,12 @@ depends-member:
 - ["PSo8NSCoding", "notificationName"]
 - ["PSo8NSCoding", "notificationName2"]
 - !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "pushViewController"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - !private ["PSo8NSCoding", "setNavigationBarHidden"]
 - !private ["PSo8NSCoding", "setToolbarHidden"]
 - ["PSo8NSCoding", "sofaName"]
+- !private ["PSo8NSCoding", "storyboard"]
 - !private ["PSo8NSCoding", "text"]
 - ["PSo8NSCoding", "textField"]
 - ["PSo8NSCoding", "textFieldDidBeginEditing"]
@@ -643,9 +674,11 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "notificationName"]
 - ["PSo26NSExtensionRequestHandling", "notificationName2"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
+- !private ["PSo26NSExtensionRequestHandling", "pushViewController"]
 - !private ["PSo26NSExtensionRequestHandling", "setNavigationBarHidden"]
 - !private ["PSo26NSExtensionRequestHandling", "setToolbarHidden"]
 - ["PSo26NSExtensionRequestHandling", "sofaName"]
+- !private ["PSo26NSExtensionRequestHandling", "storyboard"]
 - ["PSo26NSExtensionRequestHandling", "textField"]
 - ["PSo26NSExtensionRequestHandling", "textFieldDidBeginEditing"]
 - ["PSo26NSExtensionRequestHandling", "textFieldDidEndEditing"]
@@ -671,6 +704,7 @@ depends-member:
 - ["CSo8NSObject", "NetworkCommunication"]
 - ["CSo8NSObject", "Notification"]
 - !private ["CSo8NSObject", "NotificationCenter"]
+- !private ["CSo8NSObject", "SofaWaiting"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIKeyboardFrameBeginUserInfoKey"]
 - ["CSo8NSObject", "UILabel"]
@@ -685,6 +719,7 @@ depends-member:
 - ["CSo8NSObject", "connexionSucceeded"]
 - !private ["CSo8NSObject", "currentVC"]
 - !private ["CSo8NSObject", "default"]
+- !private ["CSo8NSObject", "delegate"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
 - ["CSo8NSObject", "dismissKeyboard"]
 - !private ["CSo8NSObject", "endEditing"]
@@ -692,6 +727,7 @@ depends-member:
 - !private ["CSo8NSObject", "frame"]
 - ["CSo8NSObject", "goSender"]
 - ["CSo8NSObject", "init"]
+- !private ["CSo8NSObject", "instantiateViewController"]
 - !private ["CSo8NSObject", "isHidden"]
 - ["CSo8NSObject", "keyboardWillHide"]
 - ["CSo8NSObject", "keyboardWillShow"]
@@ -701,12 +737,14 @@ depends-member:
 - ["CSo8NSObject", "notificationName"]
 - ["CSo8NSObject", "notificationName2"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "pushViewController"]
 - !private ["CSo8NSObject", "removeObserver"]
 - !private ["CSo8NSObject", "resignFirstResponder"]
 - !private ["CSo8NSObject", "sendString"]
 - !private ["CSo8NSObject", "setNavigationBarHidden"]
 - !private ["CSo8NSObject", "setToolbarHidden"]
 - ["CSo8NSObject", "sofaName"]
+- !private ["CSo8NSObject", "storyboard"]
 - !private ["CSo8NSObject", "text"]
 - ["CSo8NSObject", "textField"]
 - ["CSo8NSObject", "textFieldDidBeginEditing"]
@@ -737,6 +775,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "connexionSucceeded"]
 - !private ["PSo16NSObjectProtocol", "currentVC"]
 - !private ["PSo16NSObjectProtocol", "default"]
+- !private ["PSo16NSObjectProtocol", "delegate"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
 - ["PSo16NSObjectProtocol", "dismissKeyboard"]
 - !private ["PSo16NSObjectProtocol", "endEditing"]
@@ -744,6 +783,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "frame"]
 - ["PSo16NSObjectProtocol", "goSender"]
 - ["PSo16NSObjectProtocol", "init"]
+- !private ["PSo16NSObjectProtocol", "instantiateViewController"]
 - !private ["PSo16NSObjectProtocol", "isHidden"]
 - ["PSo16NSObjectProtocol", "keyboardWillHide"]
 - ["PSo16NSObjectProtocol", "keyboardWillShow"]
@@ -753,12 +793,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "notificationName"]
 - ["PSo16NSObjectProtocol", "notificationName2"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "pushViewController"]
 - !private ["PSo16NSObjectProtocol", "removeObserver"]
 - !private ["PSo16NSObjectProtocol", "resignFirstResponder"]
 - !private ["PSo16NSObjectProtocol", "sendString"]
 - !private ["PSo16NSObjectProtocol", "setNavigationBarHidden"]
 - !private ["PSo16NSObjectProtocol", "setToolbarHidden"]
 - ["PSo16NSObjectProtocol", "sofaName"]
+- !private ["PSo16NSObjectProtocol", "storyboard"]
 - !private ["PSo16NSObjectProtocol", "text"]
 - ["PSo16NSObjectProtocol", "textField"]
 - ["PSo16NSObjectProtocol", "textFieldDidBeginEditing"]
@@ -811,6 +853,9 @@ depends-member:
 - !private ["Vs5Slice", "Iterator"]
 - !private ["Vs5Slice", "SubSequence"]
 - !private ["Vs5Slice", "_Element"]
+- ["C4Sofa11SofaWaiting", "deinit"]
+- !private ["C4Sofa11SofaWaiting", "sofaName"]
+- !private ["C4Sofa11SofaWaiting", "user"]
 - !private ["PSo14StreamDelegate", "currentVC"]
 - !private ["PSo14StreamDelegate", "init"]
 - !private ["PSo14StreamDelegate", "sendString"]
@@ -821,12 +866,14 @@ depends-member:
 - ["Ps16TextOutputStream", "init"]
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "addGestureRecognizer"]
+- !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "endEditing"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "isHidden"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
 - !private ["PSo12UIAppearance", "addGestureRecognizer"]
+- !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "endEditing"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "isHidden"]
@@ -843,6 +890,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "connexionAttempt"]
 - ["PSo21UIAppearanceContainer", "connexionFailed"]
 - ["PSo21UIAppearanceContainer", "connexionSucceeded"]
+- !private ["PSo21UIAppearanceContainer", "delegate"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
 - ["PSo21UIAppearanceContainer", "dismissKeyboard"]
 - !private ["PSo21UIAppearanceContainer", "endEditing"]
@@ -859,10 +907,12 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "notificationName"]
 - ["PSo21UIAppearanceContainer", "notificationName2"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "pushViewController"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - !private ["PSo21UIAppearanceContainer", "setNavigationBarHidden"]
 - !private ["PSo21UIAppearanceContainer", "setToolbarHidden"]
 - ["PSo21UIAppearanceContainer", "sofaName"]
+- !private ["PSo21UIAppearanceContainer", "storyboard"]
 - !private ["PSo21UIAppearanceContainer", "text"]
 - ["PSo21UIAppearanceContainer", "textField"]
 - ["PSo21UIAppearanceContainer", "textFieldDidBeginEditing"]
@@ -900,9 +950,11 @@ depends-member:
 - ["PSo18UIContentContainer", "notificationName"]
 - ["PSo18UIContentContainer", "notificationName2"]
 - !private ["PSo18UIContentContainer", "print"]
+- !private ["PSo18UIContentContainer", "pushViewController"]
 - !private ["PSo18UIContentContainer", "setNavigationBarHidden"]
 - !private ["PSo18UIContentContainer", "setToolbarHidden"]
 - ["PSo18UIContentContainer", "sofaName"]
+- !private ["PSo18UIContentContainer", "storyboard"]
 - ["PSo18UIContentContainer", "textField"]
 - ["PSo18UIContentContainer", "textFieldDidBeginEditing"]
 - ["PSo18UIContentContainer", "textFieldDidEndEditing"]
@@ -916,18 +968,22 @@ depends-member:
 - ["PSo18UIContentContainer", "viewWillAppear"]
 - ["PSo18UIContentContainer", "viewWillDisappear"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "delegate"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "isHidden"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "resignFirstResponder"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
+- !private ["CSo9UIControl", "delegate"]
 - !private ["CSo9UIControl", "resignFirstResponder"]
 - !private ["CSo9UIControl", "text"]
 - !private ["PSo17UICoordinateSpace", "addGestureRecognizer"]
+- !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "endEditing"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "isHidden"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "text"]
 - !private ["PSo13UIDynamicItem", "addGestureRecognizer"]
+- !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "endEditing"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "isHidden"]
@@ -944,6 +1000,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "connexionAttempt"]
 - ["PSo18UIFocusEnvironment", "connexionFailed"]
 - ["PSo18UIFocusEnvironment", "connexionSucceeded"]
+- !private ["PSo18UIFocusEnvironment", "delegate"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UIFocusEnvironment", "dismissKeyboard"]
 - !private ["PSo18UIFocusEnvironment", "endEditing"]
@@ -960,10 +1017,12 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "notificationName"]
 - ["PSo18UIFocusEnvironment", "notificationName2"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "pushViewController"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - !private ["PSo18UIFocusEnvironment", "setNavigationBarHidden"]
 - !private ["PSo18UIFocusEnvironment", "setToolbarHidden"]
 - ["PSo18UIFocusEnvironment", "sofaName"]
+- !private ["PSo18UIFocusEnvironment", "storyboard"]
 - !private ["PSo18UIFocusEnvironment", "text"]
 - ["PSo18UIFocusEnvironment", "textField"]
 - ["PSo18UIFocusEnvironment", "textFieldDidBeginEditing"]
@@ -979,16 +1038,19 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "viewWillDisappear"]
 - ["PSo18UIFocusEnvironment", ""]
 - !private ["PSo11UIFocusItem", "addGestureRecognizer"]
+- !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "endEditing"]
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "isHidden"]
 - !private ["PSo11UIFocusItem", "resignFirstResponder"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["CSo19UIGestureRecognizer", "init"]
+- !private ["PSo10UIKeyInput", "delegate"]
 - !private ["PSo10UIKeyInput", "resignFirstResponder"]
 - !private ["PSo10UIKeyInput", "text"]
 - !private ["CSo7UILabel", "isHidden"]
 - ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "pushViewController"]
 - !private ["CSo22UINavigationController", "setNavigationBarHidden"]
 - !private ["CSo22UINavigationController", "setToolbarHidden"]
 - ["CSo11UIResponder", "Bool"]
@@ -998,6 +1060,7 @@ depends-member:
 - ["CSo11UIResponder", "NetworkCommunication"]
 - ["CSo11UIResponder", "Notification"]
 - !private ["CSo11UIResponder", "NotificationCenter"]
+- !private ["CSo11UIResponder", "SofaWaiting"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIKeyboardFrameBeginUserInfoKey"]
 - ["CSo11UIResponder", "UILabel"]
@@ -1008,6 +1071,7 @@ depends-member:
 - ["CSo11UIResponder", "connexionAttempt"]
 - ["CSo11UIResponder", "connexionFailed"]
 - ["CSo11UIResponder", "connexionSucceeded"]
+- !private ["CSo11UIResponder", "delegate"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
 - ["CSo11UIResponder", "dismissKeyboard"]
 - !private ["CSo11UIResponder", "endEditing"]
@@ -1024,10 +1088,12 @@ depends-member:
 - ["CSo11UIResponder", "notificationName"]
 - ["CSo11UIResponder", "notificationName2"]
 - !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "pushViewController"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - !private ["CSo11UIResponder", "setNavigationBarHidden"]
 - !private ["CSo11UIResponder", "setToolbarHidden"]
 - ["CSo11UIResponder", "sofaName"]
+- !private ["CSo11UIResponder", "storyboard"]
 - !private ["CSo11UIResponder", "text"]
 - ["CSo11UIResponder", "textField"]
 - ["CSo11UIResponder", "textFieldDidBeginEditing"]
@@ -1052,6 +1118,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "connexionAttempt"]
 - ["PSo30UIResponderStandardEditActions", "connexionFailed"]
 - ["PSo30UIResponderStandardEditActions", "connexionSucceeded"]
+- !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
 - ["PSo30UIResponderStandardEditActions", "dismissKeyboard"]
 - !private ["PSo30UIResponderStandardEditActions", "endEditing"]
@@ -1068,10 +1135,12 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "notificationName"]
 - ["PSo30UIResponderStandardEditActions", "notificationName2"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "pushViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
 - !private ["PSo30UIResponderStandardEditActions", "setNavigationBarHidden"]
 - !private ["PSo30UIResponderStandardEditActions", "setToolbarHidden"]
 - ["PSo30UIResponderStandardEditActions", "sofaName"]
+- !private ["PSo30UIResponderStandardEditActions", "storyboard"]
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - ["PSo30UIResponderStandardEditActions", "textField"]
 - ["PSo30UIResponderStandardEditActions", "textFieldDidBeginEditing"]
@@ -1109,9 +1178,11 @@ depends-member:
 - ["PSo16UIStateRestoring", "notificationName"]
 - ["PSo16UIStateRestoring", "notificationName2"]
 - !private ["PSo16UIStateRestoring", "print"]
+- !private ["PSo16UIStateRestoring", "pushViewController"]
 - !private ["PSo16UIStateRestoring", "setNavigationBarHidden"]
 - !private ["PSo16UIStateRestoring", "setToolbarHidden"]
 - ["PSo16UIStateRestoring", "sofaName"]
+- !private ["PSo16UIStateRestoring", "storyboard"]
 - ["PSo16UIStateRestoring", "textField"]
 - ["PSo16UIStateRestoring", "textFieldDidBeginEditing"]
 - ["PSo16UIStateRestoring", "textFieldDidEndEditing"]
@@ -1125,9 +1196,12 @@ depends-member:
 - ["PSo16UIStateRestoring", "viewWillAppear"]
 - ["PSo16UIStateRestoring", "viewWillDisappear"]
 - ["PSo16UIStateRestoring", ""]
+- ["CSo12UIStoryboard", "deinit"]
+- !private ["CSo12UIStoryboard", "instantiateViewController"]
 - ["CSo22UITapGestureRecognizer", "deinit"]
 - !private ["CSo22UITapGestureRecognizer", "init"]
 - ["CSo11UITextField", "deinit"]
+- !private ["CSo11UITextField", "delegate"]
 - !private ["CSo11UITextField", "resignFirstResponder"]
 - !private ["CSo11UITextField", "text"]
 - !private ["PSo19UITextFieldDelegate", "CreateSofa"]
@@ -1144,12 +1218,14 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "errorLabel"]
 - !private ["PSo19UITextFieldDelegate", "keyboardWillHide"]
 - !private ["PSo19UITextFieldDelegate", "keyboardWillShow"]
+- !private ["PSo19UITextFieldDelegate", "nameLabel"]
 - !private ["PSo19UITextFieldDelegate", "navigationController"]
 - !private ["PSo19UITextFieldDelegate", "nc"]
 - !private ["PSo19UITextFieldDelegate", "notificationName"]
 - !private ["PSo19UITextFieldDelegate", "notificationName2"]
 - !private ["PSo19UITextFieldDelegate", "print"]
 - !private ["PSo19UITextFieldDelegate", "sofaName"]
+- !private ["PSo19UITextFieldDelegate", "storyboard"]
 - ["PSo19UITextFieldDelegate", "textField"]
 - ["PSo19UITextFieldDelegate", "textFieldDidBeginEditing"]
 - ["PSo19UITextFieldDelegate", "textFieldDidEndEditing"]
@@ -1157,10 +1233,13 @@ depends-member:
 - ["PSo19UITextFieldDelegate", "textFieldShouldClear"]
 - ["PSo19UITextFieldDelegate", "textFieldShouldEndEditing"]
 - ["PSo19UITextFieldDelegate", "textFieldShouldReturn"]
+- !private ["PSo19UITextFieldDelegate", "user"]
 - !private ["PSo19UITextFieldDelegate", "view"]
 - ["PSo19UITextFieldDelegate", ""]
+- !private ["PSo11UITextInput", "delegate"]
 - !private ["PSo11UITextInput", "resignFirstResponder"]
 - !private ["PSo11UITextInput", "text"]
+- !private ["PSo17UITextInputTraits", "delegate"]
 - !private ["PSo17UITextInputTraits", "resignFirstResponder"]
 - !private ["PSo17UITextInputTraits", "text"]
 - !private ["PSo18UITraitEnvironment", "CreateSofa"]
@@ -1174,6 +1253,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "connexionAttempt"]
 - ["PSo18UITraitEnvironment", "connexionFailed"]
 - ["PSo18UITraitEnvironment", "connexionSucceeded"]
+- !private ["PSo18UITraitEnvironment", "delegate"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
 - ["PSo18UITraitEnvironment", "dismissKeyboard"]
 - !private ["PSo18UITraitEnvironment", "endEditing"]
@@ -1190,10 +1270,12 @@ depends-member:
 - ["PSo18UITraitEnvironment", "notificationName"]
 - ["PSo18UITraitEnvironment", "notificationName2"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "pushViewController"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - !private ["PSo18UITraitEnvironment", "setNavigationBarHidden"]
 - !private ["PSo18UITraitEnvironment", "setToolbarHidden"]
 - ["PSo18UITraitEnvironment", "sofaName"]
+- !private ["PSo18UITraitEnvironment", "storyboard"]
 - !private ["PSo18UITraitEnvironment", "text"]
 - ["PSo18UITraitEnvironment", "textField"]
 - ["PSo18UITraitEnvironment", "textFieldDidBeginEditing"]
@@ -1209,6 +1291,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "viewWillDisappear"]
 - ["PSo18UITraitEnvironment", ""]
 - !private ["CSo6UIView", "addGestureRecognizer"]
+- !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "endEditing"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "isHidden"]
@@ -1221,6 +1304,7 @@ depends-member:
 - ["CSo16UIViewController", "NetworkCommunication"]
 - ["CSo16UIViewController", "Notification"]
 - !private ["CSo16UIViewController", "NotificationCenter"]
+- !private ["CSo16UIViewController", "SofaWaiting"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIKeyboardFrameBeginUserInfoKey"]
 - ["CSo16UIViewController", "UILabel"]
@@ -1244,9 +1328,11 @@ depends-member:
 - ["CSo16UIViewController", "notificationName"]
 - ["CSo16UIViewController", "notificationName2"]
 - !private ["CSo16UIViewController", "print"]
+- !private ["CSo16UIViewController", "pushViewController"]
 - !private ["CSo16UIViewController", "setNavigationBarHidden"]
 - !private ["CSo16UIViewController", "setToolbarHidden"]
 - ["CSo16UIViewController", "sofaName"]
+- !private ["CSo16UIViewController", "storyboard"]
 - ["CSo16UIViewController", "textField"]
 - ["CSo16UIViewController", "textFieldDidBeginEditing"]
 - ["CSo16UIViewController", "textFieldDidEndEditing"]
@@ -1281,6 +1367,7 @@ depends-member:
 - !private ["Ps15_CVarArgAligned", "_DisallowMixedSignArithmetic"]
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "addGestureRecognizer"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "endEditing"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "isHidden"]
@@ -1320,6 +1407,7 @@ depends-member:
 - ["Ps9_Hashable", "connexionSucceeded"]
 - !private ["Ps9_Hashable", "currentVC"]
 - !private ["Ps9_Hashable", "default"]
+- !private ["Ps9_Hashable", "delegate"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
 - ["Ps9_Hashable", "dismissKeyboard"]
 - !private ["Ps9_Hashable", "endEditing"]
@@ -1327,6 +1415,7 @@ depends-member:
 - !private ["Ps9_Hashable", "frame"]
 - ["Ps9_Hashable", "goSender"]
 - ["Ps9_Hashable", "init"]
+- !private ["Ps9_Hashable", "instantiateViewController"]
 - !private ["Ps9_Hashable", "isHidden"]
 - ["Ps9_Hashable", "keyboardWillHide"]
 - ["Ps9_Hashable", "keyboardWillShow"]
@@ -1336,12 +1425,14 @@ depends-member:
 - ["Ps9_Hashable", "notificationName"]
 - ["Ps9_Hashable", "notificationName2"]
 - !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "pushViewController"]
 - !private ["Ps9_Hashable", "removeObserver"]
 - !private ["Ps9_Hashable", "resignFirstResponder"]
 - !private ["Ps9_Hashable", "sendString"]
 - !private ["Ps9_Hashable", "setNavigationBarHidden"]
 - !private ["Ps9_Hashable", "setToolbarHidden"]
 - ["Ps9_Hashable", "sofaName"]
+- !private ["Ps9_Hashable", "storyboard"]
 - !private ["Ps9_Hashable", "text"]
 - ["Ps9_Hashable", "textField"]
 - ["Ps9_Hashable", "textFieldDidBeginEditing"]
@@ -1463,6 +1554,7 @@ depends-nominal:
 - !private "Ps13SignedInteger"
 - !private "Ps12SignedNumber"
 - !private "Vs5Slice"
+- "C4Sofa11SofaWaiting"
 - !private "PSo14StreamDelegate"
 - !private "Ps10Strideable"
 - "SS"
@@ -1485,6 +1577,7 @@ depends-nominal:
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - "PSo16UIStateRestoring"
+- "CSo12UIStoryboard"
 - "CSo22UITapGestureRecognizer"
 - "CSo11UITextField"
 - "PSo19UITextFieldDelegate"
@@ -1524,12 +1617,14 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/Sofa-Bridging-Header.h"
+- "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/KeychainWrapper.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"

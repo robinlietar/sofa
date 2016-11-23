@@ -46,6 +46,7 @@
 		636D26611DCA2A5F0012A639 /* sorting_films.csv in Resources */ = {isa = PBXBuildFile; fileRef = 636D265F1DCA2A5F0012A639 /* sorting_films.csv */; };
 		639101111DDC99530095A128 /* NetworkCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639101101DDC99530095A128 /* NetworkCommunication.swift */; };
 		639D76DD1DE067CB00FA5752 /* SofaWaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D76DC1DE067CB00FA5752 /* SofaWaiting.swift */; };
+		639F19281DE4FC1400A7EA3E /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 639F19271DE4FC1400A7EA3E /* KeychainWrapper.m */; };
 		63DBE7FB1DC7AEF1001C1F89 /* CreateSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */; };
 		63DBE7FD1DC7AEFD001C1F89 /* JoinSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */; };
 		63DBE8011DC7F3D9001C1F89 /* arnacoeur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63DBE7FE1DC7F3D9001C1F89 /* arnacoeur.jpg */; };
@@ -128,6 +129,9 @@
 		636D265F1DCA2A5F0012A639 /* sorting_films.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sorting_films.csv; path = ../../../../Downloads/sofa/sorting_films.csv; sourceTree = "<group>"; };
 		639101101DDC99530095A128 /* NetworkCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCommunication.swift; sourceTree = "<group>"; };
 		639D76DC1DE067CB00FA5752 /* SofaWaiting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SofaWaiting.swift; sourceTree = "<group>"; };
+		639F19251DE4FC1200A7EA3E /* Sofa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sofa-Bridging-Header.h"; sourceTree = "<group>"; };
+		639F19261DE4FC1400A7EA3E /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		639F19271DE4FC1400A7EA3E /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSofa.swift; sourceTree = "<group>"; };
 		63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinSofa.swift; sourceTree = "<group>"; };
 		63DBE7FE1DC7F3D9001C1F89 /* arnacoeur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arnacoeur.jpg; sourceTree = "<group>"; };
@@ -222,12 +226,15 @@
 				63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */,
 				63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */,
 				639D76DC1DE067CB00FA5752 /* SofaWaiting.swift */,
+				639F19261DE4FC1400A7EA3E /* KeychainWrapper.h */,
+				639F19271DE4FC1400A7EA3E /* KeychainWrapper.m */,
 				632FB97A1DC682F6003EA4A2 /* Main.storyboard */,
 				632FB97D1DC682F6003EA4A2 /* Assets.xcassets */,
 				632FB97F1DC682F6003EA4A2 /* LaunchScreen.storyboard */,
 				632FB9821DC682F6003EA4A2 /* Info.plist */,
 				636D265D1DCA2A540012A639 /* Db */,
 				632FB9A41DC684AC003EA4A2 /* images */,
+				639F19251DE4FC1200A7EA3E /* Sofa-Bridging-Header.h */,
 			);
 			path = Sofa;
 			sourceTree = "<group>";
@@ -423,6 +430,7 @@
 					632FB9721DC682F6003EA4A2 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = R7LT4U2985;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					632FB9861DC682F6003EA4A2 = {
@@ -649,6 +657,7 @@
 				63DBE8051DC7FCF4001C1F89 /* UserInfos.swift in Sources */,
 				634BE5F91DC757D90015D735 /* TindFilm.swift in Sources */,
 				632FB9791DC682F6003EA4A2 /* Home.swift in Sources */,
+				639F19281DE4FC1400A7EA3E /* KeychainWrapper.m in Sources */,
 				639D76DD1DE067CB00FA5752 /* SofaWaiting.swift in Sources */,
 				63E2026A1DC7A9D400FE78B7 /* WatchList.swift in Sources */,
 				632FB9771DC682F6003EA4A2 /* AppDelegate.swift in Sources */,
@@ -805,6 +814,7 @@
 			baseConfigurationReference = EA1566715B9E6C9E1E84EC29 /* Pods-Sofa.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = R7LT4U2985;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -817,6 +827,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sofa.Sofa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sofa/Sofa-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -826,6 +838,7 @@
 			baseConfigurationReference = 39ACF5B2C4BAF12CB40317D7 /* Pods-Sofa.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = R7LT4U2985;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -838,6 +851,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sofa.Sofa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Sofa/Sofa-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
