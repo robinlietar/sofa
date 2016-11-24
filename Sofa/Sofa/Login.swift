@@ -158,8 +158,9 @@ class Login: UIViewController, UITextFieldDelegate {
     func parseOutput(){
         print("outPutread" + nc.outputRead)
         print(nc.outputRead.characters.count)
+        let fullNameArr = nc.outputRead.components(separatedBy: "::")
 
-        if (nc.outputRead == "1::-" || nc.outputRead.characters.count == 4096) {
+        if (fullNameArr.count == 2) {
             let mapViewControllerObj = self.storyboard?.instantiateViewController(withIdentifier: "HomeSofa") as? HomeSofa
             mapViewControllerObj?.user = user
             self.navigationController?.pushViewController(mapViewControllerObj!, animated: true)

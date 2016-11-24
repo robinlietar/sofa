@@ -1,294 +1,193 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
-- "Home"
+- "CustomCell"
 provides-nominal:
-- "C4Sofa4Home"
+- "C4Sofa10CustomCell"
 provides-member:
-- ["C4Sofa4Home", ""]
+- ["C4Sofa10CustomCell", ""]
 provides-dynamic-lookup:
-- "viewWillDisappear"
-- "viewWillAppear"
-- "didReceiveMemoryWarning"
-- "viewDidLoad"
+- "titleCell"
+- "ratingCell"
+- "imageCell"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "UIViewController"
-- "Bool"
-- "Home"
-- !private "!="
-- !private "FBSDKAccessToken"
+- "UILabel"
+- "CustomCell"
+- "UITableViewCell"
+- "UIImageView"
 depends-member:
-- !private ["Ps9AnyObject", "FBSDKAccessToken"]
-- !private ["Ps9AnyObject", "current"]
-- ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- ["Ps9AnyObject", "imageCell"]
 - !private ["Ps9AnyObject", "init"]
-- !private ["Ps9AnyObject", "navigationController"]
-- !private ["Ps9AnyObject", "setNavigationBarHidden"]
-- !private ["Ps9AnyObject", "setToolbarHidden"]
-- ["Ps9AnyObject", "viewDidLoad"]
-- ["Ps9AnyObject", "viewWillAppear"]
-- ["Ps9AnyObject", "viewWillDisappear"]
+- ["Ps9AnyObject", "ratingCell"]
+- ["Ps9AnyObject", "titleCell"]
 - ["Ps9AnyObject", ""]
-- !private ["Sb", "_getBuiltinLogicValue"]
-- ["Sb", "deinit"]
-- !private ["Ps7CVarArg", "FBSDKAccessToken"]
-- !private ["Ps7CVarArg", "current"]
-- ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- ["PSo15CALayerDelegate", "imageCell"]
+- !private ["PSo15CALayerDelegate", "init"]
+- ["PSo15CALayerDelegate", "ratingCell"]
+- ["PSo15CALayerDelegate", "titleCell"]
+- ["PSo15CALayerDelegate", ""]
+- ["Ps7CVarArg", "imageCell"]
 - !private ["Ps7CVarArg", "init"]
-- !private ["Ps7CVarArg", "navigationController"]
-- !private ["Ps7CVarArg", "setNavigationBarHidden"]
-- !private ["Ps7CVarArg", "setToolbarHidden"]
-- ["Ps7CVarArg", "viewDidLoad"]
-- ["Ps7CVarArg", "viewWillAppear"]
-- ["Ps7CVarArg", "viewWillDisappear"]
+- ["Ps7CVarArg", "ratingCell"]
+- ["Ps7CVarArg", "titleCell"]
 - ["Ps7CVarArg", ""]
-- !private ["Ps28CustomDebugStringConvertible", "FBSDKAccessToken"]
-- !private ["Ps28CustomDebugStringConvertible", "current"]
-- ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- ["C4Sofa10CustomCell", "UIImageView"]
+- ["C4Sofa10CustomCell", "UILabel"]
+- ["C4Sofa10CustomCell", "deinit"]
+- ["C4Sofa10CustomCell", "imageCell"]
+- ["C4Sofa10CustomCell", "init"]
+- ["C4Sofa10CustomCell", "ratingCell"]
+- ["C4Sofa10CustomCell", "titleCell"]
+- ["Ps28CustomDebugStringConvertible", "imageCell"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
-- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
-- !private ["Ps28CustomDebugStringConvertible", "setNavigationBarHidden"]
-- !private ["Ps28CustomDebugStringConvertible", "setToolbarHidden"]
-- ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
-- ["Ps28CustomDebugStringConvertible", "viewWillAppear"]
-- ["Ps28CustomDebugStringConvertible", "viewWillDisappear"]
+- ["Ps28CustomDebugStringConvertible", "ratingCell"]
+- ["Ps28CustomDebugStringConvertible", "titleCell"]
 - ["Ps28CustomDebugStringConvertible", ""]
-- !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
-- !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "FBSDKAccessToken"]
-- !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
-- !private ["Ps23CustomStringConvertible", "current"]
-- ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- ["Ps23CustomStringConvertible", "imageCell"]
 - !private ["Ps23CustomStringConvertible", "init"]
-- !private ["Ps23CustomStringConvertible", "navigationController"]
-- !private ["Ps23CustomStringConvertible", "setNavigationBarHidden"]
-- !private ["Ps23CustomStringConvertible", "setToolbarHidden"]
-- ["Ps23CustomStringConvertible", "viewDidLoad"]
-- ["Ps23CustomStringConvertible", "viewWillAppear"]
-- ["Ps23CustomStringConvertible", "viewWillDisappear"]
+- ["Ps23CustomStringConvertible", "ratingCell"]
+- ["Ps23CustomStringConvertible", "titleCell"]
 - ["Ps23CustomStringConvertible", ""]
-- !private ["Ps9Equatable", "FBSDKAccessToken"]
-- !private ["Ps9Equatable", "_getBuiltinLogicValue"]
-- !private ["Ps9Equatable", "current"]
-- ["Ps9Equatable", "didReceiveMemoryWarning"]
+- ["Ps9Equatable", "imageCell"]
 - !private ["Ps9Equatable", "init"]
-- !private ["Ps9Equatable", "navigationController"]
-- !private ["Ps9Equatable", "setNavigationBarHidden"]
-- !private ["Ps9Equatable", "setToolbarHidden"]
-- ["Ps9Equatable", "viewDidLoad"]
-- ["Ps9Equatable", "viewWillAppear"]
-- ["Ps9Equatable", "viewWillDisappear"]
+- ["Ps9Equatable", "ratingCell"]
+- ["Ps9Equatable", "titleCell"]
 - ["Ps9Equatable", ""]
-- !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["CSo16FBSDKAccessToken", "current"]
-- !private ["PSo12FBSDKCopying", "current"]
-- !private ["Ps8Hashable", "FBSDKAccessToken"]
-- !private ["Ps8Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps8Hashable", "current"]
-- ["Ps8Hashable", "didReceiveMemoryWarning"]
+- ["Ps8Hashable", "imageCell"]
 - !private ["Ps8Hashable", "init"]
-- !private ["Ps8Hashable", "navigationController"]
-- !private ["Ps8Hashable", "setNavigationBarHidden"]
-- !private ["Ps8Hashable", "setToolbarHidden"]
-- ["Ps8Hashable", "viewDidLoad"]
-- ["Ps8Hashable", "viewWillAppear"]
-- ["Ps8Hashable", "viewWillDisappear"]
+- ["Ps8Hashable", "ratingCell"]
+- ["Ps8Hashable", "titleCell"]
 - ["Ps8Hashable", ""]
-- ["C4Sofa4Home", "Bool"]
-- !private ["C4Sofa4Home", "FBSDKAccessToken"]
-- ["C4Sofa4Home", "deinit"]
-- ["C4Sofa4Home", "didReceiveMemoryWarning"]
-- ["C4Sofa4Home", "init"]
-- !private ["C4Sofa4Home", "navigationController"]
-- ["C4Sofa4Home", "viewDidLoad"]
-- ["C4Sofa4Home", "viewWillAppear"]
-- ["C4Sofa4Home", "viewWillDisappear"]
 - ["SQ", "deinit"]
-- !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - ["CSo7NSCoder", "deinit"]
-- !private ["PSo8NSCoding", "FBSDKAccessToken"]
-- !private ["PSo8NSCoding", "current"]
-- ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- ["PSo8NSCoding", "imageCell"]
 - !private ["PSo8NSCoding", "init"]
-- !private ["PSo8NSCoding", "navigationController"]
-- !private ["PSo8NSCoding", "setNavigationBarHidden"]
-- !private ["PSo8NSCoding", "setToolbarHidden"]
-- ["PSo8NSCoding", "viewDidLoad"]
-- ["PSo8NSCoding", "viewWillAppear"]
-- ["PSo8NSCoding", "viewWillDisappear"]
+- ["PSo8NSCoding", "ratingCell"]
+- ["PSo8NSCoding", "titleCell"]
 - ["PSo8NSCoding", ""]
-- !private ["PSo9NSCopying", "current"]
-- !private ["PSo26NSExtensionRequestHandling", "FBSDKAccessToken"]
-- ["PSo26NSExtensionRequestHandling", "didReceiveMemoryWarning"]
-- !private ["PSo26NSExtensionRequestHandling", "init"]
-- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
-- !private ["PSo26NSExtensionRequestHandling", "setNavigationBarHidden"]
-- !private ["PSo26NSExtensionRequestHandling", "setToolbarHidden"]
-- ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
-- ["PSo26NSExtensionRequestHandling", "viewWillAppear"]
-- ["PSo26NSExtensionRequestHandling", "viewWillDisappear"]
-- ["PSo26NSExtensionRequestHandling", ""]
-- ["CSo8NSObject", "Bool"]
-- !private ["CSo8NSObject", "FBSDKAccessToken"]
-- !private ["CSo8NSObject", "current"]
-- ["CSo8NSObject", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "UIImageView"]
+- ["CSo8NSObject", "UILabel"]
+- ["CSo8NSObject", "imageCell"]
 - ["CSo8NSObject", "init"]
-- !private ["CSo8NSObject", "navigationController"]
-- !private ["CSo8NSObject", "setNavigationBarHidden"]
-- !private ["CSo8NSObject", "setToolbarHidden"]
-- ["CSo8NSObject", "viewDidLoad"]
-- ["CSo8NSObject", "viewWillAppear"]
-- ["CSo8NSObject", "viewWillDisappear"]
-- !private ["PSo16NSObjectProtocol", "FBSDKAccessToken"]
-- !private ["PSo16NSObjectProtocol", "current"]
-- ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- ["CSo8NSObject", "ratingCell"]
+- ["CSo8NSObject", "titleCell"]
+- ["PSo16NSObjectProtocol", "imageCell"]
 - !private ["PSo16NSObjectProtocol", "init"]
-- !private ["PSo16NSObjectProtocol", "navigationController"]
-- !private ["PSo16NSObjectProtocol", "setNavigationBarHidden"]
-- !private ["PSo16NSObjectProtocol", "setToolbarHidden"]
-- ["PSo16NSObjectProtocol", "viewDidLoad"]
-- ["PSo16NSObjectProtocol", "viewWillAppear"]
-- ["PSo16NSObjectProtocol", "viewWillDisappear"]
+- ["PSo16NSObjectProtocol", "ratingCell"]
+- ["PSo16NSObjectProtocol", "titleCell"]
 - ["PSo16NSObjectProtocol", ""]
-- !private ["PSo14NSSecureCoding", "current"]
 - ["Sq", "deinit"]
-- !private ["PSo21UIAppearanceContainer", "FBSDKAccessToken"]
-- ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- ["PSo29UIAccessibilityIdentification", "imageCell"]
+- !private ["PSo29UIAccessibilityIdentification", "init"]
+- ["PSo29UIAccessibilityIdentification", "ratingCell"]
+- ["PSo29UIAccessibilityIdentification", "titleCell"]
+- ["PSo29UIAccessibilityIdentification", ""]
+- ["PSo12UIAppearance", "imageCell"]
+- !private ["PSo12UIAppearance", "init"]
+- ["PSo12UIAppearance", "ratingCell"]
+- ["PSo12UIAppearance", "titleCell"]
+- ["PSo12UIAppearance", ""]
+- ["PSo21UIAppearanceContainer", "imageCell"]
 - !private ["PSo21UIAppearanceContainer", "init"]
-- !private ["PSo21UIAppearanceContainer", "navigationController"]
-- !private ["PSo21UIAppearanceContainer", "setNavigationBarHidden"]
-- !private ["PSo21UIAppearanceContainer", "setToolbarHidden"]
-- ["PSo21UIAppearanceContainer", "viewDidLoad"]
-- ["PSo21UIAppearanceContainer", "viewWillAppear"]
-- ["PSo21UIAppearanceContainer", "viewWillDisappear"]
+- ["PSo21UIAppearanceContainer", "ratingCell"]
+- ["PSo21UIAppearanceContainer", "titleCell"]
 - ["PSo21UIAppearanceContainer", ""]
-- !private ["PSo18UIContentContainer", "FBSDKAccessToken"]
-- ["PSo18UIContentContainer", "didReceiveMemoryWarning"]
-- !private ["PSo18UIContentContainer", "init"]
-- !private ["PSo18UIContentContainer", "navigationController"]
-- !private ["PSo18UIContentContainer", "setNavigationBarHidden"]
-- !private ["PSo18UIContentContainer", "setToolbarHidden"]
-- ["PSo18UIContentContainer", "viewDidLoad"]
-- ["PSo18UIContentContainer", "viewWillAppear"]
-- ["PSo18UIContentContainer", "viewWillDisappear"]
-- ["PSo18UIContentContainer", ""]
-- !private ["PSo18UIFocusEnvironment", "FBSDKAccessToken"]
-- ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- ["PSo17UICoordinateSpace", "imageCell"]
+- !private ["PSo17UICoordinateSpace", "init"]
+- ["PSo17UICoordinateSpace", "ratingCell"]
+- ["PSo17UICoordinateSpace", "titleCell"]
+- ["PSo17UICoordinateSpace", ""]
+- ["PSo13UIDynamicItem", "imageCell"]
+- !private ["PSo13UIDynamicItem", "init"]
+- ["PSo13UIDynamicItem", "ratingCell"]
+- ["PSo13UIDynamicItem", "titleCell"]
+- ["PSo13UIDynamicItem", ""]
+- ["PSo18UIFocusEnvironment", "imageCell"]
 - !private ["PSo18UIFocusEnvironment", "init"]
-- !private ["PSo18UIFocusEnvironment", "navigationController"]
-- !private ["PSo18UIFocusEnvironment", "setNavigationBarHidden"]
-- !private ["PSo18UIFocusEnvironment", "setToolbarHidden"]
-- ["PSo18UIFocusEnvironment", "viewDidLoad"]
-- ["PSo18UIFocusEnvironment", "viewWillAppear"]
-- ["PSo18UIFocusEnvironment", "viewWillDisappear"]
+- ["PSo18UIFocusEnvironment", "ratingCell"]
+- ["PSo18UIFocusEnvironment", "titleCell"]
 - ["PSo18UIFocusEnvironment", ""]
-- ["CSo22UINavigationController", "deinit"]
-- !private ["CSo22UINavigationController", "setNavigationBarHidden"]
-- !private ["CSo22UINavigationController", "setToolbarHidden"]
-- ["CSo11UIResponder", "Bool"]
-- !private ["CSo11UIResponder", "FBSDKAccessToken"]
-- ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- ["PSo11UIFocusItem", "imageCell"]
+- !private ["PSo11UIFocusItem", "init"]
+- ["PSo11UIFocusItem", "ratingCell"]
+- ["PSo11UIFocusItem", "titleCell"]
+- ["PSo11UIFocusItem", ""]
+- ["PSo27UIGestureRecognizerDelegate", "imageCell"]
+- !private ["PSo27UIGestureRecognizerDelegate", "init"]
+- ["PSo27UIGestureRecognizerDelegate", "ratingCell"]
+- ["PSo27UIGestureRecognizerDelegate", "titleCell"]
+- ["PSo27UIGestureRecognizerDelegate", ""]
+- ["CSo11UIResponder", "UIImageView"]
+- ["CSo11UIResponder", "UILabel"]
+- ["CSo11UIResponder", "imageCell"]
 - ["CSo11UIResponder", "init"]
-- !private ["CSo11UIResponder", "navigationController"]
-- !private ["CSo11UIResponder", "setNavigationBarHidden"]
-- !private ["CSo11UIResponder", "setToolbarHidden"]
-- ["CSo11UIResponder", "viewDidLoad"]
-- ["CSo11UIResponder", "viewWillAppear"]
-- ["CSo11UIResponder", "viewWillDisappear"]
-- !private ["PSo30UIResponderStandardEditActions", "FBSDKAccessToken"]
-- ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- ["CSo11UIResponder", "ratingCell"]
+- ["CSo11UIResponder", "titleCell"]
+- ["PSo30UIResponderStandardEditActions", "imageCell"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
-- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
-- !private ["PSo30UIResponderStandardEditActions", "setNavigationBarHidden"]
-- !private ["PSo30UIResponderStandardEditActions", "setToolbarHidden"]
-- ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
-- ["PSo30UIResponderStandardEditActions", "viewWillAppear"]
-- ["PSo30UIResponderStandardEditActions", "viewWillDisappear"]
+- ["PSo30UIResponderStandardEditActions", "ratingCell"]
+- ["PSo30UIResponderStandardEditActions", "titleCell"]
 - ["PSo30UIResponderStandardEditActions", ""]
-- !private ["PSo16UIStateRestoring", "FBSDKAccessToken"]
-- ["PSo16UIStateRestoring", "didReceiveMemoryWarning"]
-- !private ["PSo16UIStateRestoring", "init"]
-- !private ["PSo16UIStateRestoring", "navigationController"]
-- !private ["PSo16UIStateRestoring", "setNavigationBarHidden"]
-- !private ["PSo16UIStateRestoring", "setToolbarHidden"]
-- ["PSo16UIStateRestoring", "viewDidLoad"]
-- ["PSo16UIStateRestoring", "viewWillAppear"]
-- ["PSo16UIStateRestoring", "viewWillDisappear"]
-- ["PSo16UIStateRestoring", ""]
-- !private ["PSo18UITraitEnvironment", "FBSDKAccessToken"]
-- ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- ["CSo15UITableViewCell", "UIImageView"]
+- ["CSo15UITableViewCell", "UILabel"]
+- ["CSo15UITableViewCell", "deinit"]
+- ["CSo15UITableViewCell", "imageCell"]
+- ["CSo15UITableViewCell", "init"]
+- ["CSo15UITableViewCell", "ratingCell"]
+- ["CSo15UITableViewCell", "titleCell"]
+- ["CSo15UITableViewCell", ""]
+- ["OSC20UITableViewCellStyle", "deinit"]
+- ["PSo18UITraitEnvironment", "imageCell"]
 - !private ["PSo18UITraitEnvironment", "init"]
-- !private ["PSo18UITraitEnvironment", "navigationController"]
-- !private ["PSo18UITraitEnvironment", "setNavigationBarHidden"]
-- !private ["PSo18UITraitEnvironment", "setToolbarHidden"]
-- ["PSo18UITraitEnvironment", "viewDidLoad"]
-- ["PSo18UITraitEnvironment", "viewWillAppear"]
-- ["PSo18UITraitEnvironment", "viewWillDisappear"]
+- ["PSo18UITraitEnvironment", "ratingCell"]
+- ["PSo18UITraitEnvironment", "titleCell"]
 - ["PSo18UITraitEnvironment", ""]
-- ["CSo16UIViewController", "Bool"]
-- !private ["CSo16UIViewController", "FBSDKAccessToken"]
-- ["CSo16UIViewController", "deinit"]
-- ["CSo16UIViewController", "didReceiveMemoryWarning"]
-- ["CSo16UIViewController", "init"]
-- !private ["CSo16UIViewController", "navigationController"]
-- !private ["CSo16UIViewController", "setNavigationBarHidden"]
-- !private ["CSo16UIViewController", "setToolbarHidden"]
-- ["CSo16UIViewController", "viewDidLoad"]
-- ["CSo16UIViewController", "viewWillAppear"]
-- ["CSo16UIViewController", "viewWillDisappear"]
-- ["CSo16UIViewController", ""]
-- !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "FBSDKAccessToken"]
-- !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
-- !private ["Ps9_Hashable", "current"]
-- ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- ["CSo6UIView", "UIImageView"]
+- ["CSo6UIView", "UILabel"]
+- ["CSo6UIView", "imageCell"]
+- ["CSo6UIView", "init"]
+- ["CSo6UIView", "ratingCell"]
+- ["CSo6UIView", "titleCell"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "imageCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "ratingCell"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", "titleCell"]
+- ["Ps37_DefaultCustomPlaygroundQuickLookable", ""]
+- ["Ps9_Hashable", "imageCell"]
 - !private ["Ps9_Hashable", "init"]
-- !private ["Ps9_Hashable", "navigationController"]
-- !private ["Ps9_Hashable", "setNavigationBarHidden"]
-- !private ["Ps9_Hashable", "setToolbarHidden"]
-- ["Ps9_Hashable", "viewDidLoad"]
-- ["Ps9_Hashable", "viewWillAppear"]
-- ["Ps9_Hashable", "viewWillDisappear"]
+- ["Ps9_Hashable", "ratingCell"]
+- ["Ps9_Hashable", "titleCell"]
 - ["Ps9_Hashable", ""]
-- !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 depends-nominal:
 - "Ps9AnyObject"
-- "Sb"
+- "PSo15CALayerDelegate"
 - "Ps7CVarArg"
+- "C4Sofa10CustomCell"
 - "Ps28CustomDebugStringConvertible"
-- !private "Ps29CustomPlaygroundQuickLookable"
-- !private "Ps17CustomReflectable"
 - "Ps23CustomStringConvertible"
 - "Ps9Equatable"
-- !private "Ps27ExpressibleByBooleanLiteral"
-- !private "CSo16FBSDKAccessToken"
-- !private "PSo12FBSDKCopying"
 - "Ps8Hashable"
-- "C4Sofa4Home"
 - "SQ"
-- !private "Ps25LosslessStringConvertible"
 - "CSo7NSCoder"
 - "PSo8NSCoding"
-- !private "PSo9NSCopying"
-- "PSo26NSExtensionRequestHandling"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
-- !private "PSo14NSSecureCoding"
 - "Sq"
+- "PSo29UIAccessibilityIdentification"
+- "PSo12UIAppearance"
 - "PSo21UIAppearanceContainer"
-- "PSo18UIContentContainer"
+- "PSo17UICoordinateSpace"
+- "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
-- "CSo22UINavigationController"
+- "PSo11UIFocusItem"
+- "PSo27UIGestureRecognizerDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
-- "PSo16UIStateRestoring"
+- "CSo15UITableViewCell"
+- "OSC20UITableViewCellStyle"
 - "PSo18UITraitEnvironment"
-- "CSo16UIViewController"
-- !private "Ps35_ExpressibleByBuiltinBooleanLiteral"
+- "CSo6UIView"
+- "Ps37_DefaultCustomPlaygroundQuickLookable"
 - "Ps9_Hashable"
-- !private "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
@@ -373,4 +272,4 @@ depends-external:
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/NSData+ImageContentType.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-umbrella.h"
 - "/Users/robinlietar/GitHub/sofa/Sofa/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules/module.modulemap"
-interface-hash: "4926c87e4faf19417ea2f9e54b99ecf8"
+interface-hash: "a1aaa23f782086c077897a4edc5a3edb"

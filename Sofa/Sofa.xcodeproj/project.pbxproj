@@ -47,6 +47,7 @@
 		639101111DDC99530095A128 /* NetworkCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639101101DDC99530095A128 /* NetworkCommunication.swift */; };
 		639D76DD1DE067CB00FA5752 /* SofaWaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639D76DC1DE067CB00FA5752 /* SofaWaiting.swift */; };
 		639F19281DE4FC1400A7EA3E /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 639F19271DE4FC1400A7EA3E /* KeychainWrapper.m */; };
+		639F192A1DE6468600A7EA3E /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639F19291DE6468500A7EA3E /* CustomCell.swift */; };
 		63DBE7FB1DC7AEF1001C1F89 /* CreateSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */; };
 		63DBE7FD1DC7AEFD001C1F89 /* JoinSofa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */; };
 		63DBE8011DC7F3D9001C1F89 /* arnacoeur.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63DBE7FE1DC7F3D9001C1F89 /* arnacoeur.jpg */; };
@@ -132,6 +133,7 @@
 		639F19251DE4FC1200A7EA3E /* Sofa-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sofa-Bridging-Header.h"; sourceTree = "<group>"; };
 		639F19261DE4FC1400A7EA3E /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
 		639F19271DE4FC1400A7EA3E /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		639F19291DE6468500A7EA3E /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSofa.swift; sourceTree = "<group>"; };
 		63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JoinSofa.swift; sourceTree = "<group>"; };
 		63DBE7FE1DC7F3D9001C1F89 /* arnacoeur.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = arnacoeur.jpg; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				634BE5F81DC757D90015D735 /* TindFilm.swift */,
 				635772B51DC79F80009808AC /* HomeSofa.swift */,
 				63E202691DC7A9D400FE78B7 /* WatchList.swift */,
+				639F19291DE6468500A7EA3E /* CustomCell.swift */,
 				63DBE7FA1DC7AEF1001C1F89 /* CreateSofa.swift */,
 				63DBE7FC1DC7AEFD001C1F89 /* JoinSofa.swift */,
 				639D76DC1DE067CB00FA5752 /* SofaWaiting.swift */,
@@ -661,6 +664,7 @@
 				639D76DD1DE067CB00FA5752 /* SofaWaiting.swift in Sources */,
 				63E2026A1DC7A9D400FE78B7 /* WatchList.swift in Sources */,
 				632FB9771DC682F6003EA4A2 /* AppDelegate.swift in Sources */,
+				639F192A1DE6468600A7EA3E /* CustomCell.swift in Sources */,
 				63DBE7FD1DC7AEFD001C1F89 /* JoinSofa.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

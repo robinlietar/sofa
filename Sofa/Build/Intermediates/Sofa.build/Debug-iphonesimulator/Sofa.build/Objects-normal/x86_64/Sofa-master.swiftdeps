@@ -1,16 +1,17 @@
 version: "Apple Swift version 3.0.1 (swiftlang-800.0.58.6 clang-800.0.42.1)"
 options: "e7d3a3c236125d86f5a3ba793ab3ece7"
-build_time: [533169699, 392572000]
+build_time: [533256474, 523472000]
 inputs:
   "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/CreateSofa.swift": [533167024, 0]
-  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/Login.swift": [533169698, 0]
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/Login.swift": [533249544, 0]
   "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/HomeSofa.swift": [532867199, 0]
-  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/NetworkCommunication.swift": [532868301, 0]
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/NetworkCommunication.swift": [533252101, 0]
   "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/SignUp.swift": [532868301, 0]
   "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/UserInfos.swift": [532804850, 0]
-  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/TindFilm.swift": [533165371, 0]
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/TindFilm.swift": [533252101, 0]
   "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/Home.swift": [531245944, 0]
   "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/SofaWaiting.swift": [533166648, 0]
-  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/WatchList.swift": [532802337, 0]
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/WatchList.swift": [533256472, 0]
   "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/AppDelegate.swift": [531224611, 0]
+  "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/CustomCell.swift": [533253509, 0]
   "/Users/robinlietar/GitHub/sofa/Sofa/Sofa/JoinSofa.swift": [533167070, 0]

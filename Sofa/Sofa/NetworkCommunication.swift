@@ -105,6 +105,11 @@ func stream(_ handlestream: Stream, handle eventCode: Stream.Event) {
             let notificationName = Notification.Name(self.currentVC + ".ConnexionSucceeded")
             NotificationCenter.default.post(name: notificationName, object: nil)
         }
+//        else if (outputFirst == "["){
+//            let notificationName = Notification.Name(self.currentVC + ".ConnexionSucceeded")
+//            NotificationCenter.default.post(name: notificationName, object: nil)
+//        }
+
         else {
             let notificationName = Notification.Name(self.currentVC + ".ConnexionFailed")
             NotificationCenter.default.post(name: notificationName, object: nil)

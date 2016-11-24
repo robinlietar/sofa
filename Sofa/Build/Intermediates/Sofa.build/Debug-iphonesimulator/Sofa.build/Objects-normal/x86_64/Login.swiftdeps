@@ -6,63 +6,62 @@ provides-nominal:
 provides-member:
 - ["C4Sofa5Login", ""]
 provides-dynamic-lookup:
-- "errorLabel"
-- "notificationName2"
-- "usernameField"
-- "keyboardWillShow"
-- "passToTindFilms"
-- "parseOutput"
-- "viewWillDisappear"
-- "textFieldDidEndEditing"
-- "passwordField"
-- "connexionFailed"
-- "username"
-- "connexionAttempt"
-- "notificationName"
-- "connexionSucceeded"
-- "user"
-- "viewWillAppear"
-- "dismissKeyboard"
 - "viewDidLoad"
+- "notificationName2"
 - "textFieldShouldReturn"
+- "textFieldDidEndEditing"
+- "errorLabel"
 - "keyboardWillHide"
 - "didReceiveMemoryWarning"
+- "usernameField"
+- "connexionSucceeded"
+- "passToTindFilms"
+- "notificationName"
+- "passwordField"
+- "connexionFailed"
+- "user"
+- "username"
+- "keyboardWillShow"
+- "connexionAttempt"
+- "parseOutput"
+- "viewWillDisappear"
 - "nc"
+- "viewWillAppear"
+- "dismissKeyboard"
 depends-top-level:
+- !private "UITapGestureRecognizer"
+- !private "SDWebImageOptions"
 - !private "NSURL"
-- !private "UIKeyboardFrameBeginUserInfoKey"
-- !private "URL"
-- !private "NSValue"
-- "String"
-- !private "+="
-- "UITextField"
-- "Bool"
-- "AssignmentPrecedence"
-- !private "=="
-- "CastingPrecedence"
-- !private "+"
-- "Notification"
-- !private "!="
-- !private "TindFilm"
-- !private "||"
-- !private "SDWebImageManager"
 - !private "NotificationCenter"
+- !private "Int"
+- !private "URL"
+- !private "UIKeyboardFrameBeginUserInfoKey"
+- !private "UnicodeScalarType"
+- !private "print"
+- "String"
+- "NSNotification"
+- !private "!="
+- !private "HomeSofa"
+- "AssignmentPrecedence"
+- "Bool"
+- "CastingPrecedence"
+- !private "=="
+- !private "NSValue"
+- "UITextField"
+- "Notification"
+- !private "SDWebImageManager"
+- "UITextFieldDelegate"
+- !private "+"
 - "User"
 - "UIViewController"
-- "NSNotification"
 - "StringLiteralType"
-- "UITextFieldDelegate"
-- "Login"
-- !private "HomeSofa"
-- !private "SDWebImageOptions"
-- !private "UITapGestureRecognizer"
+- !private "TindFilm"
 - "NetworkCommunication"
-- !private "UnicodeScalarType"
+- !private "+="
+- "Login"
 - !private "-="
-- !private "Int"
-- !private "BooleanLiteralType"
-- !private "print"
 - "UILabel"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "Login"]
@@ -139,7 +138,9 @@ depends-member:
 - ["Ps9AnyObject", "viewWillDisappear"]
 - ["Ps9AnyObject", ""]
 - !private ["Sa", "Index"]
+- !private ["Sa", "IndexDistance"]
 - !private ["Sa", "SubSequence"]
+- !private ["Sa", "count"]
 - ["Sa", "deinit"]
 - !private ["Sa", "subscript"]
 - !private ["Ps23BidirectionalCollection", "Index"]
@@ -215,6 +216,7 @@ depends-member:
 - ["Ps7CVarArg", "connexionAttempt"]
 - ["Ps7CVarArg", "connexionFailed"]
 - ["Ps7CVarArg", "connexionSucceeded"]
+- !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "currentVC"]
 - !private ["Ps7CVarArg", "default"]
 - !private ["Ps7CVarArg", "delegate"]
@@ -315,6 +317,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "connexionAttempt"]
 - ["Ps28CustomDebugStringConvertible", "connexionFailed"]
 - ["Ps28CustomDebugStringConvertible", "connexionSucceeded"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "currentVC"]
 - !private ["Ps28CustomDebugStringConvertible", "default"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
@@ -393,6 +396,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
 - !private ["Ps17CustomReflectable", "characters"]
 - !private ["Ps17CustomReflectable", "components"]
+- !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "height"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "origin"]
@@ -429,6 +433,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "connexionAttempt"]
 - ["Ps23CustomStringConvertible", "connexionFailed"]
 - ["Ps23CustomStringConvertible", "connexionSucceeded"]
+- !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "currentVC"]
 - !private ["Ps23CustomStringConvertible", "default"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
@@ -589,7 +594,9 @@ depends-member:
 - !private ["Ps9Equatable", "y"]
 - ["Ps9Equatable", ""]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
+- !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
 - !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - !private ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
@@ -810,10 +817,14 @@ depends-member:
 - !private ["Ps10MirrorPath", "components"]
 - ["Ps10MirrorPath", "init"]
 - !private ["Ps17MutableCollection", "Index"]
+- !private ["Ps17MutableCollection", "IndexDistance"]
 - !private ["Ps17MutableCollection", "SubSequence"]
+- !private ["Ps17MutableCollection", "count"]
 - !private ["Ps17MutableCollection", "subscript"]
 - !private ["Ps16MutableIndexable", "Index"]
+- !private ["Ps16MutableIndexable", "IndexDistance"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
+- !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "subscript"]
 - ["CSo7NSCoder", "deinit"]
 - !private ["PSo8NSCoding", "Login"]
@@ -1123,6 +1134,7 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "SubSequence"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "count"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
 - !private ["Ps21RandomAccessIndexable", "Index"]
 - !private ["Ps21RandomAccessIndexable", "IndexDistance"]
@@ -1130,6 +1142,7 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "Iterator"]
 - !private ["Ps21RandomAccessIndexable", "SubSequence"]
 - !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "count"]
 - !private ["Ps21RandomAccessIndexable", "subscript"]
 - !private ["Vs17RandomAccessSlice", "Index"]
 - !private ["Vs17RandomAccessSlice", "IndexDistance"]
@@ -1790,7 +1803,9 @@ depends-member:
 - !private ["C4Sofa4User", "secondImage"]
 - !private ["C4Sofa4User", "username"]
 - !private ["Ps14_ArrayProtocol", "Index"]
+- !private ["Ps14_ArrayProtocol", "IndexDistance"]
 - !private ["Ps14_ArrayProtocol", "SubSequence"]
+- !private ["Ps14_ArrayProtocol", "count"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps15_CVarArgAligned", "Stride"]
 - !private ["Ps15_CVarArgAligned", "_DisallowMixedSignArithmetic"]
@@ -1804,7 +1819,9 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "resignFirstResponder"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
+- !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "Stride"]
 - !private ["Ps28_DisallowMixedSignArithmetic", "_DisallowMixedSignArithmetic"]
@@ -1937,6 +1954,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "characters"]
 - !private ["Ps21_ObjectiveCBridgeable", "components"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "height"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "origin"]

@@ -271,6 +271,7 @@ class TindFilm: UIViewController, UIGestureRecognizerDelegate {
             if (self.cpt <= 7){
             let manager = SDWebImageManager()
             manager.downloadImage(with: NSURL(string: user.affArrReco[cpt + 2]) as URL!, options: SDWebImageOptions(rawValue: 0), progress: nil, completed: { (image, error, bool, cache, url) in
+                print("user.affArrReco[cpt + 2]")
                 print("image  2")
                 if (image != nil) {
                     print("image not nil")
@@ -278,7 +279,7 @@ class TindFilm: UIViewController, UIGestureRecognizerDelegate {
                 }
                 else {
                     print("fail")
-                    self.user.thirdImage = self.user.secondImage
+                    //self.user.thirdImage = self.user.secondImage
                 }
             })
             }

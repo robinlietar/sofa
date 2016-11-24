@@ -172,6 +172,17 @@ SWIFT_CLASS("_TtC4Sofa10CreateSofa")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIImageView;
+
+SWIFT_CLASS("_TtC4Sofa10CustomCell")
+@interface CustomCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified imageCell;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified titleCell;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified ratingCell;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC4Sofa4Home")
 @interface Home : UIViewController
@@ -324,7 +335,6 @@ SWIFT_CLASS("_TtC4Sofa11SofaWaiting")
 
 @class UIImage;
 @class UIPanGestureRecognizer;
-@class UIImageView;
 @class UIView;
 @class UITextView;
 
@@ -381,13 +391,20 @@ SWIFT_CLASS("_TtC4Sofa4User")
 @end
 
 @class UITableView;
-@class UITableViewCell;
 
 SWIFT_CLASS("_TtC4Sofa9WatchList")
 @interface WatchList : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, strong) User * _Null_unspecified user;
+@property (nonatomic, strong) NetworkCommunication * _Null_unspecified nc;
+@property (nonatomic, readonly) NSNotificationName _Nonnull notificationName;
+@property (nonatomic, readonly) NSNotificationName _Nonnull notificationName2;
+@property (nonatomic, copy) NSArray<NSDictionary<NSString *, NSString *> *> * _Nonnull filmWatchingListArr;
 - (void)viewDidLoad;
+- (void)connexionAttempt;
+- (void)connexionSucceeded;
+- (void)connexionFailed;
+- (void)parseOutput;
 - (void)didReceiveMemoryWarning;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
